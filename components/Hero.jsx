@@ -96,14 +96,14 @@ export default function Hero() {
 
           <a
             href="/services"
-            className="px-7 py-3 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition"
+            className="px-7 py-1.5 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition"
           >
             Explore Services
           </a>
 
           <a
             href="/contact"
-            className="px-7 py-3 rounded-full border border-white/50 text-white hover:border-white transition"
+            className="px-7 py-1.5 rounded-full border border-white/50 text-white hover:border-white transition"
           >
             Contact Us
           </a>

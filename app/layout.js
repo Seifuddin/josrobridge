@@ -1,4 +1,7 @@
+import Footer from "@/components/Footer";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import WhatsAppButton from "@/components/WhatsApp";
 
 export const metadata = {
   title: "Josro Bridge International Limited",
@@ -10,7 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Navbar />
         {children}
+        <WhatsAppButton />
+        <Footer />
       </body>
     </html>
   );
