@@ -10,19 +10,20 @@ import StudentSuccessWall from "@/components/Successwall";
 import FloatingCTA from "@/components/CTA";
 import GlobalCTASection from "@/components/Action";
 import FAQSection from "@/components/FAQ";
+import GlobalAcademicJourney from "@/components/Journey";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <GlobalAcademicJourney />
+      <GlobalCTASection />
       <About />
       <GlobalOpportunitiesCounter />
       <Services />
-      <GlobalCTASection />
-      <FloatingCTA />
-      <WhyJosroWins />
       <StudentSuccessWall />
       <FAQSection />
+      <WhyJosroWins />
     </>
   );
 }
