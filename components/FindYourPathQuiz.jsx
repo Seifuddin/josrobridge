@@ -144,7 +144,7 @@ Country: ${result.data.country}
   };
 
   return (
-    <section className="py-10 bg-blue-50">
+    <section className="py-10 bg-orange-50">
       <div className="max-w-5xl mx-auto px-6">
 
         {/* HEADER */}
@@ -161,7 +161,7 @@ Country: ${result.data.country}
           <div className="grid md:grid-cols-3 gap-4">
 
             {/* PROGRESS */}
-            <div className="bg-blue-50 border border-blue-200 rounded-xl p-3">
+            <div className="bg-orange-50 border border-orange-200 rounded-xl p-3">
               <h3 className="text-xs font-semibold text-gray-700 mb-3">
                 Progress
               </h3>
@@ -179,7 +179,7 @@ Country: ${result.data.country}
                         ? "bg-orange-500 text-white border-orange-500"
                         : i === step
                         ? "bg-blue-700 text-white border-blue-900"
-                        : "bg-white border-blue-300"
+                        : "bg-white border-orange-200"
                     }`}
                   >
                     {i < step ? "✓" : i + 1}
@@ -195,7 +195,7 @@ Country: ${result.data.country}
               key={step}
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="md:col-span-2 bg-blue-50 border border-blue-200 rounded-2xl p-5 shadow-sm"
+              className="md:col-span-2 bg-orange-50 border border-orange-200 rounded-2xl p-5 shadow-sm"
             >
               <p className="text-[11px] text-gray-600 mb-2">
                 Step {step + 1}/{questions.length}
