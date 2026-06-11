@@ -18,7 +18,7 @@ export default function About() {
             About Josro Bridge
           </p>
 
-          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-blue-950 leading-tight">
+          <h2 className="mt-4 text-2xl md:text-3xl font-bold text-blue-950">
             We Build Real Bridges to{" "}
             <span className="text-orange-500">Global Opportunity</span>
           </h2>

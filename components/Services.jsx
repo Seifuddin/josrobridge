@@ -1,148 +1,255 @@
+"use client";
+
+import { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   GraduationCap,
   BookOpen,
   Briefcase,
-  Users,
+  Award,
   Globe,
+  Users,
+  ArrowRight,
 } from "lucide-react";
+
+/* =========================
+   DATA
+========================= */
 
 const services = [
   {
     title: "University Placement",
-    desc: "Guiding students through applications, scholarships, and admissions to top universities worldwide.",
     icon: GraduationCap,
+    image: "/images/PhD-Scholarship-for-Domestic-International-Students-at-University-of-New-England-in-Australia-1024x684.jpg",
+    description:
+      "Helping students secure admission to leading universities and colleges across the globe.",
+    subServices: [
+      "University applications",
+      "Admission guidance",
+      "Scholarship assistance",
+      "Course selection support",
+    ],
   },
+
   {
     title: "IELTS Training",
-    desc: "Expert-led preparation programs designed to achieve competitive IELTS scores.",
     icon: BookOpen,
+    image: "/images/IELTS-Training-Centre.jpg",
+    description:
+      "Professional IELTS preparation programs designed to help students achieve their desired scores.",
+    subServices: [
+      "Listening practice",
+      "Speaking coaching",
+      "Writing workshops",
+      "Mock examinations",
+    ],
   },
+
   {
     title: "Business Consultancy",
-    desc: "Strategic advisory services for startups, SMEs, and established organizations.",
     icon: Briefcase,
+    image: "/images/business-meeting-office_1268-21517.avif",
+    description:
+      "Strategic business advisory services that help organizations grow and succeed in competitive markets.",
+    subServices: [
+      "Business planning",
+      "Market research",
+      "Investment guidance",
+      "Growth strategies",
+    ],
   },
+
   {
     title: "Professional Training",
-    desc: "Leadership, entrepreneurship, and management development programs.",
-    icon: Users,
+    icon: Award,
+    image: "/images/profession.jpeg",
+    description:
+      "Industry-focused training programs that equip professionals with practical and relevant skills.",
+    subServices: [
+      "Leadership development",
+      "Corporate workshops",
+      "Career advancement",
+      "Skills enhancement",
+    ],
   },
+
   {
     title: "Labor Mobility",
-    desc: "Connecting skilled workers to verified international employment opportunities.",
     icon: Globe,
+    image: "/images/labor-markets.jpg",
+    description:
+      "Connecting skilled professionals with international employment opportunities and mobility programs.",
+    subServices: [
+      "International recruitment",
+      "Work permit guidance",
+      "Employer matching",
+      "Relocation support",
+    ],
+  },
+
+  {
+    title: "Student Visa Assistance",
+    icon: Users,
+    image: "/images/visa.webp",
+    description:
+      "Comprehensive visa application support to help students study abroad with confidence.",
+    subServices: [
+      "Visa processing",
+      "Document verification",
+      "Interview preparation",
+      "Travel advisory",
+    ],
   },
 ];
 
-export default function Services() {
+/* =========================
+   MODAL
+========================= */
+
+function Modal({ service, open, setOpen }) {
+  if (!open) return null;
+
   return (
-    <section
-      id="services"
-      className="relative py-28 bg-gradient-to-b from-white to-blue-50 overflow-hidden"
-    >
-      {/* background glow */}
-      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-3xl"></div>
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div
+        className="absolute inset-0 bg-black/60"
+        onClick={() => setOpen(false)}
+      />
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative bg-white w-full max-w-lg rounded-2xl p-6 shadow-xl">
+        <h2 className="text-2xl font-semibold text-blue-950">
+          {service?.title}
+        </h2>
 
-        {/* HEADER */}
-        <div className="text-center max-w-3xl mx-auto">
-          <p className="text-orange-500 font-semibold tracking-widest uppercase text-sm">
-            Our Services
-          </p>
+        <p className="mt-3 text-gray-600">
+          {service?.description}
+        </p>
 
-          <h2 className="mt-3 text-4xl md:text-5xl font-bold text-blue-950 leading-tight">
-            Global Pathways to Education, Skills & Careers
-          </h2>
-
-          <div className="w-24 h-1 bg-orange-500 mx-auto mt-6 rounded-full"></div>
-
-          <p className="mt-6 text-gray-600 text-lg">
-            We connect individuals to world-class universities, professional
-            training, business growth opportunities, and international employment pathways.
-          </p>
+        <div className="mt-5 space-y-3">
+          {service?.subServices?.map((item, i) => (
+            <div key={i} className="flex items-center gap-2 text-gray-700">
+              <span className="w-2 h-2 bg-orange-500 rounded-full" />
+              {item}
+            </div>
+          ))}
         </div>
 
-        {/* FEATURED + LIST LAYOUT */}
-        <div className="mt-20 grid md:grid-cols-2 gap-12 items-center">
-
-          {/* LEFT - FEATURED SERVICE */}
-          <div className="bg-blue-950 text-white rounded-3xl p-10 relative overflow-hidden">
-
-            <div className="absolute -top-20 -right-20 w-[300px] h-[300px] bg-orange-500/20 rounded-full blur-3xl"></div>
-
-            <p className="text-orange-400 font-semibold tracking-widest text-sm">
-              FLAGSHIP PROGRAM
-            </p>
-
-            <h3 className="mt-4 text-3xl font-bold">
-              University Placement Program
-            </h3>
-
-            <p className="mt-6 text-gray-300 leading-relaxed">
-              We provide structured guidance for students seeking admission into
-              top global universities, including application support, scholarship
-              assistance, documentation, and interview preparation.
-            </p>
-
-            <a
-              href="#contact"
-              className="inline-block mt-8 bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-full font-semibold transition"
-            >
-              Start Application
-            </a>
-          </div>
-
-          {/* RIGHT - SERVICE LIST */}
-          <div className="space-y-6">
-
-            {services.map((service, i) => {
-              const Icon = service.icon;
-
-              return (
-                <div
-                  key={i}
-                  className="flex gap-4 p-5 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow-md transition"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-orange-500 text-white flex items-center justify-center">
-                    <Icon size={22} />
-                  </div>
-
-                  <div>
-                    <h4 className="font-bold text-blue-950">
-                      {service.title}
-                    </h4>
-                    <p className="text-sm text-gray-600 mt-1">
-                      {service.desc}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="mt-24 text-center">
-          <h3 className="text-2xl font-bold text-blue-950">
-            Ready to begin your international journey?
-          </h3>
-
-          <p className="text-gray-600 mt-2">
-            Speak with our consultants and choose the right pathway for you.
-          </p>
-
-          <a
-            href="#contact"
-            className="inline-block mt-6 bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition"
-          >
-            Book Consultation
-          </a>
-        </div>
-
+        <button
+          onClick={() => setOpen(false)}
+          className="mt-6 w-full bg-blue-950 text-white py-3 rounded-xl"
+        >
+          Close
+        </button>
       </div>
-    </section>
+    </div>
   );
+}
+
+/* =========================
+   MAIN SECTION
+========================= */
+
+export default function Services() {
+  const [active, setActive] = useState(null);
+  const [open, setOpen] = useState(false);
+
+  return (
+  <section id="services" className="py-12 bg-amber-50">
+    {/* HEADER */}
+    <div className="text-center max-w-2xl mx-auto px-4">
+      <p className="text-xs mb-2 tracking-[0.3em] uppercase text-orange-600">
+        Our Services
+      </p>
+
+      <h2 className="text-2xl md:text-3xl font-bold text-blue-950">
+        Empowering Education & Global Opportunities
+      </h2>
+
+      <p className="mt-3 text-sm text-gray-700">
+        Josro Bridge International provides trusted guidance in university
+        placement, IELTS preparation, professional development, labor mobility,
+        and international career opportunities.
+      </p>
+    </div>
+
+    {/* SERVICES GRID */}
+    <div className="max-w-7xl mx-auto px-4 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      {services.map((s, i) => {
+        const Icon = s.icon;
+
+        return (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4 }}
+            className="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition"
+          >
+            {/* IMAGE */}
+            <div className="relative h-40">
+              <Image
+                src={s.image}
+                alt={s.title}
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* CONTENT */}
+            <div className="p-4">
+              <div className="flex items-center gap-2">
+                <div className="p-1.5 bg-orange-100 rounded-md">
+                  <Icon size={18} className="text-orange-600" />
+                </div>
+
+                <h3 className="font-semibold text-base text-blue-950">
+                  {s.title}
+                </h3>
+              </div>
+
+              <p className="mt-2 text-xs text-gray-600 line-clamp-3">
+                {s.description}
+              </p>
+
+              <div className="mt-3 space-y-1">
+                {s.subServices.map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-center gap-2 text-xs text-gray-700"
+                  >
+                    <span className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+                    {item}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-4 flex gap-2">
+                <button
+                  onClick={() => {
+                    setActive(s);
+                    setOpen(true);
+                  }}
+                  className="flex-1 bg-blue-950 hover:bg-blue-900 text-white py-2 rounded-lg text-xs transition"
+                >
+                  View
+                </button>
+
+                <button className="flex-1 border border-blue-950 text-blue-950 hover:bg-blue-50 py-2 rounded-lg text-xs flex items-center justify-center gap-1 transition">
+                  Request
+                  <ArrowRight size={13} />
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        );
+      })}
+    </div>
+
+    {/* MODAL */}
+    <Modal service={active} open={open} setOpen={setOpen} />
+  </section>
+);
 }
