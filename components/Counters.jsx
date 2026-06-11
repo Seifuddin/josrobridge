@@ -65,11 +65,11 @@ function StatTile({ stat, start, index }) {
       <div className="rounded-2xl p-4 border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden relative">
 
         {/* glow */}
-        <div className="absolute -top-10 -right-10 w-32 h-32 bg-yellow-400/10 blur-3xl rounded-full" />
+        <div className="absolute -top-10 -right-10 w-32 h-32 bg-orange-400/10 blur-3xl rounded-full" />
 
         <div className="flex items-center gap-2 mb-3">
-          <div className="p-2 rounded-lg bg-yellow-400/10 border border-yellow-400/20">
-            <Icon className="text-yellow-300" size={16} />
+          <div className="p-2 rounded-lg bg-orange-400/10 border border-orange-400/20">
+            <Icon className="text-orange-400" size={16} />
           </div>
 
           <p className="text-[11px] text-white/70 uppercase tracking-wide">
@@ -79,7 +79,7 @@ function StatTile({ stat, start, index }) {
 
         <h3 className="text-3xl font-bold text-white leading-none">
           {count.toLocaleString()}
-          <span className="text-yellow-300 ml-1">{stat.suffix}</span>
+          <span className="text-orange-400 ml-1">{stat.suffix}</span>
         </h3>
       </div>
     </motion.div>
@@ -122,11 +122,11 @@ export default function GlobalOpportunitiesCounter() {
             animate={start ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-8"
           >
-            <p className="text-[11px] tracking-[0.35em] text-yellow-300 uppercase">
+            <p className="text-[11px] tracking-[0.35em] text-orange-400 uppercase">
               Global Impact Dashboard
             </p>
 
-            <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mt-2">
               Real Results Across the World
             </h2>
 
@@ -143,7 +143,7 @@ export default function GlobalOpportunitiesCounter() {
               <div className="h-full rounded-2xl p-5 border border-white/10 bg-white/5 backdrop-blur-xl relative overflow-hidden">
 
                 {/* glow */}
-                <div className="absolute -top-16 -left-16 w-56 h-56 bg-yellow-400/10 blur-3xl rounded-full" />
+                <div className="absolute -top-16 -left-16 w-56 h-56 bg-orange-400/10 blur-3xl rounded-full" />
 
                 <h3 className="text-white text-lg font-semibold">
                   Global Trust Network
@@ -154,15 +154,15 @@ export default function GlobalOpportunitiesCounter() {
                   across multiple continents with verified pathways.
                 </p>
 
-                <div className="mt-4 border-l-2 border-yellow-400 pl-3">
-                  <p className="text-yellow-300 text-xs">
+                <div className="mt-4 border-l-2 border-orange-400 pl-3">
+                  <p className="text-orange-400 text-xs">
                     Built for serious international applicants
                   </p>
                 </div>
 
                 {/* PULSING DOTS */}
                 <div className="absolute bottom-5 right-5 flex gap-1.5">
-                  <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full animate-pulse" />
+                  <div className="w-1.5 h-1.5 bg-orange-400 rounded-full animate-pulse" />
                   <div className="w-1.5 h-1.5 bg-white/50 rounded-full animate-pulse delay-150" />
                   <div className="w-1.5 h-1.5 bg-orange-400 rounded-full animate-pulse delay-300" />
                 </div>
