@@ -32,7 +32,7 @@ export default function About() {
             we empower students and professionals to achieve success in a globalized world.
           </p>
 
-          <p className="mt-5 text-gray-600 textsm leading-relaxed">
+          <p className="hidden mt-5 text-gray-600 textsm leading-relaxed">
             We guide students to world-class universities, provide IELTS training,
             and deliver strategic consultancy and career development programs that
             open global opportunities.
@@ -56,7 +56,7 @@ export default function About() {
         <div className="relative">
 
           {/* IMAGE CARD */}
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 h-[500px]">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 h-[400px]">
 
             <Image
               src="/images/PhD-Scholarship-for-Domestic-International-Students-at-University-of-New-England-in-Australia-1024x684.jpg"
