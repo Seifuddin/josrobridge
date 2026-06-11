@@ -175,7 +175,7 @@ export default function Services() {
     </div>
 
     {/* SERVICES GRID */}
-    <div className="max-w-7xl mx-auto px-4 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div className="max-w-7xl mx-auto px-6 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       {services.map((s, i) => {
         const Icon = s.icon;
 

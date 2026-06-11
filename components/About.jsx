@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-28 bg-gradient-to-b from-white to-blue-50 overflow-hidden"
+      className="relative py-28 bg-amber-50 overflow-hidden"
     >
       {/* decorative background */}
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -14,7 +14,7 @@ export default function About() {
 
         {/* LEFT SIDE */}
         <div>
-          <p className="text-orange-500 font-semibold tracking-widest uppercase text-sm">
+          <p className="text-xs mb-2 tracking-[0.3em] uppercase text-orange-600">
             About Josro Bridge
           </p>
 
@@ -59,7 +59,7 @@ export default function About() {
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 h-[500px]">
 
             <Image
-              src="/images/about.jpg"
+              src="/images/PhD-Scholarship-for-Domestic-International-Students-at-University-of-New-England-in-Australia-1024x684.jpg"
               alt="Josro Bridge International"
               fill
               className="object-cover"
