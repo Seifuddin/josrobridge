@@ -71,7 +71,7 @@ export default function GlobalAcademicJourney() {
             >
 
               {/* IMAGE */}
-              <div className="relative h-44 md:h-64 w-full">
+              <div className="relative h-56 mdh-64 w-full">
                 <Image
                   src={country.image}
                   alt={country.name}
