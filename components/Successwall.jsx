@@ -12,21 +12,21 @@ import { MapPin, ArrowRight, BadgeCheck } from "lucide-react";
 const students = [
   {
     name: "Grace W.",
-    from: "Nairobi, Kenya",
+    from: "Kisumu, Kenya",
     country: "Canada 🇨🇦",
     achievement: "Studying Nursing in Toronto",
     before: "Uncertain career path in Kenya",
     after: "Fully funded nursing placement in Canada",
-    image: "/images/file_00000000d80c71f490aae0fd6d7f311b~2.jpg",
+    image: "/images/laboratory.jpg",
   },
   {
-    name: "Brian K.",
-    from: "Kiambu, Kenya",
+    name: "Muriithi Nguru.",
+    from: "Nairobi, Kenya",
     country: "UK 🇬🇧",
     achievement: "Computer Science Student",
     before: "Limited academic exposure locally",
     after: "Accepted into UK university program",
-    image: "/images/file_00000000d80c71f490aae0fd6d7f311b~2.jpg",
+    image: "/images/1765669389666~2.jpg",
   },
   {
     name: "Amina S.",
@@ -35,7 +35,7 @@ const students = [
     achievement: "Engineering Training Program",
     before: "Struggling to find direction",
     after: "Skilled vocational placement in Germany",
-    image: "/images/file_00000000d80c71f490aae0fd6d7f311b~2.jpg",
+    image: "/images/istockphoto-1350330301-612x612.jpg",
   },
 ];
 

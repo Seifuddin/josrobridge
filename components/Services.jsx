@@ -22,7 +22,7 @@ const services = [
   {
     title: "University Placement",
     icon: GraduationCap,
-    image: "/images/PhD-Scholarship-for-Domestic-International-Students-at-University-of-New-England-in-Australia-1024x684.jpg",
+    image: "/images/about.jpg",
     description:
       "Helping students secure admission to leading universities and colleges across the globe.",
     subServices: [
@@ -189,7 +189,7 @@ export default function Services() {
             className="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition"
           >
             {/* IMAGE */}
-            <div className="relative h-40">
+            <div className="relative h-44">
               <Image
                 src={s.image}
                 alt={s.title}

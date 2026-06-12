@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const countries = [
   {
     name: "Canada",
-    image: "/images/about.jpg",
+    image: "/images/torontouniversity.jpg",
     description:
       "A top destination for quality education, research opportunities, and post-study pathways.",
     universities: "100+ Universities",
@@ -15,7 +15,7 @@ const countries = [
   },
   {
     name: "United Kingdom",
-    image: "/images/visa.webp",
+    image: "/images/oxforduniversity.jpg",
     description:
       "Home to world-class universities with globally recognized degrees and rich academic history.",
     universities: "150+ Universities",
@@ -24,7 +24,7 @@ const countries = [
   },
   {
     name: "Germany",
-    image: "/images/ielts.jpeg",
+    image: "/images/munichuniversity.jpg",
     description:
       "Affordable and high-quality education with strong focus on engineering and innovation.",
     universities: "90+ Universities",
@@ -33,7 +33,7 @@ const countries = [
   },
   {
     name: "United States",
-    image: "/images/Graduation_StudentsGroup_Smiling_Outdoor_GettyImages-907837926.jpg",
+    image: "/images/havarduniversity.webp",
     description:
       "A global leader in higher education with diverse programs and cutting-edge research.",
     universities: "200+ Universities",
@@ -103,7 +103,7 @@ export default function GlobalAcademicJourney() {
                 </div>
 
                 {/* LINK INDICATOR */}
-                <div className="mt-3 text-xs font-medium text-orange-500 group-hover:underline">
+                <div className="hidde mt-3 text-xs font-medium text-orange-500 group-hover:underline">
                   Explore Programs →
                 </div>
 

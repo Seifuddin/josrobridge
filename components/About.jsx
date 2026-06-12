@@ -23,7 +23,7 @@ export default function About() {
             <span className="text-orange-500">Global Opportunity</span>
           </h2>
 
-          <div className="w-24 h-1 bg-orange-500 mt-6 rounded-full"></div>
+          <div className="hidden w-24 h-1 bg-orange-500 mt-6 rounded-full"></div>
 
           <p className="mt-8 text-gray-600 textsm leading-relaxed">
             Josro Bridge International Limited is an education and consultancy firm
@@ -80,7 +80,7 @@ export default function About() {
           </div>
 
           {/* FLOATING STATS */}
-          <div className="absolute -bottom-10 right-6 bg-white shadow-xl rounded-2xl p-6 w-64 border border-gray-100">
+          <div className="hidden absolute-bottom-10 right-6 bg-white shadow-xl rounded-2xl p-6 w-64 border border-gray-100">
 
             <h4 className="text-blue-950 font-bold text-lg">
               Our Impact

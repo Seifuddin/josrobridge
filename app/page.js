@@ -22,8 +22,8 @@ export default function Home() {
       <GlobalOpportunitiesCounter />
       <Services />
       <StudentSuccessWall />
-      <FAQSection />
       <WhyJosroWins />
+      <FAQSection />
     </>
   );
 }

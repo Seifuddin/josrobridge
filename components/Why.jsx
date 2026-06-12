@@ -34,16 +34,16 @@ const points = [
 
 export default function WhyJosroWins() {
   return (
-    <section className="py-14 bg-white">
+    <section id="whyus" className="py-14 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* HEADER */}
         <div className="mb-10">
-          <p className="text-xs tracking-[0.35em] text-orange-600 uppercase">
+          <p className="text-xs text-center tracking-[0.35em] text-orange-600 uppercase">
             Why Josro Bridge International
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-bold text-blue-950">
+          <h2 className="text-2xl text-center md:text-3xl font-bold text-blue-950">
             We don’t compete on promises. We win on execution.
           </h2>
         </div>
@@ -80,7 +80,7 @@ export default function WhyJosroWins() {
           <div className="md:col-span-3 flex justify-center">
             <div className="relative w-full h-[240px] rounded-2xl overflow-hidden shadow-lg border">
               <img
-                src="/images/Graduation_StudentsGroup_Smiling_Outdoor_GettyImages-907837926.jpg"
+                src="/images/muslimadoctorr2.jpg"
                 alt="Students global opportunities"
                 className="w-full h-full object-cover"
               />

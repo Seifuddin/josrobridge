@@ -114,13 +114,13 @@ export default function GlobalOpportunitiesCounter() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#050f24] via-[#061a38] to-[#050f24]" />
 
         {/* CONTENT */}
-        <div ref={ref} className="relative max-w-6xl mx-auto px-6 w-full">
+        <div ref={ref} className="relative max-w-7xl mx-auto px-6 w-full">
 
           {/* HEADER */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={start ? { opacity: 1, y: 0 } : {}}
-            className="text-center mb-8"
+            className="text-center mb-4"
           >
             <p className="text-[11px] tracking-[0.35em] text-orange-400 uppercase">
               Global Impact Dashboard
