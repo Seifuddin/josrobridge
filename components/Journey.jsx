@@ -5,40 +5,40 @@ import { motion } from "framer-motion";
 
 const countries = [
   {
-    name: "Canada",
+    name: "University of Toronto, Canada",
     image: "/images/torontouniversity.jpg",
     description:
       "A top destination for quality education, research opportunities, and post-study pathways.",
     universities: "100+ Universities",
     courses: "10,000+ Courses",
-    link: "#canada",
+    link: "https://www.utoronto.ca",
   },
   {
-    name: "United Kingdom",
+    name: "University of Oxford, United Kingdom",
     image: "/images/oxforduniversity.jpg",
     description:
       "Home to world-class universities with globally recognized degrees and rich academic history.",
     universities: "150+ Universities",
     courses: "20,000+ Courses",
-    link: "#uk",
+    link: "https://www.ox.ac.uk",
   },
   {
-    name: "Germany",
+    name: "Technical University of Munich, Germany",
     image: "/images/munichuniversity.jpg",
     description:
       "Affordable and high-quality education with strong focus on engineering and innovation.",
     universities: "90+ Universities",
     courses: "15,000+ Courses",
-    link: "#germany",
+    link: "https://www.tum.de",
   },
   {
-    name: "United States",
+    name: "Harvard University, United States",
     image: "/images/havarduniversity.webp",
     description:
       "A global leader in higher education with diverse programs and cutting-edge research.",
     universities: "200+ Universities",
     courses: "30,000+ Courses",
-    link: "#usa",
+    link: "https://www.harvard.edu",
   },
 ];
 
@@ -66,12 +66,14 @@ export default function GlobalAcademicJourney() {
             <motion.a
               key={i}
               href={country.link}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ y: -5 }}
               className="group relative block rounded-2xl overflow-hidden shadow-md"
             >
 
               {/* IMAGE */}
-              <div className="relative h-56 mdh-64 w-full">
+              <div className="relative h-56 md:h-64 w-full">
                 <Image
                   src={country.image}
                   alt={country.name}
@@ -82,7 +84,7 @@ export default function GlobalAcademicJourney() {
                 {/* DARK GRADIENT OVERLAY */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-                {/* COUNTRY NAME (INSIDE IMAGE ONLY) */}
+                {/* UNIVERSITY NAME (INSIDE IMAGE ONLY) */}
                 <div className="absolute bottom-3 left-3">
                   <p className="text-white font-semibold text-lg">
                     {country.name}
@@ -103,7 +105,7 @@ export default function GlobalAcademicJourney() {
                 </div>
 
                 {/* LINK INDICATOR */}
-                <div className="hidde mt-3 text-xs font-medium text-orange-500 group-hover:underline">
+                <div className="hidden mt-3 text-xs font-medium text-orange-500 group-hover:underline">
                   Explore Programs →
                 </div>
 

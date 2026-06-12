@@ -189,7 +189,7 @@ export default function Services() {
             className="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition"
           >
             {/* IMAGE */}
-            <div className="relative h-44">
+            <div className="relative h-56">
               <Image
                 src={s.image}
                 alt={s.title}
