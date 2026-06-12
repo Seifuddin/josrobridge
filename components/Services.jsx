@@ -92,7 +92,7 @@ const services = [
   {
     title: "Student Visa Assistance",
     icon: Users,
-    image: "/images/visa.webp",
+    image: "/images/visas.webp",
     description:
       "Comprehensive visa application support to help students study abroad with confidence.",
     subServices: [

@@ -18,9 +18,9 @@ export default function About() {
             About Josro Bridge
           </p>
 
-          <h2 className="mt-4 text-2xl md:text-3xl font-bold text-blue-950">
+          <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-gray-900">
             We Build Real Bridges to{" "}
-            <span className="text-orange-500">Global Opportunity</span>
+            <span className="text-orang-500">Global Opportunity</span>
           </h2>
 
           <div className="hidden w-24 h-1 bg-orange-500 mt-6 rounded-full"></div>
@@ -39,7 +39,7 @@ export default function About() {
           </p>
 
           {/* highlight tags */}
-          <div className="mt-10 flex gap-3 flex-wrap">
+          <div className="hiddn mt-10 flex gap-3 flex-wrap">
             <div className="bg-white border px-5 py-1 rounded-full text-sm text-blue-900 shadow-sm">
               🌍 Global Education
             </div>
@@ -70,7 +70,7 @@ export default function About() {
 
             {/* image text */}
             <div className="absolute bottom-0 p-8 text-white">
-              <h3 className="text-2xl font-bold">
+              <h3 className="text2xl font-bold">
                 Global Education Access
               </h3>
               <p className="mt-2 text-sm text-white/80">

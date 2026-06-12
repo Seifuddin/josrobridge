@@ -9,7 +9,7 @@ const countries = [
     image: "/images/torontouniversity.jpg",
     description:
       "A top destination for quality education, research opportunities, and post-study pathways.",
-    universities: "100+ Universities",
+    universities: "100+ Universities in Canada",
     courses: "10,000+ Courses",
     link: "https://www.utoronto.ca",
   },
@@ -18,7 +18,7 @@ const countries = [
     image: "/images/oxforduniversity.jpg",
     description:
       "Home to world-class universities with globally recognized degrees and rich academic history.",
-    universities: "150+ Universities",
+    universities: "150+ Universities in UK",
     courses: "20,000+ Courses",
     link: "https://www.ox.ac.uk",
   },
@@ -27,7 +27,7 @@ const countries = [
     image: "/images/munichuniversity.jpg",
     description:
       "Affordable and high-quality education with strong focus on engineering and innovation.",
-    universities: "90+ Universities",
+    universities: "90+ Universities in Germany",
     courses: "15,000+ Courses",
     link: "https://www.tum.de",
   },
@@ -36,7 +36,7 @@ const countries = [
     image: "/images/havarduniversity.webp",
     description:
       "A global leader in higher education with diverse programs and cutting-edge research.",
-    universities: "200+ Universities",
+    universities: "200+ Universities in USA",
     courses: "30,000+ Courses",
     link: "https://www.harvard.edu",
   },
@@ -86,7 +86,7 @@ export default function GlobalAcademicJourney() {
 
                 {/* UNIVERSITY NAME (INSIDE IMAGE ONLY) */}
                 <div className="absolute bottom-3 left-3">
-                  <p className="text-white font-semibold text-lg">
+                  <p className="text-white font-semibold md: text- lg">
                     {country.name}
                   </p>
                 </div>

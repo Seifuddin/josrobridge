@@ -120,13 +120,13 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex gap2">
             <input
               type="email"
               placeholder="Enter your email"
-              className="px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm outline-none"
+              className="px-4 py-2 rounded-l full bg-white/10 border border-white/20 text-sm outline-none"
             />
-            <button className="bg-orange-500 hover:bg-orange-600 px-5 py-2 rounded-full text-sm font-semibold transition">
+            <button className="bg-orange-500 hover:bg-orange-600 px-5 py-2 rounded-r full text-sm font-semibold transition">
               Subscribe
             </button>
           </div>

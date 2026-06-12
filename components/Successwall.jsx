@@ -65,7 +65,7 @@ export default function StudentSuccessWall() {
 
         {/* HEADER (compact) */}
         <div className="text-center mb-6">
-          <p className="text-yellow-400 text-[10px] tracking-[0.3em] uppercase">
+          <p className="text-orange-400 text-[10px] tracking-[0.3em] uppercase">
             Student Success Wall
           </p>
 
@@ -82,7 +82,7 @@ export default function StudentSuccessWall() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.35 }}
-            className="bg-blue-900/40 border border-yellow-400/20 rounded-2xl overflow-hidden shadow-lg"
+            className="bg-blue-900/40 border border-orange-400/20 rounded-2xl overflow-hidden shadow-lg"
           >
 
             <div className="grid md:grid-cols-2">
@@ -105,11 +105,11 @@ export default function StudentSuccessWall() {
                 {/* TOP ROW */}
                 <div className="flex items-center justify-between">
                   <h3 className="font-semibold flex items-center gap-1 text-sm md:text-base">
-                    <BadgeCheck className="text-yellow-400" size={16} />
+                    <BadgeCheck className="text-orange-400" size={16} />
                     {student.name}
                   </h3>
 
-                  <span className="text-[10px] px-2 py-1 rounded-full bg-yellow-400/10 text-yellow-300 border border-yellow-400/30">
+                  <span className="text-[10px] px-2 py-1 rounded-full bg-orange-400/10 text-orange-300 border border-orange-400/30">
                     {student.country}
                   </span>
                 </div>
@@ -123,18 +123,18 @@ export default function StudentSuccessWall() {
                 <div className="mt-4 space-y-2">
 
                   <div className="p-2 rounded-lg bg-blue-950/40 border border-white/10">
-                    <p className="text-[10px] text-yellow-300">Before</p>
+                    <p className="text-[10px] text-orange-300">Before</p>
                     <p className="text-xs text-white/70">
                       {student.before}
                     </p>
                   </div>
 
-                  <div className="flex justify-center text-yellow-400 text-xs">
+                  <div className="flex justify-center text-orange-400 text-xs">
                     ↓
                   </div>
 
-                  <div className="p-2 rounded-lg bg-yellow-400/10 border border-yellow-400/20">
-                    <p className="text-[10px] text-yellow-300">After</p>
+                  <div className="p-2 rounded-lg bg-orange-400/10 border border-orange-400/20">
+                    <p className="text-[10px] text-orange-300">After</p>
                     <p className="text-xs text-white">
                       {student.after}
                     </p>
@@ -144,7 +144,7 @@ export default function StudentSuccessWall() {
 
                 {/* FOOTER */}
                 <div className="flex items-center gap-2 mt-4 text-[10px] text-white/60">
-                  <MapPin size={12} className="text-yellow-400" />
+                  <MapPin size={12} className="text-orange-400" />
                   {student.from}
                 </div>
 
@@ -161,7 +161,7 @@ export default function StudentSuccessWall() {
               onClick={() => setIndex(i)}
               className={`w-2 h-2 rounded-full transition ${
                 i === index
-                  ? "bg-yellow-400"
+                  ? "bg-orange-400"
                   : "bg-white/20"
               }`}
             />

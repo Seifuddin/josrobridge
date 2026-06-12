@@ -40,7 +40,7 @@ export default function WhyJosroWins() {
         {/* HEADER */}
         <div className="mb-10">
           <p className="text-xs text-center tracking-[0.35em] text-orange-600 uppercase">
-            Why Josro Bridge International
+            Why Choose Josro?
           </p>
 
           <h2 className="text-2xl text-center md:text-3xl font-bold text-blue-950">
