@@ -35,7 +35,7 @@ const points = [
 export default function WhyJosroWins() {
   return (
     <section id="whyus" className="py-14 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
         <div className="mb-10">
@@ -80,7 +80,7 @@ export default function WhyJosroWins() {
           <div className="md:col-span-3 flex justify-center">
             <div className="relative w-full h-[240px] rounded-2xl overflow-hidden shadow-lg border">
               <img
-                src="/images/muslimadoctorr2.jpg"
+                src="/images/why-choose-us-page.jpg"
                 alt="Students global opportunities"
                 className="w-full h-full object-cover"
               />

@@ -156,7 +156,7 @@ export default function Services() {
   const [open, setOpen] = useState(false);
 
   return (
-  <section id="services" className="py-12 bg-amber-50">
+  <section id="services" className="py-12 bg-white">
     {/* HEADER */}
     <div className="text-center max-w-2xl mx-auto px-4">
       <p className="text-xs mb-2 tracking-[0.3em] uppercase text-orange-600">

@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-28 bg-amber-50 overflow-hidden"
+      className="relative py-28 bg-white overflow-hidden"
     >
       {/* decorative background */}
       <div className="hidden absolute-top-40 -left-40 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl"></div>

@@ -61,7 +61,7 @@ export default function StudentSuccessWall() {
       {/* subtle glow */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950" />
 
-      <div className="relative max-w-5xl mx-auto px-4">
+      <div className="relative max-w-7xl mx-auto px-6">
 
         {/* HEADER (compact) */}
         <div className="text-center mb-6">

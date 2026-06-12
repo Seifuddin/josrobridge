@@ -45,7 +45,7 @@ const countries = [
 export default function GlobalAcademicJourney() {
   return (
     <section className="py-12 bg-white">
-      <div className="max-w-6xl mx-auto px-5">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
         <div className="text-center mb-8">
@@ -73,7 +73,7 @@ export default function GlobalAcademicJourney() {
             >
 
               {/* IMAGE */}
-              <div className="relative h-56 md:h-64 w-full">
+              <div className="relative h-56 mdh-64 w-full">
                 <Image
                   src={country.image}
                   alt={country.name}
@@ -105,7 +105,7 @@ export default function GlobalAcademicJourney() {
                 </div>
 
                 {/* LINK INDICATOR */}
-                <div className="hidden mt-3 text-xs font-medium text-orange-500 group-hover:underline">
+                <div className="hiddn mt-3 text-xs font-medium text-orange-500 group-hover:underline">
                   Explore Programs →
                 </div>
 

@@ -16,7 +16,7 @@ export default function FloatingCTA() {
         {/* GLASS BAR */}
         <div className="flex items-center justify-between gap-2 
                         bg-blue-950/80 backdrop-blur-xl 
-                        border border-yellow-400/20 
+                        border border-orange-400/20 
                         rounded-2xl px-3 py-2 shadow-2xl">
 
           {/* CALL */}
@@ -24,7 +24,7 @@ export default function FloatingCTA() {
             href="tel:+254700000000"
             className="flex flex-col items-center justify-center flex-1 py-1 rounded-xl hover:bg-blue-900/50 transition"
           >
-            <Phone className="text-yellow-400" size={18} />
+            <Phone className="text-orange-400" size={18} />
             <span className="text-[10px] text-white/80 mt-1">
               Call
             </span>
@@ -36,7 +36,7 @@ export default function FloatingCTA() {
             target="_blank"
             className="flex flex-col items-center justify-center flex-1 py-1 rounded-xl hover:bg-blue-900/50 transition"
           >
-            <MessageCircle className="text-yellow-400" size={18} />
+            <MessageCircle className="text-orange-400" size={18} />
             <span className="text-[10px] text-white/80 mt-1">
               WhatsApp
             </span>
@@ -47,7 +47,7 @@ export default function FloatingCTA() {
             href="#apply"
             className="flex flex-col items-center justify-center flex-1 py-1 rounded-xl hover:bg-blue-900/50 transition"
           >
-            <GraduationCap className="text-yellow-400" size={18} />
+            <GraduationCap className="text-orange-400" size={18} />
             <span className="text-[10px] text-white/80 mt-1">
               Apply
             </span>
