@@ -8,37 +8,37 @@ const slides = [
   {
     id: 1,
     image: "/images/PhD-Scholarship-for-Domestic-International-Students-at-University-of-New-England-in-Australia-1024x684.jpg",
-    title: "University Placement Services",
+    title: "University Placement",
     subtitle:
-      "Guiding Kenyan students through applications, scholarships, and admissions to top universities worldwide.",
+      "Guiding students through applications, scholarships, and admissions to top universities worldwide.",
   },
   {
     id: 2,
     image: "/images/ielts.jpeg",
-    title: "IELTS Training in Kenya",
+    title: "IELTS Training",
     subtitle:
-      "Expert-led IELTS preparation programs to help you achieve competitive band scores for international studies.",
+      "Offering expert-led programs to help candidates achieve competitive IELTS scores.",
   },
   {
     id: 3,
     image: "/images/business-meeting-office_1268-21517.avif",
-    title: "Business Consultancy Services",
+    title: "Business Consultancy",
     subtitle:
-      "Tailored advisory services for startups, SMEs, and enterprises to improve performance and growth.",
+      "Providing tailored advisory services to startups, SMEs, and established firms for improved performance.",
   },
   {
     id: 4,
     image: "/images/profession.jpeg",
-    title: "Professional Training Programs",
+    title: "Professional Training",
     subtitle:
-      "Workshops in leadership, entrepreneurship, and career development skills for global opportunities.",
+      "Delivering workshops and courses in leadership, entrepreneurship, and management skills.",
   },
   {
     id: 5,
     image: "/images/labor-markets.jpg",
-    title: "International Labor Mobility",
+    title: "Labor Mobility",
     subtitle:
-      "Connecting skilled and semi-skilled workers to verified job opportunities abroad.",
+      "Connecting skilled and semi-skilled labor to work placements abroad.",
   },
 ];
 
@@ -74,21 +74,17 @@ export default function Hero() {
           priority
         />
 
+        {/* BLUE + ORANGE GRADIENT OVERLAY */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-950/80 via-blue-900/70 to-orange-500/30" />
       </div>
 
       {/* CONTENT */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-6">
 
-        {/* SEO H1 (ONLY ONE ON PAGE) */}
+        {/* TITLE */}
         <h1 className="text-3xl md:text-5xl font-extrabold drop-shadow-xl max-w-4xl">
-          Study Abroad, IELTS Training & University Placement in Kenya
-        </h1>
-
-        {/* SLIDE TITLE (SECONDARY - like H2) */}
-        <h2 className="mt-5 text-2xl md:text-3xl font-semibold text-white/90 max-w-3xl">
           {slides[current].title}
-        </h2>
+        </h1>
 
         {/* SUBTITLE */}
         <p className="mt-4 text-base md:text-xl text-gray-200 max-w-2xl leading-relaxed">
@@ -100,14 +96,14 @@ export default function Hero() {
 
           <a
             href="/services"
-            className="px-7 py-1.5 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition"
+            className="px-7 py-1.5 rounded -full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition"
           >
             Explore Services
           </a>
 
           <a
             href="/contact"
-            className="px-7 py-1.5 rounded-full border border-white/50 text-white hover:border-white transition"
+            className="px-7 py-1.5 rounded -full border border-white/50 text-white hover:border-white transition"
           >
             Contact Us
           </a>
@@ -115,7 +111,7 @@ export default function Hero() {
 
         {/* TRUST LINE */}
         <p className="mt-6 text-xs text-white/50">
-          Trusted Education • IELTS Experts • Global University Admissions • Work Abroad Opportunities
+          Trusted Education • Professional Training • Global Opportunities
         </p>
       </div>
 
