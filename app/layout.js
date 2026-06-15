@@ -66,7 +66,7 @@ export const metadata = {
     follow: true,
   },
 
-  // ✅ GOOGLE SEARCH CONSOLE VERIFICATION (FIXED)
+  // ✅ NEXT.JS OFFICIAL VERIFICATION METHOD
   verification: {
     google: "LytfC-YtYYBFDGgk0_jDnv_OgwYiwzqBwHWKxa4hI1c",
   },
@@ -76,6 +76,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+
+        {/* 🔥 FORCE META TAG FOR SEARCH CONSOLE COMPATIBILITY */}
+        <Script
+          id="google-site-verification-meta"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              const meta = document.createElement('meta');
+              meta.name = "google-site-verification";
+              meta.content = "LytfC-YtYYBFDGgk0_jDnv_OgwYiwzqBwHWKxa4hI1c";
+              document.head.appendChild(meta);
+            `,
+          }}
+        />
+
         {/* GLOBAL SCHEMA MARKUP (SEO POWER BOOST) */}
         <Script
           id="organization-schema"
