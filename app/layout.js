@@ -66,7 +66,6 @@ export const metadata = {
     follow: true,
   },
 
-  // ✅ NEXT.JS OFFICIAL VERIFICATION METHOD
   verification: {
     google: "LytfC-YtYYBFDGgk0_jDnv_OgwYiwzqBwHWKxa4hI1c",
   },
@@ -77,7 +76,23 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
 
-        {/* 🔥 FORCE META TAG FOR SEARCH CONSOLE COMPATIBILITY */}
+        {/* 🔥 GOOGLE ANALYTICS 4 (GA4) */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-45W2JEJ488"
+        />
+
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-45W2JEJ488');
+          `}
+        </Script>
+
+        {/* 🔥 GOOGLE SEARCH CONSOLE VERIFICATION META */}
         <Script
           id="google-site-verification-meta"
           strategy="beforeInteractive"
@@ -114,7 +129,6 @@ export default function RootLayout({ children }) {
                 "https://www.linkedin.com/",
               ],
               contactPoint: {
-                "@type": "ContactPoint",
                 contactType: "customer support",
                 availableLanguage: ["English"],
               },
