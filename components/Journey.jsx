@@ -44,11 +44,11 @@ const countries = [
 
 export default function GlobalAcademicJourney() {
   return (
-    <section className="py-12 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 max-w-2xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
             Start your global academic journey with the worlds top institutions
           </h2>
@@ -69,11 +69,11 @@ export default function GlobalAcademicJourney() {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -5 }}
-              className="group relative block rounded-2xl overflow-hidden shadow-md"
+              className="group relative block rounded -xl overflow-hidden shadowmd"
             >
 
               {/* IMAGE */}
-              <div className="relative h-56 mdh-64 w-full">
+              <div className="relative h-48 mdh-64 w-full">
                 <Image
                   src={country.image}
                   alt={country.name}
@@ -93,7 +93,7 @@ export default function GlobalAcademicJourney() {
               </div>
 
               {/* CONTENT BELOW IMAGE */}
-              <div className="p-4 border border-gray-100 rounded-b-2xl bg-white">
+              <div className="p-4 border border-gray-200 rounded-b-xl bg-white">
 
                 <p className="text-xs text-gray-600 leading-relaxed">
                   {country.description}

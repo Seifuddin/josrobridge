@@ -94,7 +94,7 @@ export default function EliteCTA() {
             <div className="mt-6 space-y-3">
 
               <a
-                href="#apply"
+                href="#contact"
                 className="w-full flex items-center justify-center gap-2 bg-orange-400 text-blue-950 font-semibold py-2.5 rounded-xl hover:bg-yellow-300 transition"
               >
                 Start Application
@@ -102,7 +102,7 @@ export default function EliteCTA() {
               </a>
 
               <a
-                href="https://wa.me/254700000000"
+                href="https://wa.me/254720823950"
                 target="_blank"
                 className="w-full flex items-center justify-center gap-2 border border-orange-400/30 text-orange-400 py-2.5 rounded-xl hover:bg-yellow-400/10 transition"
               >

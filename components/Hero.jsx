@@ -95,14 +95,14 @@ export default function Hero() {
         <div className="mt-7 flex gap-3 flex-wrap justify-center">
 
           <a
-            href="/services"
+            href="#services"
             className="px-7 py-1.5 rounded -full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition"
           >
             Explore Services
           </a>
 
           <a
-            href="/contact"
+            href="#contact"
             className="px-7 py-1.5 rounded -full border border-white/50 text-white hover:border-white transition"
           >
             Contact Us

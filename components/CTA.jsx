@@ -32,7 +32,7 @@ export default function FloatingCTA() {
 
           {/* WHATSAPP */}
           <a
-            href="https://wa.me/254700000000"
+            href="https://wa.me/254720823950"
             target="_blank"
             className="flex flex-col items-center justify-center flex-1 py-1 rounded-xl hover:bg-blue-900/50 transition"
           >
