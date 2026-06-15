@@ -65,13 +65,18 @@ export const metadata = {
     index: true,
     follow: true,
   },
+
+  // ✅ GOOGLE SEARCH CONSOLE VERIFICATION (FIXED)
+  verification: {
+    google: "LytfC-YtYYBFDGgk0_jDnv_OgwYiwzqBwHWKxa4hI1c",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* GLOBAL SCHEMA MARKUP (IMPORTANT FOR SEO) */}
+        {/* GLOBAL SCHEMA MARKUP (SEO POWER BOOST) */}
         <Script
           id="organization-schema"
           type="application/ld+json"
@@ -91,7 +96,7 @@ export default function RootLayout({ children }) {
               sameAs: [
                 "https://www.facebook.com/",
                 "https://www.instagram.com/",
-                "https://www.linkedin.com/"
+                "https://www.linkedin.com/",
               ],
               contactPoint: {
                 "@type": "ContactPoint",
