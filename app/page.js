@@ -12,6 +12,7 @@ import GlobalCTASection from "@/components/Action";
 import FAQSection from "@/components/FAQ";
 import GlobalAcademicJourney from "@/components/Journey";
 import Script from "next/script";
+import ContactSection from "@/components/Contacts";
 
 export const metadata = {
   title: "Study Abroad, IELTS & University Placement in Kenya | Josro Bridge",
@@ -71,6 +72,7 @@ export default function Home() {
       <StudentSuccessWall />
 
       <FAQSection />
+      <ContactSection />
     </>
   );
 }
