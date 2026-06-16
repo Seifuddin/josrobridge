@@ -128,7 +128,7 @@ export default function GlobalAcademicJourney() {
                     </a>
 
                     <a
-                      href="/contact"
+                      href="#contact"
                       className="px-7 py-3 rounded-full border border-white/30 hover:bg-white/10 transition"
                     >
                       Apply Now
@@ -186,7 +186,7 @@ export default function GlobalAcademicJourney() {
                   </div>
 
                   <a
-                    href="/contact"
+                    href="#contact"
                     className="mt-6 block text-center bg-orange-500 hover:bg-orange-600 transition text-white py-3 rounded-xl font-medium"
                   >
                     Start Application

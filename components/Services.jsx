@@ -232,14 +232,14 @@ export default function Services() {
                     setActive(s);
                     setOpen(true);
                   }}
-                  className="flex-1 bg-blue-950 hover:bg-blue-900 text-white py-2 rounded -lg text-xs transition"
+                  className="flex-1 bg-blue-950 hover:bg-blue-900 text-white py-2 rounded-l -lg text-xs transition"
                 >
                   View
                 </button>
 
                 <a
             href="#contact"
-            className="flex-1 border border-blue-950 text-blue-950 hover:bg-blue-50 py-2 rounded -lg text-xs flex items-center justify-center gap-1 transition"
+            className="flex-1 border border-blue-950 text-blue-950 hover:bg-blue-50 py-2 rounded-r -lg text-xs flex items-center justify-center gap-1 transition"
           >
             Request
           </a>
