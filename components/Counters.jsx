@@ -43,7 +43,7 @@ function useCount(target, start) {
 ========================= */
 const stats = [
   { label: "Students Placed", value: 1240, icon: Users, suffix: "+" },
-  { label: "Countries Covered", value: 12, icon: Globe, suffix: "+" },
+  { label: "Countries Covered", value: 7, icon: Globe, suffix: "+" },
   { label: "Success Rate", value: 94, icon: TrendingUp, suffix: "%" },
   { label: "Partner Institutions", value: 80, icon: Building2, suffix: "+" },
 ];

@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle, Globe } from "lucide-react";
 
 export default function EliteCTA() {
   return (
-    <section className="relative py-12 bg-blue-950 overflow-hidden">
+    <section className="relative py-20 bg-blue-950 overflow-hidden">
 
       {/* BACKGROUND LAYERS */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950" />
@@ -95,7 +95,7 @@ export default function EliteCTA() {
 
               <a
                 href="#contact"
-                className="w-full flex items-center justify-center gap-2 bg-orange-400 text-blue-950 font-semibold py-2.5 rounded-xl hover:bg-yellow-300 transition"
+                className="w-full flex items-center justify-center gap-2 bg-orange-400 text-blue-950 font-semibold py-2.5 rounded -xl hover:bg-yellow-300 transition"
               >
                 Start Application
                 <ArrowRight size={16} />
@@ -104,7 +104,7 @@ export default function EliteCTA() {
               <a
                 href="https://wa.me/254720823950"
                 target="_blank"
-                className="w-full flex items-center justify-center gap-2 border border-orange-400/30 text-orange-400 py-2.5 rounded-xl hover:bg-yellow-400/10 transition"
+                className="w-full flex items-center justify-center gap-2 border border-orange-400/30 text-orange-400 py-2.5 rounded -xl hover:bg-yellow-400/10 transition"
               >
                 Talk to Advisor
               </a>

@@ -24,7 +24,7 @@ const faqs = [
   {
     icon: Globe,
     q: "Which countries can I apply to?",
-    a: "We support UK, Canada, Germany, UAE, and other international destinations depending on your profile and goals.",
+    a: "We support UK, Australia, New Zealand and other international destinations depending on your profile and goals.",
   },
   {
     icon: FileText,
