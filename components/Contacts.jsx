@@ -60,7 +60,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="overflow-hidden rounded -3xl bg-white shado-xl border border-gray-100">
+        <div className="overflow-hidden rounded -3xl bg-white shado-xl border border-gray-200">
           <div className="grid lg:grid-cols-2">
             {/* LEFT SIDE */}
             <div className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white p-6 md:p-8 flex flex-col justify-between">

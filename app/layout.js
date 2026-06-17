@@ -92,20 +92,6 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* 🔥 GOOGLE SEARCH CONSOLE VERIFICATION META */}
-        <Script
-          id="google-site-verification-meta"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              const meta = document.createElement('meta');
-              meta.name = "google-site-verification";
-              meta.content = "LytfC-YtYYBFDGgk0_jDnv_OgwYiwzqBwHWKxa4hI1c";
-              document.head.appendChild(meta);
-            `,
-          }}
-        />
-
         {/* GLOBAL SCHEMA MARKUP (SEO POWER BOOST) */}
         <Script
           id="organization-schema"
