@@ -16,9 +16,9 @@ export default function About() {
       className="relative py-20 lg:py-24 bg-white overflow-hidden"
     >
       {/* Background Decorations */}
-      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-orange-100 rounded-full blur-3xl opacity-40" />
+      <div className="hidden absolute-top-40 -left-40 w-[500px] h-[500px] bg-orange-100 rounded-full blur-3xl opacity-40" />
 
-      <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-blue-100 rounded-full blur-3xl opacity-40" />
+      <div className="hidden absolute-bottom-40 -right-40 w-[500px] h-[500px] bg-blue-100 rounded-full blur-3xl opacity-40" />
 
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
@@ -39,14 +39,14 @@ export default function About() {
             </h2>
 
             {/* Description */}
-            <p className="mt-6 text-slate-600 leading-relaxed text-lg">
+            <p className="mt-6 text-slate-600 leading-relaxed text-sm md:text-lg">
               Josro Bridge International Limited is an education and consultancy
               firm committed to helping students and professionals unlock
               international opportunities through education, language
               proficiency, and career development.
             </p>
 
-            <p className="mt-4 text-slate-600 leading-relaxed">
+            <p className="mt-4 text-slate-600 leading-relaxed text-sm md:text-lg">
               We connect ambitious individuals with world-class universities,
               IELTS preparation programs, and career pathways that create
               lasting impact in an increasingly global world.

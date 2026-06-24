@@ -60,8 +60,8 @@ export default function Home() {
       <About />
       <GlobalOpportunitiesCounter />
       <Services />
-      <WhyJosroWins />
       <GlobalCTASection />
+      <WhyJosroWins />
       <StudentSuccessWall />
       <FAQSection />
       <ContactSection />
