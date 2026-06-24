@@ -120,7 +120,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="flex gap2">
+          <div className="flex w-full gap2">
             <input
               type="email"
               placeholder="Enter your email"

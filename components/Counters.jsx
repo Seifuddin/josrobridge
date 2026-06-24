@@ -96,7 +96,7 @@ export default function GlobalOpportunitiesCounter() {
 
   return (
     <div className="relative">
-      <section className="sticky top-0 min-h-[600px] py-14 flex items-center bg-[#050f24] overflow-hidden">
+      <section className="sticky top-0 min-h-[400px] py-14 flex items-center bg-[#050f24] overflow-hidden">
         {/* BACKGROUND MAP */}
         <div className="absolute inset-0 opacity-10">
           <img

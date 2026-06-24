@@ -56,21 +56,13 @@ export default function Home() {
       />
 
       <Hero />
-
       <GlobalAcademicJourney />
-
-      <GlobalCTASection />
-
       <About />
-
       <GlobalOpportunitiesCounter />
-
       <Services />
-
       <WhyJosroWins />
-
+      <GlobalCTASection />
       <StudentSuccessWall />
-
       <FAQSection />
       <ContactSection />
     </>
