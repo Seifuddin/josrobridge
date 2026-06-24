@@ -13,7 +13,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-20 lg:py-24 bg-white overflow-hidden"
+      className="relative pb-20 lg:pb-24 bg-white overflow-hidden"
     >
       {/* Background Decorations */}
       <div className="hidden absolute-top-40 -left-40 w-[500px] h-[500px] bg-orange-100 rounded-full blur-3xl opacity-40" />
@@ -25,13 +25,13 @@ export default function About() {
           {/* LEFT CONTENT */}
           <div>
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-sm font-medium">
+            <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-xs font-medium">
               <Globe size={16} />
               About Josro Bridge
             </div>
 
             {/* Heading */}
-            <h2 className="mt-6 text-2xl md:text-4xl font-bold leading-tight text-slate-900">
+            <h2 className="mt-6 text-3xl md:text-4xl font-bold leading-tight text-slate-900">
               Building Bridges to
               <span className="block text-orange-500">
                 Global Opportunities
@@ -39,14 +39,14 @@ export default function About() {
             </h2>
 
             {/* Description */}
-            <p className="mt-6 text-slate-600 leading-relaxed text-sm md:text-lg">
+            <p className="mt-6 text-slate-600 leading-relaxed textsm md:text-lg">
               Josro Bridge International Limited is an education and consultancy
               firm committed to helping students and professionals unlock
               international opportunities through education, language
               proficiency, and career development.
             </p>
 
-            <p className="mt-4 text-slate-600 leading-relaxed text-sm md:text-lg">
+            <p className="mt-4 text-slate-600 leading-relaxed textsm md:text-lg">
               We connect ambitious individuals with world-class universities,
               IELTS preparation programs, and career pathways that create
               lasting impact in an increasingly global world.
