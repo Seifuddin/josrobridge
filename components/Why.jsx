@@ -38,28 +38,32 @@ export default function WhyJosroWins() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
-        <div className="mb-10">
-          <p className="text-xs text-center tracking-[0.35em] text-orange-600 uppercase">
-            Why Choose Josro?
-          </p>
+    <div className="text-center max-w-2xl mx-auto px-4">
+      <p className="hidden text-xs mb-2 tracking-[0.3em] uppercase text-orange-600">
+        Why Choose Josro Bridge?
+      </p>
 
-          <h2 className="text-2xl text-center md:text-3xl font-bold text-blue-950">
-            We don’t compete on promises. We win on execution.
-          </h2>
-        </div>
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-950">
+        Why Choose Josro?
+      </h2>
+
+      <p className="mt-3 text-base text-gray-700">
+        We don’t compete on promises. We win on execution.
+      </p>
+    </div>
 
         {/* MAIN GRID */}
-        <div className="grid md:grid-cols-12 gap-6 items-center">
+        <div className="grid md:grid-cols-12 gap-6 items-center mt-4">
 
           {/* LEFT TEXT */}
-          <div className="md:col-span-5 space-y-4">
+          <div className="md:col-span-4 space-y-4">
 
-            <p className="text-sm text-gray-600 leading-relaxed">
+            <p className="text-base text-gray-600 leading-relaxed">
               Most agencies slow students down with unclear processes,
               middlemen, and poor communication.
             </p>
 
-            <p className="text-sm text-gray-600 leading-relaxed">
+            <p className="text-base text-gray-600 leading-relaxed">
               We removed all of that. What remains is a direct,
               structured, high-success system built for international placement.
             </p>
@@ -70,15 +74,15 @@ export default function WhyJosroWins() {
             </div>
 
             {/* SMALL CTA LINE */}
-            <div className="flex items-center gap-2 text-sm font-medium text-orange-600">
+            <div className="flex items-center gap-2 text-base font-medium text-orange-600">
               <ArrowRight size={16} />
               Built for serious applicants only
             </div>
           </div>
 
           {/* CENTER IMAGE */}
-          <div className="md:col-span-3 flex justify-center">
-            <div className="relative w-full h-[240px] rounded-2xl overflow-hidden shadow-lg border">
+          <div className="md:col-span-4 flex justify-center">
+            <div className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg border">
               <img
                 src="/images/why-choose-us-page.jpg"
                 alt="Students global opportunities"
@@ -113,11 +117,11 @@ export default function WhyJosroWins() {
 
                   {/* TEXT */}
                   <div>
-                    <h3 className="text-sm font-semibold text-blue-900">
+                    <h3 className="text-base font-bold text-blue-900">
                       {item.title}
                     </h3>
 
-                    <p className="text-xs text-gray-600 leading-relaxed">
+                    <p className="text-sm text-gray-600 leading-relaxed">
                       {item.desc}
                     </p>
                   </div>

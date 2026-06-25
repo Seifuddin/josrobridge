@@ -109,12 +109,12 @@ const prevSlide = () => {
 setActive((prev) => (prev - 1 + slides.length) % slides.length);
 };
 
-return ( <section className="py-16 bg-white"> <div className="max-w-7xl mx-auto px-5">
+return ( <section className="pb-16 bg-white"> <div className="max-w-7xl mx-auto px-5">
 {/* Header */} <div className="text-center max-w-3xl mx-auto mb-10"> <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-xs fontmedium"> <GraduationCap size={16} />
 Student Success Stories </div>
 
 
-      <h2 className="mt-4 text-2xl md:text-3xl font-bold text-slate-900">
+      <h2 className="mt-4 text-3xl md:text-4xl font-bold text-slate-900">
         Real Students. Real Transformations.
       </h2>
 

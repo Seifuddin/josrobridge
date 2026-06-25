@@ -55,7 +55,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="pb-16 bg-white">
 
       <div className="max-w-3xl mx-auto px-5">
 
@@ -66,11 +66,11 @@ export default function FAQSection() {
             Support Center
           </div>
 
-          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
             Frequently Asked Questions
           </h2>
 
-          <p className="text-gray-500 text-xs mt-2">
+          <p className="text-gray-500 textxs mt-2">
             Everything you need to know before applying
           </p>
         </div>
@@ -99,7 +99,7 @@ export default function FAQSection() {
                   </div>
 
                   {/* TEXT */}
-                  <span className="text-sm text-gray-800 font-medium flex-1">
+                  <span className="textsm text-gray-800 font-medium flex-1">
                     {item.q}
                   </span>
 
@@ -121,7 +121,7 @@ export default function FAQSection() {
                       transition={{ duration: 0.25 }}
                       className="px-4 pb-3"
                     >
-                      <p className="text-xs text-gray-600 leading-relaxed pl-12">
+                      <p className="text-sm text-gray-600 leading-relaxed pl-12">
                         {item.a}
                       </p>
                     </motion.div>

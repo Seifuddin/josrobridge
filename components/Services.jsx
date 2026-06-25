@@ -163,11 +163,11 @@ export default function Services() {
         Our Services
       </p>
 
-      <h2 className="text-2xl md:text-3xl font-bold text-blue-950">
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-950">
         Empowering Education & Global Opportunities
       </h2>
 
-      <p className="mt-3 text-sm text-gray-700">
+      <p className="mt-3 text-base text-gray-700">
         Josro Bridge International provides trusted guidance in university
         placement, IELTS preparation, professional development, labor mobility,
         and international career opportunities.
@@ -186,7 +186,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition"
+            className="bg-white rounded -2xl overflow-hidden border border-gray-200 hover:shadow-lg transition"
           >
             {/* IMAGE */}
             <div className="relative h-48">
@@ -201,16 +201,16 @@ export default function Services() {
             {/* CONTENT */}
             <div className="p-4">
               <div className="flex items-center gap-2">
-                <div className="p-1.5 bg-orange-100 rounded-md">
+                <div className="p-1.5 bg-orange-100 rounded -md">
                   <Icon size={18} className="text-orange-600" />
                 </div>
 
-                <h3 className="font-semibold text-base text-blue-950">
+                <h3 className="font-black textbase text-blue-950">
                   {s.title}
                 </h3>
               </div>
 
-              <p className="mt-2 text-xs text-gray-600 line-clamp-3">
+              <p className="mt-2 text-sm text-gray-600 line-clamp-3">
                 {s.description}
               </p>
 
@@ -232,14 +232,14 @@ export default function Services() {
                     setActive(s);
                     setOpen(true);
                   }}
-                  className="flex-1 bg-blue-950 hover:bg-blue-900 text-white py-2 rounded-l -lg text-xs transition"
+                  className="flex-1 bg-blue-950 hover:bg-blue-900 text-white py-2 rounded-l -lg text-sm transition"
                 >
                   View
                 </button>
 
                 <a
             href="#contact"
-            className="flex-1 border border-blue-950 text-blue-950 hover:bg-blue-50 py-2 rounded-r -lg text-xs flex items-center justify-center gap-1 transition"
+            className="flex-1 border-2 border-blue-950 text-blue-950 hover:bg-blue-50 py-2 rounded-r -lg text-sm flex items-center justify-center gap-1 transition"
           >
             Request
           </a>

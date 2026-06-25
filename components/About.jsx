@@ -31,36 +31,36 @@ export default function About() {
             </div>
 
             {/* Heading */}
-            <h2 className="mt-6 text-3xl md:text-4xl font-bold leading-tight text-slate-900">
-              Building Bridges to
-              <span className="block text-orange-500">
-                Global Opportunities
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold leading-tight text-slate-900">
+              Building Bridges to 
+              <span className="blck pl-2 text-orange-500">
+                 Global Opportunities
               </span>
             </h2>
 
             {/* Description */}
-            <p className="mt-6 text-slate-600 leading-relaxed textsm md:text-lg">
+            <p className="mt-4 text-slate-600 leading-relaxed font-base md:text-lg">
               Josro Bridge International Limited is an education and consultancy
               firm committed to helping students and professionals unlock
               international opportunities through education, language
               proficiency, and career development.
             </p>
 
-            <p className="mt-4 text-slate-600 leading-relaxed textsm md:text-lg">
+            <p className="mt-3 text-slate-600 leading-relaxed textsm md:text-lg">
               We connect ambitious individuals with world-class universities,
               IELTS preparation programs, and career pathways that create
               lasting impact in an increasingly global world.
             </p>
 
             {/* Mission & Vision */}
-            <div className="grid md:grid-cols-2 gap-4 mt-8">
-              <div className="p-4 rounded-xl border-b border-slate-200 bg-white shadow-sm">
-                <div className="flex items-center gap-3 mb-3">
+            <div className="grid md:grid-cols-2 gap-4 mt-4">
+              <div className="p-2 rounded-xl border-b border-slate-200 bg-white shadowsm">
+                <div className="flex items-center gap-2 mb-1">
                   <div className="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center">
                     <Target className="text-orange-500" size={18} />
                   </div>
 
-                  <h3 className="font-semibold text-blue-900">
+                  <h3 className="font-black text-blue-950 fon-medium">
                     Our Mission
                   </h3>
                 </div>
@@ -71,13 +71,13 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="p-4 rounded-xl border-b border-slate-200 bg-white shadow-sm">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center">
+              <div className="p-2 rounded-xl border-b border-slate-200 bg-white shadowsm">
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center">
                     <Eye className="text-orange-500" size={18} />
                   </div>
 
-                  <h3 className="font-semibold text-blue-900">
+                  <h3 className="font-black text-blue-950">
                     Our Vision
                   </h3>
                 </div>
@@ -93,7 +93,7 @@ export default function About() {
           {/* RIGHT CONTENT */}
           <div className="relative">
             {/* Main Image */}
-            <div className="relative h-[550px] rounded-[32px] overflow-hidden shadow-2xl">
+            <div className="relative h-[550px] rounded-lg -[32px] overflow-hidden shadow-2xl">
               <Image
                 src="/images/PhD-Scholarship-for-Domestic-International-Students-at-University-of-New-England-in-Australia-1024x684.jpg"
                 alt="Josro Bridge International"
@@ -116,12 +116,12 @@ export default function About() {
             </div>
 
             {/* Floating Card 1 */}
-            <div className="absolute -left-6 top-10 bg-white shadow-xl rounded-3xl p-5 border border-slate-100">
+            <div className="absolute -left-6 top-10 bg-white shadow-xl rounded-lg p-5 border border-slate-100">
               <div className="flex items-center gap-3">
                 <GraduationCap className="text-orange-500" size={26} />
 
                 <div>
-                  <div className="font-bold text-slate-900">
+                  <div className="font-bold text-blue-950">
                     Global Education
                   </div>
 
@@ -133,12 +133,12 @@ export default function About() {
             </div>
 
             {/* Floating Card 2 */}
-            <div className="absolute -right-6 bottom-16 bg-white shadow-xl rounded-3xl p-5 border border-slate-100">
+            <div className="absolute -right-6 bottom-16 bg-white shadow-xl rounded-lg p-5 border border-slate-100">
               <div className="flex items-center gap-3">
                 <Briefcase className="text-blue-600" size={26} />
 
                 <div>
-                  <div className="font-bold text-slate-900">
+                  <div className="font-bold text-blue-950">
                     Global Careers
                   </div>
 
@@ -150,7 +150,7 @@ export default function About() {
             </div>
 
             {/* Floating Card 3 */}
-            <div className="absolute left-12 bottom-4 bg-orange-500 text-white rounded-3xl px-6 py-4 shadow-xl">
+            <div className="absolute left-12 bottom-4 bg-orange-500 text-white rounded-lg px-6 py-4 shadow-xl">
               <div className="font-bold textlg">
                 Worldwide Opportunities
               </div>

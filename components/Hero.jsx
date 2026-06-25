@@ -102,7 +102,7 @@ return ( <section className="relative h-[80vh] min-h-[520px] overflow-hidden">
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-4 text-base md:text-lg text-slate-200 leading-relaxed max-w-xl">
+        <p className="mt-4 text-basemd: text-lg text-slate-200 leading-relaxed max-w-xl">
           {slides[current].subtitle}
         </p>
 

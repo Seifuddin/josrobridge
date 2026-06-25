@@ -69,10 +69,9 @@ export default function ContactSection() {
                   Contact Josro Bridge
                 </span>
 
-                <h2 className="mt-4 text-2xl md:text-3xl font-bold leading-tight">
-                  Begin Your Global
+                <h2 className="mt-4 text-3xl md:text-4xl font-bold leading-tight">
+                  Begin Your Global Academic Journey
                   <br />
-                  Academic Journey
                 </h2>
 
                 <p className="mt-4 text-white/80 leading-relaxed max-w-lg">

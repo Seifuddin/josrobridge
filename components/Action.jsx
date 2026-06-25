@@ -30,7 +30,7 @@ export default function EliteCTA() {
       <div className="absolute top-0 right-0 w-80 h-80 bg-orange-500/10 blur-3xl rounded-full" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-orange-500/10 blur-3xl rounded-full" />
 
-      <div className="relative max-w-6xl mx-auto px-6">
+      <div className="relative max-w-7xl mx-auto px-6">
 
         <div className="grid md:grid-cols-2 gap-8 items-center">
 
@@ -46,7 +46,7 @@ export default function EliteCTA() {
               Global Education Access
             </div>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-white mt-4 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mt-4 leading-tight">
               Your Future Abroad Starts With
               <span className="block text-orange-400">
                 The Right Guidance
