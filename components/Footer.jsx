@@ -109,7 +109,7 @@ export default function Footer() {
         </div>
 
         {/* NEWSLETTER CTA */}
-        <div className="mt-16 border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="hidden mt-16 border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
 
           <div>
             <h4 className="textlg font-semibold">
@@ -120,7 +120,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="flex w-full gap2">
+          <div className="flex wfull gap2">
             <input
               type="email"
               placeholder="Enter your email"
