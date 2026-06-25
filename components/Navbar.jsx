@@ -43,7 +43,7 @@ export default function Navbar() {
     className="w-14 h-14 object-contain"
   />
 
-  <div className="leading-tight">
+  <div className="hidden leading-tight">
     <h1 className="font-semibold text-blue-900 text-sm">
       Josro Bridge
     </h1>

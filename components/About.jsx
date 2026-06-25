@@ -56,11 +56,11 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-4 mt-4">
               <div className="p-2 rounded-xl border-b border-slate-200 bg-white shadowsm">
                 <div className="flex items-center gap-2 mb-1">
-                  <div className="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded -xl bg-orange-100 flex items-center justify-center">
                     <Target className="text-orange-500" size={18} />
                   </div>
 
-                  <h3 className="font-black text-blue-950 fon-medium">
+                  <h3 className="font-semibold text-lg text-blue-950">
                     Our Mission
                   </h3>
                 </div>
@@ -73,11 +73,11 @@ export default function About() {
 
               <div className="p-2 rounded-xl border-b border-slate-200 bg-white shadowsm">
                 <div className="flex items-center gap-2 mb-1">
-                  <div className="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded -xl bg-orange-100 flex items-center justify-center">
                     <Eye className="text-orange-500" size={18} />
                   </div>
 
-                  <h3 className="font-black text-blue-950">
+                  <h3 className="font-semibold text-lg text-blue-950">
                     Our Vision
                   </h3>
                 </div>

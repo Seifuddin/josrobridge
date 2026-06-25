@@ -70,7 +70,7 @@ export default function GlobalAcademicJourney() {
             Global Opportunities
           </span>
 
-          <h2 className="mt-4 text-2xl md:text-3xl font-bold text-gray-900">
+          <h2 className="mt-4 text-3xl md:text-4xl font-bold text-gray-900">
             Start Your Global Academic Journey
           </h2>
 
@@ -109,7 +109,7 @@ export default function GlobalAcademicJourney() {
                     Featured University
                   </span>
 
-                  <h3 className="mt-5 text-4xl md:text-6xl font-bold leading-tight">
+                  <h3 className="mt-5 text-3xl md:text-5xl font-bold leading-tight">
                     The University of Melbourne
                   </h3>
 

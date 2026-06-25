@@ -39,12 +39,12 @@ export default function WhyJosroWins() {
 
         {/* HEADER */}
     <div className="text-center max-w-2xl mx-auto px-4">
-      <p className="hidden text-xs mb-2 tracking-[0.3em] uppercase text-orange-600">
-        Why Choose Josro Bridge?
+      <p className="text-xs mb-2 tracking-[0.3em] uppercase text-orange-600">
+        Why Us
       </p>
 
       <h2 className="text-3xl md:text-4xl font-bold text-blue-950">
-        Why Choose Josro?
+        Why Choose Josro Bridge?
       </h2>
 
       <p className="mt-3 text-base text-gray-700">
@@ -56,7 +56,9 @@ export default function WhyJosroWins() {
         <div className="grid md:grid-cols-12 gap-6 items-center mt-4">
 
           {/* LEFT TEXT */}
-          <div className="md:col-span-4 space-y-4">
+          <div className="md:col-span-4 space-y-3 mt-4">
+            <h3 className="textbase font-bold text-blue-900"> Did You Know?
+                    </h3>
 
             <p className="text-base text-gray-600 leading-relaxed">
               Most agencies slow students down with unclear processes,
@@ -111,13 +113,13 @@ export default function WhyJosroWins() {
                 >
 
                   {/* ICON */}
-                  <div className="mt-1">
+                  <div className="mt-1 w-10 h-10 rounded -xl bg-orange-100 flex items-center justify-center">
                     <Icon size={18} className="text-orange-600" />
                   </div>
 
                   {/* TEXT */}
                   <div>
-                    <h3 className="text-base font-bold text-blue-900">
+                    <h3 className="font-semibold text-lg text-blue-950">
                       {item.title}
                     </h3>
 

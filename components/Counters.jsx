@@ -124,7 +124,7 @@ export default function GlobalOpportunitiesCounter() {
               Global Impact Dashboard
             </p>
 
-            <h2 className="text-2xl md:text-4xl font-bold text-white mt-2.5">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mt-2.5">
               Real Results Across the World
             </h2>
 
