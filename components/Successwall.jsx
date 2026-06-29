@@ -21,7 +21,7 @@ before: "Uncertain career path",
 after: "Fully funded nursing placement",
 story:
 "Josro Bridge guided me through admissions and scholarship opportunities, helping me secure a life-changing nursing placement in Canada.",
-image: "/images/laboratory.jpg",
+image: "/images/images.jpeg",
 },
 {
 name: "Muriithi Nguru",
@@ -43,7 +43,7 @@ before: "Unsure about career direction",
 after: "Vocational placement in Germany",
 story:
 "I discovered a clear pathway into engineering and secured an international vocational opportunity in Germany.",
-image: "/images/profession.jpeg",
+image: "/images/portrait-male-engineer-working-field-engineers-day-celebration_23-2151615115.avif",
 },
 
 {
@@ -55,7 +55,7 @@ before: "Unsure which country matched her career goals",
 after: "Accepted into a leading New Zealand institution",
 story:
 "The guidance I received helped me choose the right course and successfully begin my international education journey.",
-image: "/images/Graduation_StudentsGroup_Smiling_Outdoor_GettyImages-907837926.jpg",
+image: "/images/Leveraging-AI.jpg",
 },
 {
 name: "Kevin O.",
@@ -66,7 +66,7 @@ before: "Limited access to global opportunities",
 after: "Started an IT degree in Australia",
 story:
 "From university selection to visa processing, every step was handled professionally and efficiently.",
-image: "/images/download.jpg",
+image: "/images/11062b_def775dbcc4b42d2950e4764e6bed5b8~mv2.jpg",
 },
 
 {
@@ -78,7 +78,7 @@ before: "Unsure where to study",
 after: "Accepted into a leading Australian institution",
 story:
 "With expert guidance, I found the right university and course to match my long-term career goals.",
-image: "/images/IELTS-Training-Centre.jpg",
+image: "/images/istockphoto-1363105078-612x612.jpg",
 },
 ];
 
