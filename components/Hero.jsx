@@ -15,35 +15,35 @@ const slides = [
 {
 id: 1,
 image:
-"/images/PhD-Scholarship-for-Domestic-International-Students-at-University-of-New-England-in-Australia-1024x684.jpg",
+"/images/13486128-pronto-per-successo-quattro-universita-laureati-in-piedi-nel-un-riga-e-sorridente-gratuito-foto.jpeg",
 title: "University Placement",
 subtitle:
 "Guiding students through applications, scholarships, and admissions to top universities worldwide.",
 },
 {
 id: 2,
-image: "/images/ielts.jpeg",
+image: "/images/istockphoto-1358814280-612x612.jpg",
 title: "IELTS Training",
 subtitle:
 "Offering expert-led programs to help candidates achieve competitive IELTS scores.",
 },
 {
 id: 3,
-image: "/images/business-meeting-office_1268-21517.avif",
+image: "/images/what-is-a-business-consultant-scaled.jpg",
 title: "Business Consultancy",
 subtitle:
 "Providing tailored advisory services to startups, SMEs, and established firms.",
 },
 {
 id: 4,
-image: "/images/profession.jpeg",
+image: "/images/lead.jpg",
 title: "Professional Training",
 subtitle:
 "Delivering leadership, entrepreneurship, and management development programs.",
 },
 {
 id: 5,
-image: "/images/labor-markets.jpg",
+image: "/images/horticulture+LHL+lawsuit+TN.webp",
 title: "Labor Mobility",
 subtitle:
 "Connecting skilled professionals to international work opportunities.",
@@ -83,7 +83,7 @@ return ( <section className="relative h-[80vh] min-h-[520px] overflow-hidden">
        className="object-cover transition-all duration-700"
      />
 
-    <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-orange-950/40" />
+    <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/40 to-orange-950/30" />
   </div>
 
   {/* Content */}
