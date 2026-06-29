@@ -43,7 +43,7 @@ before: "Unsure about career direction",
 after: "Vocational placement in Germany",
 story:
 "I discovered a clear pathway into engineering and secured an international vocational opportunity in Germany.",
-image: "/images/portrait-male-engineer-working-field-engineers-day-celebration_23-2151615115.avif",
+image: "/images/pretty-arabic-architect-woman-isolated-260nw-1928172167.webp",
 },
 
 {
@@ -55,7 +55,7 @@ before: "Unsure which country matched her career goals",
 after: "Accepted into a leading New Zealand institution",
 story:
 "The guidance I received helped me choose the right course and successfully begin my international education journey.",
-image: "/images/Leveraging-AI.jpg",
+image: "/images/koechin-adobestock-lightfield-studios-197477820.jpg",
 },
 {
 name: "Kevin O.",
