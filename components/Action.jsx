@@ -23,7 +23,7 @@ export default function EliteCTA() {
         />
 
         {/* DARK OVERLAY */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/55 via-blue-950/55 to-blue-950/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/65 via-blue-950/65 to-blue-950/60" />
       </div>
 
       {/* DECORATIVE GLOWS */}
@@ -122,7 +122,7 @@ export default function EliteCTA() {
             <div className="mt-6 space-y-3">
               <a
                 href="#contact"
-                className="w-full flex items-center justify-center gap-2 bg-orange-500 text-white font-semibold py-2 rounded-xl hover:bg-orange-600 transition"
+                className="w-full flex items-center justify-center gap-2 bg-orange-500 text-white font-semibold py-2 rounded -xl hover:bg-orange-600 transition"
               >
                 Start Application
                 <ArrowRight size={18} />
@@ -132,7 +132,7 @@ export default function EliteCTA() {
                 href="https://wa.me/254720823950"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 border border-orange-400/40 text-orange-300 py-2 rounded-xl hover:bg-orange-500/10 transition"
+                className="w-full flex items-center justify-center gap-2 border border-orange-400/40 text-orange-300 py-2 rounded -xl hover:bg-orange-500/10 transition"
               >
                 Talk to an Advisor
               </a>

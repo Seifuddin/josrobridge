@@ -60,13 +60,11 @@ export default function FAQSection() {
       <div className="max-w-3xl mx-auto px-5">
 
         {/* HEADER */}
-        <div className="text-center mb-6">
-          <div className="flex items-center justify-center gap-2 text-orange-500 text-xs tracking-[0.3em] uppercase">
-            <HelpCircle size={14} />
-            Support Center
-          </div>
+        <div className="text-center max-w-3xl mx-auto mb-10"> <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-xs fontmedium"> <HelpCircle size={16} />
+Support Center </div>
+          
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mt-2">
             Frequently Asked Questions
           </h2>
 

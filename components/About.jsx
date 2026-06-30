@@ -31,7 +31,7 @@ export default function About() {
             </div>
 
             {/* Heading */}
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold leading-tight text-slate-900">
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold leading-tight text-blue-950">
               Building Bridges to 
               <span className="blck pl-2 text-orange-500">
                  Global Opportunities
@@ -121,7 +121,7 @@ export default function About() {
                 <GraduationCap className="text-orange-500" size={26} />
 
                 <div>
-                  <div className="font-bold text-blue-950">
+                  <div className="font-bold text-blue-900">
                     Global Education
                   </div>
 
@@ -138,7 +138,7 @@ export default function About() {
                 <Briefcase className="text-blue-600" size={26} />
 
                 <div>
-                  <div className="font-bold text-blue-950">
+                  <div className="font-bold text-blue-900">
                     Global Careers
                   </div>
 

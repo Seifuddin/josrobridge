@@ -91,7 +91,7 @@ export default function GlobalAcademicJourney() {
             Global Opportunities
           </span>
 
-          <h2 className="mt-4 text-3xl md:text-4xl font-bold text-gray-900">
+          <h2 className="mt-4 text-3xl md:text-4xl font-bold text-blue-950">
             Start Your Global Academic Journey
           </h2>
 
@@ -168,22 +168,22 @@ export default function GlobalAcademicJourney() {
 
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white/10 p-4 rounded-2xl text-center">
-                      <div className="text-3xl font-bold text-orange-400">10</div>
+                      <div className="text-xl md:text-3xl font-bold text-orange-400">10</div>
                       <div className="text-sm text-white/80">Universities</div>
                     </div>
 
                     <div className="bg-white/10 p-4 rounded-2xl text-center">
-                      <div className="text-3xl font-bold text-orange-400">4</div>
+                      <div className="text-xl md:text-3xl font-bold text-orange-400">4</div>
                       <div className="text-sm text-white/80">Countries</div>
                     </div>
 
                     <div className="bg-white/10 p-4 rounded-2xl text-center">
-                      <div className="text-3xl font-bold text-orange-400">1000+</div>
+                      <div className="text-xl md:text-3xl font-bold text-orange-400">1000+</div>
                       <div className="text-sm text-white/80">Courses</div>
                     </div>
 
                     <div className="bg-white/10 p-4 rounded-2xl text-center">
-                      <div className="text-3xl font-bold text-orange-400">24/7</div>
+                      <div className="text-xl md:text-3xl font-bold text-orange-400">24/7</div>
                       <div className="text-sm text-white/80">Support</div>
                     </div>
                   </div>
@@ -228,7 +228,7 @@ export default function GlobalAcademicJourney() {
               {/* COUNTRY HEADER */}
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-3xl">{destination.flag}</span>
-                <h3 className="text-2xl font-bold text-gray-900">
+                <h3 className="text-2xl font-bold text-blue-950">
                   {destination.country}
                 </h3>
               </div>

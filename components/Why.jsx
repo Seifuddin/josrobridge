@@ -38,10 +38,8 @@ export default function WhyJosroWins() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
-    <div className="text-center max-w-2xl mx-auto px-4">
-      <p className="text-xs mb-2 tracking-[0.3em] uppercase text-orange-600">
-        Why Us
-      </p>
+                <div className="text-center max-w-3xl mx-auto mb-10"> <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-xs fontmedium">
+        Why Us </div>
 
       <h2 className="text-3xl md:text-4xl font-bold text-blue-950">
         Why Choose Josro Bridge?

@@ -32,7 +32,7 @@ before: "Limited academic opportunities",
 after: "Accepted into a UK university",
 story:
 "The entire application process felt simple and organized. Today I'm pursuing Computer Science in the UK.",
-image: "/images/1765669389666~2.jpg",
+image: "/images/IMG_20240804_185749_718~2.jpg",
 },
 {
 name: "Amina S.",
@@ -114,7 +114,7 @@ return ( <section className="pb-16 bg-white"> <div className="max-w-7xl mx-auto 
 Student Success Stories </div>
 
 
-      <h2 className="mt-4 text-3xl md:text-4xl font-bold text-slate-900">
+      <h2 className="mt-4 text-3xl md:text-4xl font-bold text-blue-950">
         Real Students. Real Transformations.
       </h2>
 

@@ -159,9 +159,8 @@ export default function Services() {
   <section id="services" className="py-12 bg-white">
     {/* HEADER */}
     <div className="text-center max-w-2xl mx-auto px-4">
-      <p className="text-xs mb-2 tracking-[0.3em] uppercase text-orange-600">
-        Our Services
-      </p>
+      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-xs fontmedium">
+        What We Do </div>
 
       <h2 className="text-3xl md:text-4xl font-bold text-blue-950">
         Empowering Education & Global Opportunities
@@ -239,7 +238,7 @@ export default function Services() {
 
                 <a
             href="#contact"
-            className="flex-1 border-2 border-blue-950 text-blue-950 hover:bg-blue-50 py-1 .5 rounded-r -lg textsm flex items-center justify-center gap-1 transition"
+            className="flex-1 border border-blue-950 text-blue-950 hover:bg-blue-50 py-1 .5 rounded-r -lg textsm flex items-center justify-center gap-1 transition"
           >
             Request
           </a>
