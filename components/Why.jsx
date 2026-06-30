@@ -86,7 +86,7 @@ export default function WhyJosroWins() {
           <div className="md:col-span-4 flex justify-center">
             <div className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg border">
               <img
-                src="/images/why-choose-us-page.jpg"
+                src="/images/global-network-glow-stockcake.jpg"
                 alt="Students global opportunities"
                 className="w-full h-full object-cover"
               />

@@ -57,6 +57,27 @@ const destinations = [
       },
     ],
   },
+  {
+    country: "Canada",
+    flag: "🇨🇦",
+    universities: [
+      {
+        name: "University of Toronto",
+        image: "/images/torontouniversity.jpg",
+        link: "https://www.utoronto.ca",
+      },
+      {
+        name: "University of Alberta",
+        image: "/images/albertauniversity.jpeg",
+        link: "https://www.ualberta.ca",
+      },
+      {
+        name: "University of Calgary",
+        image: "/images/university-of-calgary-campus-image.webp",
+        link: "https://www.ucalgary.ca",
+      },
+    ],
+  },
 ];
 
 export default function GlobalAcademicJourney() {
@@ -147,12 +168,12 @@ export default function GlobalAcademicJourney() {
 
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white/10 p-4 rounded-2xl text-center">
-                      <div className="text-3xl font-bold text-orange-400">7</div>
+                      <div className="text-3xl font-bold text-orange-400">10</div>
                       <div className="text-sm text-white/80">Universities</div>
                     </div>
 
                     <div className="bg-white/10 p-4 rounded-2xl text-center">
-                      <div className="text-3xl font-bold text-orange-400">3</div>
+                      <div className="text-3xl font-bold text-orange-400">4</div>
                       <div className="text-sm text-white/80">Countries</div>
                     </div>
 
@@ -181,6 +202,9 @@ export default function GlobalAcademicJourney() {
                       </span>
                       <span className="px-3 py-2 bg-white/10 rounded-full text-white">
                         🇳🇿 New Zealand
+                      </span>
+                      <span className="px-3 py-2 bg-white/10 rounded-full text-white">
+                        🇨🇦 Canada
                       </span>
                     </div>
                   </div>

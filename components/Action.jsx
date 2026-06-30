@@ -15,7 +15,7 @@ export default function EliteCTA() {
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0">
         <Image
-          src="/images/visas.webp" // Replace with your image
+          src="/images/image-removebg-preview (13).png" // Replace with your image
           alt="Study Abroad"
           fill
           priority
@@ -23,7 +23,7 @@ export default function EliteCTA() {
         />
 
         {/* DARK OVERLAY */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/65 via-blue-950/65 to-blue-950/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/55 via-blue-950/55 to-blue-950/50" />
       </div>
 
       {/* DECORATIVE GLOWS */}
