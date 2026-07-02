@@ -15,7 +15,7 @@ export default function EliteCTA() {
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0">
         <Image
-          src="/images/image-removebg-preview (13).png" // Replace with your image
+          src="/images/photo-1521295121783-8a321d551ad2.avif" // Replace with your image
           alt="Study Abroad"
           fill
           priority

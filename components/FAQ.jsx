@@ -19,12 +19,12 @@ const faqs = [
   {
     icon: GraduationCap,
     q: "Do you help with university admissions abroad?",
-    a: "Yes. We assist with applications, admission letters, scholarships, and placement into universities in the UK, Canada, Germany, and more.",
+    a: "Yes. We assist with applications, admission letters, scholarships, and placement into universities in the UK, Canada, Australia, New Zealand and more.",
   },
   {
     icon: Globe,
     q: "Which countries can I apply to?",
-    a: "We support UK, Australia, New Zealand and other international destinations depending on your profile and goals.",
+    a: "We support UK, Canada, Australia, New Zealand and other international destinations depending on your profile and goals.",
   },
   {
     icon: FileText,

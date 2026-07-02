@@ -2,79 +2,146 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const destinations = [
   {
     country: "United Kingdom",
     flag: "🇬🇧",
+    color: "from-red-600 to-blue-600",
     universities: [
       {
         name: "University of Gloucestershire",
         image: "/images/UniversityofGloucestershire.png",
         link: "https://www.glos.ac.uk",
+        rating: 4.2,
+        programs: 120,
       },
       {
         name: "York St John University",
         image: "/images/YorkStJohnUniversity.webp",
         link: "https://www.yorksj.ac.uk",
+        rating: 4.1,
+        programs: 95,
       },
       {
         name: "Coventry University",
         image: "/images/CoventryUniversity.jpg",
         link: "https://www.coventry.ac.uk",
+        rating: 4.4,
+        programs: 150,
+      },
+      {
+        name: "University of Bristol",
+        image: "/images/Geography_Department,_University_of_Bristol_-_geograph.org.uk_-_201159.jpg",
+        link: "https://www.bristol.ac.uk",
+        rating: 4.5,
+        programs: 180,
       },
     ],
   },
   {
     country: "Australia",
     flag: "🇦🇺",
+    color: "from-yellow-600 to-green-700",
     universities: [
       {
         name: "The University of Queensland",
-        image: "/images/UniversityofQueensland.jpg",
+        image: "/images/qweensland.png",
         link: "https://www.uq.edu.au",
+        rating: 4.6,
+        programs: 200,
       },
       {
         name: "The University of Melbourne",
         image: "/images/UniversityofMelbourne.jpeg",
         link: "https://www.unimelb.edu.au",
+        rating: 4.8,
+        programs: 220,
+      },
+      {
+        name: "The University of Adelaide",
+        image: "/images/adelaide.jpeg",
+        link: "https://www.adelaide.edu.au",
+        rating: 4.4,
+        programs: 170,
+      },
+      {
+        name: "The University of Sydney",
+        image: "/images/University-of-Sydney-campus.jpg",
+        link: " https://www.sydney.edu.au/",
+        rating: 4.8,
+        programs: 220,
       },
     ],
   },
   {
     country: "New Zealand",
     flag: "🇳🇿",
+    color: "from-blue-700 to-red-600",
     universities: [
       {
         name: "The University of Auckland",
         image: "/images/UniversityofAuckland.jpg",
         link: "https://www.auckland.ac.nz",
+        rating: 4.5,
+        programs: 180,
       },
       {
         name: "The University of Waikato",
         image: "/images/UniversityofWaikato.webp",
         link: "https://www.waikato.ac.nz",
+        rating: 4.0,
+        programs: 85,
+      },
+      {
+        name: "University of Canterbury",
+        image: "/images/Ivey_Hall,_Lincoln_University,_New_Zealand.jpg",
+        link: "https://www.canterbury.ac.nz",
+        rating: 4.3,
+        programs: 140,
+      },
+      {
+        name: "University of Otago",
+        image: "/images/Clocktower,_University_of_Otago,_Dunedin_2024.jpg",
+        link: "https://www.otago.ac.nz",
+        rating: 4.4,
+        programs: 155,
       },
     ],
   },
   {
     country: "Canada",
     flag: "🇨🇦",
+    color: "from-red-600 to-red-800",
     universities: [
       {
         name: "University of Toronto",
         image: "/images/torontouniversity.jpg",
         link: "https://www.utoronto.ca",
+        rating: 4.7,
+        programs: 250,
       },
       {
         name: "University of Alberta",
         image: "/images/albertauniversity.jpeg",
         link: "https://www.ualberta.ca",
+        rating: 4.3,
+        programs: 160,
       },
       {
         name: "University of Calgary",
-        image: "/images/university-of-calgary-campus-image.webp",
+        image: "/images/history-and-alumni-from-the-university-of-calgary.jpg",
         link: "https://www.ucalgary.ca",
+        rating: 4.2,
+        programs: 130,
+      },
+      {
+        name: "University of Waterloo",
+        image: "/images/waterloo.jpg",
+        link: "https://uwaterloo.ca",
+        rating: 4.6,
+        programs: 190,
       },
     ],
   },
@@ -82,226 +149,179 @@ const destinations = [
 
 export default function GlobalAcademicJourney() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-10 bg-gradient-to-b from-slate-50 via-white to-slate-50">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* HEADER */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block px-4 py-2 rounded-full bg-orange-50 text-orange-600 text-sm font-medium">
-            Global Opportunities
+        {/* COMPACT HEADER */}
+        <div className="text-center max-w-2xl mx-auto mb-8">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/50 text-blue-600 text-[10px] font-semibold tracking-widest uppercase">
+            <span className="w-1 h-1 rounded-full bg-blue-500 animate-pulse" />
+            Global Network
           </span>
 
-          <h2 className="mt-4 text-3xl md:text-4xl font-bold text-blue-950">
-            Start Your Global Academic Journey
+          <h2 className="mt-2 text-2xl md:text-3xl font-bold">
+            <span className="text-slate-900">Global</span>
+            <span className="text-blue-600"> Academic Journey</span>
           </h2>
 
-          <p className="mt-4 text-gray-600 leading-relaxed">
-            Explore partner universities across the United Kingdom, Australia,
-            and New Zealand and build your future with world-class education.
+          <p className="mt-1 text-xs text-slate-500">
+            14+ universities • 4 countries • 1000+ programs
           </p>
         </div>
 
-        {/* FEATURED SECTION */}
+        {/* COMPACT FEATURED CARD */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="relative overflow-hidden rounded-3xl mb-20"
+          transition={{ duration: 0.5 }}
+          className="mb-10"
         >
-          <div className="relative min-h-[520px]">
-            <Image
-              src="/images/UniversityofMelbourne.jpeg"
-              alt="University of Melbourne"
-              fill
-              className="object-cover"
-            />
+          <div className="relative overflow-hidden rounded-xl">
+            <div className="relative h-[160px] md:h-[180px]">
+              <Image
+                src="/images/UniversityofMelbourne.jpeg"
+                alt="University of Melbourne"
+                fill
+                className="object-cover"
+              />
 
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/40" />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
 
-            {/* GRID LAYOUT */}
-            <div className="relative z-10 grid lg:grid-cols-5 min-h-[520px]">
-
-              {/* LEFT SIDE */}
-              <div className="lg:col-span-3 flex items-center">
-                <div className="p-8 md:p-12 lg:p-16 text-white max-w-2xl">
-                  <span className="inline-block px-4 py-2 rounded-full bg-orange-500/20 border border-orange-400/30 text-orange-200 text-sm">
-                    Featured University
-                  </span>
-
-                  <h3 className="mt-5 text-3xl md:text-5xl font-bold leading-tight">
-                    The University of Melbourne
+              <div className="relative z-10 flex items-center h-full px-6 md:px-8">
+                <div className="max-w-lg">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-xs text-yellow-400">🏆</span>
+                    <span className="text-[10px] text-white/80 font-medium tracking-wider uppercase">
+                      Featured
+                    </span>
+                  </div>
+                  <h3 className="text-lg md:text-xl font-bold text-white">
+                    University of Melbourne
                   </h3>
-
-                  <p className="mt-5 text-white/90 text-lg leading-relaxed">
-                    One of Australia's top universities, globally recognized for
-                    academic excellence, research innovation, and graduate success.
-                  </p>
-
-                  <div className="mt-8 flex flex-wrap gap-4">
+                  <div className="flex items-center gap-3 mt-1 text-white/70 text-xs">
+                    <span>⭐ 4.8</span>
+                    <span className="w-px h-3 bg-white/30" />
+                    <span>220+ programs</span>
+                    <span className="w-px h-3 bg-white/30" />
+                    <span>🇦🇺 Australia</span>
+                  </div>
+                  <div className="flex gap-2 mt-2">
                     <a
                       href="https://www.unimelb.edu.au"
                       target="_blank"
-                      className="px-7 py-3 rounded-full bg-orange-500 hover:bg-orange-600 transition font-medium"
+                      className="px-4 py-1 bg-white text-slate-900 hover:bg-yellow-50 transition rounded-full text-xs font-medium"
                     >
-                      Explore Programs
+                      Explore
                     </a>
-
                     <a
                       href="#contact"
-                      className="px-7 py-3 rounded-full border border-white/30 hover:bg-white/10 transition"
+                      className="px-4 py-1 border border-white/30 hover:bg-white/10 transition rounded-full text-xs text-white"
                     >
-                      Apply Now
+                      Apply
                     </a>
                   </div>
-                </div>
-              </div>
-
-              {/* RIGHT SIDE */}
-              <div className="lg:col-span-2 flex items-center justify-center p-8">
-                <div className="w-full max-w-sm bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6">
-
-                  <h4 className="text-white text-xl font-semibold mb-6">
-                    Study Abroad Overview
-                  </h4>
-
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-white/10 p-4 rounded-2xl text-center">
-                      <div className="text-xl md:text-3xl font-bold text-orange-400">10</div>
-                      <div className="text-sm text-white/80">Universities</div>
-                    </div>
-
-                    <div className="bg-white/10 p-4 rounded-2xl text-center">
-                      <div className="text-xl md:text-3xl font-bold text-orange-400">4</div>
-                      <div className="text-sm text-white/80">Countries</div>
-                    </div>
-
-                    <div className="bg-white/10 p-4 rounded-2xl text-center">
-                      <div className="text-xl md:text-3xl font-bold text-orange-400">1000+</div>
-                      <div className="text-sm text-white/80">Courses</div>
-                    </div>
-
-                    <div className="bg-white/10 p-4 rounded-2xl text-center">
-                      <div className="text-xl md:text-3xl font-bold text-orange-400">24/7</div>
-                      <div className="text-sm text-white/80">Support</div>
-                    </div>
-                  </div>
-
-                  <div className="mt-6 border-t border-white/10 pt-5">
-                    <h5 className="text-white font-medium mb-3">
-                      Destinations
-                    </h5>
-
-                    <div className="flex flex-wrap gap-2 text-sm">
-                      <span className="px-3 py-2 bg-white/10 rounded-full text-white">
-                        🇬🇧 UK
-                      </span>
-                      <span className="px-3 py-2 bg-white/10 rounded-full text-white">
-                        🇦🇺 Australia
-                      </span>
-                      <span className="px-3 py-2 bg-white/10 rounded-full text-white">
-                        🇳🇿 New Zealand
-                      </span>
-                      <span className="px-3 py-2 bg-white/10 rounded-full text-white">
-                        🇨🇦 Canada
-                      </span>
-                    </div>
-                  </div>
-
-                  <a
-                    href="#contact"
-                    className="mt-6 block text-center bg-orange-500 hover:bg-orange-600 transition text-white py-3 rounded-xl font-medium"
-                  >
-                    Start Application
-                  </a>
                 </div>
               </div>
             </div>
           </div>
         </motion.div>
 
-        {/* DESTINATION SECTIONS */}
-        <div className="space-y-16">
+        {/* COMPACT DESTINATION GRID */}
+        <div className="space-y-6">
           {destinations.map((destination, index) => (
-            <div key={index}>
-              {/* COUNTRY HEADER */}
-              <div className="flex items-center gap-3 mb-6">
-                <span className="text-3xl">{destination.flag}</span>
-                <h3 className="text-2xl font-bold text-blue-950">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
+            >
+              {/* Compact Country Header */}
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-lg">{destination.flag}</span>
+                <h3 className="text-sm font-bold text-slate-800">
                   {destination.country}
                 </h3>
+                <span className="text-[10px] text-slate-400 font-medium">
+                  {destination.universities.length} unis
+                </span>
               </div>
 
-              {/* UNIVERSITIES */}
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  {destination.universities.map((uni, i) => (
-    <motion.a
-      key={i}
-      href={uni.link}
-      target="_blank"
-      whileHover={{ y: -5 }}
-      className="group relative h-72 rounded-2xl overflow-hidden"
-    >
-      <Image
-        src={uni.image}
-        alt={uni.name}
-        fill
-        className="object-cover group-hover:scale-105 transition duration-500"
-      />
+              {/* University Cards - Smaller Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+                {destination.universities.map((uni, i) => (
+                  <motion.a
+                    key={i}
+                    href={uni.link}
+                    target="_blank"
+                    whileHover={{ y: -3 }}
+                    className="group relative h-32 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                  >
+                    <Image
+                      src={uni.image}
+                      alt={uni.name}
+                      fill
+                      className="object-cover group-hover:scale-110 transition duration-400"
+                    />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
-      <div className="absolute bottom-0 p-5 text-white">
-        <h4 className="text-lg font-semibold">{uni.name}</h4>
-        <p className="text-sm text-white/80 mt-2">
-          View admissions and programs
-        </p>
-        <div className="mt-3 text-orange-300 text-sm font-medium">
-          Explore →
-        </div>
-      </div>
-    </motion.a>
-  ))}
+                    {/* Rating Badge - Smaller */}
+                    <div className="absolute top-1.5 right-1.5 bg-black/60 backdrop-blur-sm px-1.5 py-0.5 rounded-full text-white text-[8px] font-medium flex items-center gap-0.5">
+                      ⭐ {uni.rating}
+                    </div>
 
-  {/* 🔥 FILLER CARD (AUTO ADD WHEN LESS THAN 3) */}
-  {destination.universities.length < 3 && (
-    <div className="relative h-72 rounded-2xl overflow-hidden bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center p-6">
-      <div className="text-center text-white">
-        <h4 className="text-lg font-semibold">
-          Why Study in {destination.country}?
-        </h4>
-
-        <p className="text-sm mt-3 text-white/90">
-          {destination.country === "Australia" && (
-            <>
-              Top-ranked universities, strong job opportunities, and post-study work visas.
-            </>
-          )}
-
-          {destination.country === "New Zealand" && (
-            <>
-              Safe environment, affordable education, and globally recognized degrees.
-            </>
-          )}
-
-          {destination.country === "United Kingdom" && (
-            <>
-              World-class education, short degree duration, and global recognition.
-            </>
-          )}
-        </p>
-
-        <div className="mt-4 text-sm font-medium underline">
-          Learn More →
-        </div>
-      </div>
-    </div>
-  )}
-</div>
-            </div>
+                    <div className="absolute bottom-0 p-2 text-white">
+                      <h4 className="text-[10px] font-semibold leading-tight line-clamp-2">
+                        {uni.name}
+                      </h4>
+                      <p className="text-[8px] text-white/70 mt-0.5">
+                        📚 {uni.programs}
+                      </p>
+                    </div>
+                  </motion.a>
+                ))}
+              </div>
+            </motion.div>
           ))}
         </div>
+
+        {/* COMPACT BOTTOM CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-10"
+        >
+          <div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-slate-800 to-slate-900 px-6 py-5">
+            <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="text-center sm:text-left">
+                <h3 className="text-sm font-bold text-white">
+                  Ready to Begin?
+                </h3>
+                <p className="text-xs text-slate-300">
+                  Join 1000+ students on their global journey
+                </p>
+              </div>
+              <div className="flex gap-2">
+                <a
+                  href="#contact"
+                  className="px-5 py-1.5 bg-blue-600 hover:bg-blue-700 transition rounded-full text-white text-xs font-medium shadow-lg shadow-blue-500/25"
+                >
+                  Start Application
+                </a>
+                <a
+                  href="#"
+                  className="px-5 py-1.5 bg-white/10 hover:bg-white/20 transition rounded-full text-white text-xs font-medium border border-white/20"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
       </div>
     </section>
