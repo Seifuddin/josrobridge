@@ -107,7 +107,7 @@ return ( <section className="relative h-[80vh] min-h-[520px] overflow-hidden">
         </p>
 
         {/* Service Highlights */}
-        <div className="mt-5 flex flex-wrap gap-2">
+        <div className="hidden mt-5 flexflex-wrap gap-2">
           <div className="bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1.5 rounded-full text-white text-xs md:text-sm">
             🎓 Study Abroad
           </div>

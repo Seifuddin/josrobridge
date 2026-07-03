@@ -154,13 +154,13 @@ export default function GlobalAcademicJourney() {
 
         {/* COMPACT HEADER */}
         <div className="text-center max-w-2xl mx-auto mb-8">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/50 text-blue-600 text-[10px] font-semibold tracking-widest uppercase">
-            <span className="w-1 h-1 rounded-full bg-blue-500 animate-pulse" />
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 border border-orange-200/50 text-orange-600 text-[10px] font-semibold tracking-widest uppercase">
+            <span className="w-1 h-1 rounded-full bg-orange-500 animate-pulse" />
             Global Network
           </span>
 
           <h2 className="mt-2 text-2xl md:text-3xl font-bold">
-            <span className="text-slate-900">Global</span>
+            <span className="text-blue-950">Global</span>
             <span className="text-blue-600"> Academic Journey</span>
           </h2>
 

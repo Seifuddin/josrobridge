@@ -73,7 +73,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="relative py-16 lg:py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50/30 overflow-hidden"
+      className="relative pb-16 lg:pb-20 bg-gradient-to-br from-slate-50 via-white to-blue-50/30 overflow-hidden"
     >
       {/* Background Decorations - Minimal */}
       <div className="absolute inset-0 overflow-hidden">
@@ -81,7 +81,7 @@ export default function About() {
         <div className="absolute bottom-0 -right-32 w-[400px] h-[400px] bg-gradient-to-tl from-blue-200/15 to-blue-100/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="relative max-w-7xl mx-auto px-6 smpx-6">
         <motion.div
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -89,12 +89,12 @@ export default function About() {
           className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
         >
           {/* LEFT CONTENT */}
-          <motion.div variants={itemVariants} className="space-y-6">
+          <motion.div variants={itemVariants} className="space-y-3">
             {/* Badge */}
             <motion.div variants={itemVariants}>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-orange-50 to-orange-100/50 border border-orange-200/50">
                 <Sparkles className="w-3.5 h-3.5 text-orange-500" />
-                <span className="text-[10px] font-semibold text-orange-600 tracking-widest uppercase">
+                <span className="text-[10px] font-sembold text-orange-600 tracking-widest uppercase">
                   About Josro Bridge
                 </span>
               </div>
@@ -102,20 +102,24 @@ export default function About() {
 
             {/* Heading */}
             <motion.div variants={itemVariants}>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+              <h2 className="hidden text-3xl md:text-4xl lgtext-5xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
                   Building Bridges to
                 </span>
-                <br />
                 <span className="bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent">
                   Global Opportunities
                 </span>
               </h2>
+
+              <h2 className="mt-2 text-2xl md:text-3xl font-bold">
+            <span className="text-blue-950">Building Bridges to</span>
+            <span className="text-blue-600"> Global Opportunities</span>
+          </h2>
             </motion.div>
 
             {/* Description */}
             <motion.div variants={itemVariants} className="space-y-3">
-              <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+              <p className="text-slate-600 text-smmd:text-base leading-relaxed">
                 Josro Bridge International Limited is an education and consultancy
                 firm committed to helping students and professionals unlock
                 international opportunities through education, language
