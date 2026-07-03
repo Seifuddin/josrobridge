@@ -82,92 +82,41 @@ export default function About() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 smpx-6">
+        {/* TITLE AND SUBTITLE AT TOP */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-center max-w-3xl mx-auto mb-12"
+        >
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-orange-50 to-orange-100/50 border border-orange-200/50">
+            <Sparkles className="w-3.5 h-3.5 text-orange-500" />
+            <span className="text-[10px] font-sembold text-orange-600 tracking-widest uppercase">
+              About Josro Bridge
+            </span>
+          </div>
+
+          <h2 className="mt-3 text-3xl md:text-4xl font-bold">
+            <span className="text-blue-950">Building Bridges to</span>
+            <br className="hidden sm:block" />
+            <span className="text-blue-600"> Global Opportunities</span>
+          </h2>
+
+          <p className="mt-3 text-slate-600 text-smmd: text-base max-w-2xl mx-auto">
+            We connect ambitious individuals with world-class universities,
+                IELTS preparation programs, and career pathways that create
+                lasting impact.
+          </p>
+        </motion.div>
+
         <motion.div
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+          className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start"
         >
-          {/* LEFT CONTENT */}
-          <motion.div variants={itemVariants} className="space-y-3">
-            {/* Badge */}
-            <motion.div variants={itemVariants}>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-orange-50 to-orange-100/50 border border-orange-200/50">
-                <Sparkles className="w-3.5 h-3.5 text-orange-500" />
-                <span className="text-[10px] font-sembold text-orange-600 tracking-widest uppercase">
-                  About Josro Bridge
-                </span>
-              </div>
-            </motion.div>
-
-            {/* Heading */}
-            <motion.div variants={itemVariants}>
-              <h2 className="hidden text-3xl md:text-4xl lgtext-5xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
-                  Building Bridges to
-                </span>
-                <span className="bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent">
-                  Global Opportunities
-                </span>
-              </h2>
-
-              <h2 className="mt-2 text-3xl md:text-4xl font-bold">
-            <span className="text-blue-950">Building Bridges to</span>
-            <span className="text-blue-600"> Global Opportunities</span>
-          </h2>
-            </motion.div>
-
-            {/* Description */}
-            <motion.div variants={itemVariants} className="space-y-3">
-              <p className="text-slate-600 text-smmd:text-base leading-relaxed">
-                Josro Bridge International Limited is an education and consultancy
-                firm committed to helping students and professionals unlock
-                international opportunities through education, language
-                proficiency, and career development.
-              </p>
-              <p className="text-slate-600 text-smmd:text-base leading-relaxed">
-                We connect ambitious individuals with world-class universities,
-                IELTS preparation programs, and career pathways that create
-                lasting impact.
-              </p>
-            </motion.div>
-
-            {/* Features - Compact Grid */}
-            <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-              {features.map((feature, index) => (
-                <motion.div
-                  key={index}
-                  variants={itemVariants}
-                  whileHover={{ y: -3 }}
-                  className="group p-3 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100"
-                >
-                  <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${feature.color} flex items-center justify-center mb-2 group-hover:scale-110 transition-transform`}>
-                    <feature.icon className="w-4 h-4 text-white" />
-                  </div>
-                  <h4 className="text-xs font-bold text-slate-800 group-hover:text-orange-600 transition">
-                    {feature.title}
-                  </h4>
-                  <p className="text-[10px] text-slate-500 mt-0.5">
-                    {feature.description}
-                  </p>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            {/* CTA */}
-            <motion.div variants={itemVariants}>
-              <a
-                href="#contact"
-                className="hidden inline-flexitems-center gap-2 px-6 py-2.5 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white text-sm font-medium rounded-full shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-300 group"
-              >
-                <span>Discover Your Pathway</span>
-                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </motion.div>
-          </motion.div>
-
-          {/* RIGHT CONTENT - Premium Image Section */}
-          <motion.div variants={itemVariants} className="relative">
+          {/* LEFT COLUMN - Now has the image (swapped from right) */}
+          <motion.div variants={itemVariants} className="relative order-2lg:order-1">
             {/* Main Image Container */}
             <div className="relative h-[380px] md:h-[420px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
@@ -265,6 +214,92 @@ export default function About() {
             {/* Decorative Rings - Subtle */}
             <div className="absolute -z-10 -top-8 -right-8 w-32 h-32 border border-orange-200/20 rounded-full" />
             <div className="absolute -z-10 -bottom-8 -left-8 w-40 h-40 border border-blue-200/20 rounded-full" />
+          </motion.div>
+
+          {/* RIGHT COLUMN - Now has the content (swapped from left) */}
+          <motion.div variants={itemVariants} className="space-y-4 order-1 lg:order-2">
+            {/* Description */}
+            <motion.div variants={itemVariants} className="space-y-3">
+              <p className="text-slate-600 text-smmd:text-base leading-relaxed">
+                Josro Bridge International Limited is an education and consultancy
+                firm committed to helping students and professionals unlock
+                international opportunities through education, language
+                proficiency, and career development.
+              </p>
+              <p className="hidden text-slate-600 text-sm md:text-base leading-relaxed">
+                We connect ambitious individuals with world-class universities,
+                IELTS preparation programs, and career pathways that create
+                lasting impact.
+              </p>
+            </motion.div>
+
+            {/* Features - Compact Grid */}
+            <motion.div variants={itemVariants} className="hidden md:grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+              {features.map((feature, index) => (
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                  whileHover={{ y: -3 }}
+                  className="group p-3 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100"
+                >
+                  <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${feature.color} flex items-center justify-center mb-2 group-hover:scale-110 transition-transform`}>
+                    <feature.icon className="w-4 h-4 text-white" />
+                  </div>
+                  <h4 className="text-xs font-bold text-slate-800 group-hover:text-orange-600 transition">
+                    {feature.title}
+                  </h4>
+                  <p className="text-[10px] text-slate-500 mt-0.5">
+                    {feature.description}
+                  </p>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* MISSION & VISION - Replacing the three small cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              {/* Mission Card */}
+              <motion.div
+                variants={itemVariants}
+                whileHover={{ y: -3 }}
+                className="group p-4 rounded-xl bg-white bggradient-to-br from-orange-500 to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center mb-2">
+                  <span className="text-lg text-orange-500">🎯</span>
+                </div>
+                <h4 className="textxs font-bold text-blue-950">Our Mission</h4>
+                <p className="text-[10px] text-gray-700 mt-1 leading-relaxed">
+                  To empower students worldwide with access to quality education, 
+                  fostering academic excellence and cultural understanding.
+                </p>
+              </motion.div>
+
+              {/* Vision Card */}
+              <motion.div
+                variants={itemVariants}
+                whileHover={{ y: -3 }}
+                className="group p-4 rounded-xl bg-white gradient-to-br from-blue-600 to-blue-700 shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center mb-2">
+                  <span className="text-lg text-orange-500">👁️</span>
+                </div>
+                <h4 className="textxs font-bold text-blue-950">Our Vision</h4>
+                <p className="text-[10px] text-gray-700 mt-1 leading-relaxed">
+                  To become the leading global education consultancy, creating 
+                  opportunities for every student regardless of boundaries.
+                </p>
+              </motion.div>
+            </div>
+
+            {/* CTA */}
+            <motion.div variants={itemVariants}>
+              <a
+                href="/contacts"
+                className="hidden inline-flexitems-center gap-2 px-6 py-2.5 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white text-sm font-medium rounded -full shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-300 group"
+              >
+                <span>Discover Your Pathway</span>
+                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>

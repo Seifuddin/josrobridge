@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function GlobalAcademicJourney() {
   return (
-    <section className="py-10 bg-gradient-to-b from-slate-50 via-white to-slate-50">
+    <section className="pb-16 bg-gradient-to-b from-slate-50 via-white to-slate-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* HEADER */}
         <div className="text-center max-w-2xl mx-auto mb-10">
