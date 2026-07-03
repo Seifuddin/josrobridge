@@ -178,7 +178,7 @@ export default function GlobalAcademicJourney() {
           className="mb-10"
         >
           <div className="relative overflow-hidden rounded-xl">
-            <div className="relative h-[2000px] md:h-[220px]">
+            <div className="relative h-[200px] md:h-[220px]">
               <Image
                 src="/images/UniversityofMelbourne.jpeg"
                 alt="University of Melbourne"

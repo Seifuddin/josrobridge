@@ -125,7 +125,7 @@ export default function About() {
                 international opportunities through education, language
                 proficiency, and career development.
               </p>
-              <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+              <p className="text-slate-600 text-smmd:text-base leading-relaxed">
                 We connect ambitious individuals with world-class universities,
                 IELTS preparation programs, and career pathways that create
                 lasting impact.
