@@ -56,8 +56,8 @@ export default function Home() {
       />
 
       <Hero />
-      <GlobalAcademicJourney />
       <About />
+      <GlobalAcademicJourney />
       <GlobalOpportunitiesCounter />
       <Services />
       <GlobalCTASection />

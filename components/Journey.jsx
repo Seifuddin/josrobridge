@@ -159,7 +159,7 @@ export default function GlobalAcademicJourney() {
             Global Network
           </span>
 
-          <h2 className="mt-2 text-2xl md:text-3xl font-bold">
+          <h2 className="mt-2 text-3xl md:text-4xl font-bold">
             <span className="text-blue-950">Global</span>
             <span className="text-blue-600"> Academic Journey</span>
           </h2>
@@ -178,7 +178,7 @@ export default function GlobalAcademicJourney() {
           className="mb-10"
         >
           <div className="relative overflow-hidden rounded-xl">
-            <div className="relative h-[160px] md:h-[180px]">
+            <div className="relative h-[2000px] md:h-[220px]">
               <Image
                 src="/images/UniversityofMelbourne.jpeg"
                 alt="University of Melbourne"
@@ -293,7 +293,7 @@ export default function GlobalAcademicJourney() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mt-10"
+          className="hidden mt-10"
         >
           <div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-slate-800 to-slate-900 px-6 py-5">
             <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4">

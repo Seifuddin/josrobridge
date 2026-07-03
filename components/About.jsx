@@ -73,7 +73,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="relative pb-16 lg:pb-20 bg-gradient-to-br from-slate-50 via-white to-blue-50/30 overflow-hidden"
+      className="relative py-16 lg:py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50/30 overflow-hidden"
     >
       {/* Background Decorations - Minimal */}
       <div className="absolute inset-0 overflow-hidden">
@@ -111,7 +111,7 @@ export default function About() {
                 </span>
               </h2>
 
-              <h2 className="mt-2 text-2xl md:text-3xl font-bold">
+              <h2 className="mt-2 text-3xl md:text-4xl font-bold">
             <span className="text-blue-950">Building Bridges to</span>
             <span className="text-blue-600"> Global Opportunities</span>
           </h2>
