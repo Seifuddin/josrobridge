@@ -237,7 +237,7 @@ export default function Services() {
                 </button>
 
                 <a
-            href="#contact"
+            href="/contacts"
             className="flex-1 border border-blue-950 text-blue-950 hover:bg-blue-50 py-1 .5 rounded-r -lg textsm flex items-center justify-center gap-1 transition"
           >
             Request

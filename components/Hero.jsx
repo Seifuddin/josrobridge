@@ -132,7 +132,7 @@ return ( <section className="relative h-[80vh] min-h-[520px] overflow-hidden">
           </a>
 
           <a
-            href="#contact"
+            href="/contacts"
             className="px-5 py-1.5 rounded -full border-2 border-white/30 text-white hover:bg-white/10 transition"
           >
             Contact Us

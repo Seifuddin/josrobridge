@@ -12,7 +12,7 @@ export default function Navbar() {
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
     { name: "Why Us", href: "#whyus" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "/contacts" },
   ];
 
   useEffect(() => {
@@ -103,7 +103,7 @@ export default function Navbar() {
           ))}
 
           <a
-            href="#contact"
+            href="/contacts"
             className="block text-center bg-blue-900 text-white py-3 rounded-lg mt-4"
           >
             Get Started
