@@ -14,19 +14,12 @@ import GlobalAcademicJourney from "@/components/Journey";
 import Script from "next/script";
 import ContactSection from "@/components/Contacts";
 
-export const metadata = {
-  title: "Study Abroad, IELTS & University Placement in Kenya | Josro Bridge",
-  description:
-    "Josro Bridge International Limited helps Kenyan students study abroad through university placement, IELTS training, visa support, and international education consultancy services.",
-  keywords: [
-    "study abroad Kenya",
-    "university placement Kenya",
-    "IELTS training Kenya",
-    "visa assistance Kenya",
-    "work abroad programs Kenya",
-    "international education consultants Kenya",
-  ],
-};
+// ❌ REMOVE THIS ENTIRE METADATA OBJECT - IT'S CONFLICTING WITH LAYOUT.JS
+// export const metadata = {
+//   title: "Study Abroad, IELTS & University Placement in Kenya | Josro Bridge",
+//   description: "...",
+//   keywords: [...],
+// };
 
 export default function Home() {
   return (
