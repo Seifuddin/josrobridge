@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -32,7 +33,7 @@ const students = [
     after: "Fully funded nursing placement",
     story: "Josro Bridge guided me through admissions and scholarship opportunities, helping me secure a life-changing nursing placement in Canada.",
     fullStory: "When I first started my journey, I had no idea how to navigate the complex world of international education. I was working as a nurse assistant in Kisumu, struggling to make ends meet and feeling stuck in my career. Josro Bridge changed everything. They took the time to understand my goals, my financial situation, and my dreams of becoming a registered nurse in Canada. Their team helped me research universities, prepare my applications, and most importantly, find scholarships that covered my entire tuition. Within 6 months, I had an acceptance letter from a top nursing school in Toronto with full funding. Now I'm living my dream, studying in one of the world's best healthcare systems, and I'm already getting job offers before graduation. Josro Bridge didn't just help me get into school - they helped me build a future.",
-    image: "/images/images.jpeg",
+    image: "/images/nurse-scaled.webp",
     rating: 5,
     date: "2024",
     category: "Healthcare",
@@ -62,7 +63,7 @@ const students = [
     after: "Vocational placement in Germany",
     story: "I discovered a clear pathway into engineering and secured an international vocational opportunity in Germany.",
     fullStory: "After finishing high school in Mombasa, I was completely lost. I knew I wanted to do something in engineering, but I didn't know where to start or what options were available to me. My family couldn't afford university fees, and I felt like giving up on my dreams. Then I found Josro Bridge. They introduced me to vocational training programs in Germany that I never knew existed - programs that pay you while you learn! They helped me apply, prepared me for the German language requirements, and guided me through every step. Now I'm in Germany, learning from some of the best engineers in the world, getting paid for it, and building a career that will support my family for generations. This opportunity changed my entire life trajectory.",
-    image: "/images/pretty-arabic-architect-woman-isolated-260nw-1928172167.webp",
+    image: "/images/muslim-portrait-college-student-commute-class-learning-future-studying-university-travel-start-happy-black-woman-with-book-confidence-school-education-scholarship_590464-516135.avif",
     rating: 5,
     date: "2024",
     category: "Engineering",
@@ -77,7 +78,7 @@ const students = [
     after: "Accepted into a leading New Zealand institution",
     story: "The guidance I received helped me choose the right course and successfully begin my international education journey.",
     fullStory: "I was a bright student with good grades, but I was overwhelmed by all the choices. Which country should I study in? Which university was the best fit? What course would lead to a successful career? Josro Bridge helped me sort through all the noise. They assessed my interests and skills and recommended New Zealand - a country I had never even considered! They explained why it was perfect for Hospitality Management and connected me with universities I could afford. Their team helped me with every single application, interviewed me to prepare for admissions, and even helped my family understand the process. Now I'm studying in New Zealand, working part-time in the hospitality industry, and already building the career I've always dreamed of. I'm so grateful for the clarity and support Josro Bridge provided.",
-    image: "/images/koechin-adobestock-lightfield-studios-197477820.jpg",
+    image: "/images/DSC_0244-1-scaled.jpg",
     rating: 5,
     date: "2023",
     category: "Hospitality",
@@ -107,7 +108,7 @@ const students = [
     after: "Accepted into a leading Australian institution",
     story: "With expert guidance, I found the right university and course to match my long-term career goals.",
     fullStory: "Coming from a small town in Nakuru, studying abroad felt like a distant dream. I had good grades but no guidance - my family didn't know how to help me navigate international education, and I felt lost. Josro Bridge changed everything. They helped me identify my strengths and interests, matched me with the right business management programs in Australia, and guided me through the entire application process. They even helped me with my scholarship applications, and I received partial funding! Now I'm studying at one of Australia's leading business schools, learning from industry experts, and building a network that will help me achieve my goal of becoming a business leader in Kenya. Josro Bridge gave me the roadmap to success.",
-    image: "/images/istockphoto-1363105078-612x612.jpg",
+    image: "/images/business-management-vs-business-administration.jpg",
     rating: 5,
     date: "2023",
     category: "Business",
@@ -255,7 +256,7 @@ export default function StudentSuccessWall() {
                     {/* Read Full Story Button */}
                     <button
                       onClick={() => openStory(student)}
-                      className="mt-3 w-full py-1.5 px-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs font-semibold rounded-lg hover:shadow-md transition-all duration-300 hover:scale-[1.02]"
+                      className="mt-3 w-full py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs font-semibold rounded-lg hover:shadow-md transition-all duration-300 hover:scale-[1.02]"
                     >
                       Read Full Story →
                     </button>
@@ -295,7 +296,7 @@ export default function StudentSuccessWall() {
               {/* Modal Content */}
               <div className="p-6 pt-0">
                 {/* Header Image */}
-                <div className="relative h-64 rounded-2xl overflow-hidden -mt-6">
+                <div className="relative w-full h-64 rounded 2xl overflow-hidden -mt-6">
                   <Image
                     src={selectedStudent.image}
                     alt={selectedStudent.name}
@@ -376,9 +377,15 @@ export default function StudentSuccessWall() {
                     <p className="text-white/90 text-sm mb-4">
                       Join hundreds of successful students who transformed their lives with Josro Bridge
                     </p>
-                    <button className="px-6 py-2.5 bg-white text-orange-600 font-semibold rounded-xl hover:shadow-lg transition-all hover:scale-105">
+                    <button className="hidden px-6 py-2.5 bg-white text-orange-600 font-semibold rounded-xl hover:shadow-lg transition-all hover:scale-105">
                       Apply Now →
                     </button>
+                    <a
+                    href="/contacts"
+                    className="px-6 py-2.5 bg-white text-orange-600 font-semibold rounded-xl hover:shadow-lg transition-all hover:scale-105"
+                  >
+                    Apply Now →
+                  </a>
                   </div>
                 </div>
               </div>

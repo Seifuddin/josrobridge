@@ -86,10 +86,10 @@ export default function AustraliaPage() {
               </div>
 
               <div className="p-4">
-                <h3 className="font-semibold text-slate-900 text-sm mb-2 line-clamp-2">
+                <h3 className="font-semibold text-slate-900 text- mb-2 line-clamp-2">
                   {uni.name}
                 </h3>
-                <div className="flex items-center gap-2 text-xs text-slate-500 mb-3">
+                <div className="flex items-center gap-2 text-sm text-slate-500 mb-3">
                   <span>📚 {uni.programs} programs</span>
                 </div>
 
@@ -98,13 +98,13 @@ export default function AustraliaPage() {
                     href={uni.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 px-3 py-1.5 bg-blue-600 hover:bg-blue-700 transition text-white text-xs font-medium rounded-lg text-center"
+                    className="flex-1 px-3 py-2 bg-blue-600 hover:bg-blue-700 transition text-white text-xs font-medium rounded -lg text-center"
                   >
                     Explore
                   </a>
                   <a
                     href="/contacts"
-                    className="flex-1 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 transition text-slate-700 text-xs font-medium rounded-lg text-center"
+                    className="flex-1 px-3 py-2 bg-slate-100 hover:bg-slate-200 transition text-slate-700 text-xs font-medium rounded -lg text-center"
                   >
                     Apply
                   </a>
