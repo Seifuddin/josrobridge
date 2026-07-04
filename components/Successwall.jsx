@@ -48,7 +48,7 @@ const students = [
     after: "Accepted into a UK university",
     story: "The entire application process felt simple and organized. Today I'm pursuing Computer Science in the UK.",
     fullStory: "Growing up in Nairobi, I always dreamed of studying abroad but thought it was impossible for someone like me from a middle-class family. I had good grades but no connections, no knowledge of how the international education system worked, and no idea how to fund it. Josro Bridge was my guiding light. They helped me understand which UK universities were the best fit for my Computer Science goals, guided me through every step of the UCAS application, and connected me with scholarship opportunities I never knew existed. They also helped me with my visa application and even prepared me for my interview. Today, I'm at a top UK university, learning from world-class professors, and building connections that will last a lifetime. My family is so proud, and I couldn't have done it without Josro Bridge.",
-    image: "/images/IMG_20240804_185749_718~2.jpg",
+    image: "/images/1683437593103.jpg",
     rating: 5,
     date: "2023",
     category: "Technology",

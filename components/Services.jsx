@@ -64,7 +64,7 @@ const services = [
   {
     title: "Professional Training",
     icon: Award,
-    image: "/images/profession.jpeg",
+    image: "/images/lead.jpg",
     description:
       "Industry-focused training programs that equip professionals with practical and relevant skills.",
     subServices: [

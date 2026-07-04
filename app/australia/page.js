@@ -37,7 +37,7 @@ const australiaUniversities = [
 
 export default function AustraliaPage() {
   return (
-    <section className="py-10 bg-gradient-to-b from-slate-50 via-white to-slate-50 min-h-screen">
+    <section className="py-10 mt-10 bg-gradient-to-b from-slate-50 via-white to-slate-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
         {/* Back Button */}
         <Link href="/journey">
@@ -53,7 +53,7 @@ export default function AustraliaPage() {
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900">
               Australia
             </h1>
-            <span className="text-sm text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
+            <span className="text-sm text-orange-500 bg-orange-100 px-3 py-1 rounded-full">
               {australiaUniversities.length} Universities
             </span>
           </div>

@@ -37,7 +37,7 @@ export default function GlobalAcademicJourney() {
               whileHover={{ y: -8 }}
               className="group cursor-pointer"
             >
-              <div className="relative overflow-hidden rounded-2xl h-64 shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="relative overflow-hidden rounded -2xl h-56 shadow-lg hover:shadow-2xl transition-all duration-300">
                 {/* Background Image */}
                 <Image
                   src="/images/londonview.jpg"
@@ -87,7 +87,7 @@ export default function GlobalAcademicJourney() {
               whileHover={{ y: -8 }}
               className="group cursor-pointer"
             >
-              <div className="relative overflow-hidden rounded-2xl h-64 shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="relative overflow-hidden rounded -2xl h-56 shadow-lg hover:shadow-2xl transition-all duration-300">
                 {/* Background Image */}
                 <Image
                   src="/images/sidney.jpg"
@@ -137,7 +137,7 @@ export default function GlobalAcademicJourney() {
               whileHover={{ y: -8 }}
               className="group cursor-pointer"
             >
-              <div className="relative overflow-hidden rounded-2xl h-64 shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="relative overflow-hidden rounded -2xl h-56 shadow-lg hover:shadow-2xl transition-all duration-300">
                 {/* Background Image */}
                 <Image
                   src="/images/wellington.png"
@@ -187,7 +187,7 @@ export default function GlobalAcademicJourney() {
               whileHover={{ y: -8 }}
               className="group cursor-pointer"
             >
-              <div className="relative overflow-hidden rounded-2xl h-64 shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="relative overflow-hidden rounded -2xl h-56 shadow-lg hover:shadow-2xl transition-all duration-300">
                 {/* Background Image */}
                 <Image
                   src="/images/ottawa.jpg"

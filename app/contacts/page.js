@@ -58,8 +58,8 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-10 bg-gradient-to-b from-slate-50 via-white to-slate-50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-6 py-4">
+    <section id="contact" className="bg-white py-12 mt-10">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="overflow-hidden rounded -3xl bg-white shado-xl border border-gray-200">
           <div className="grid lg:grid-cols-2">
             {/* LEFT SIDE */}

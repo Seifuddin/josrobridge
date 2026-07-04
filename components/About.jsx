@@ -261,13 +261,13 @@ export default function About() {
               <motion.div
                 variants={itemVariants}
                 whileHover={{ y: -3 }}
-                className="group p-4 rounded-xl bg-white bggradient-to-br from-orange-500 to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="group p-4 border-b border-orange-300 rounded bg-white bggradient-to-br from-orange-500 to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center mb-2">
-                  <span className="text-lg text-orange-500">🎯</span>
+                  <span className="text-xl bg-orange-500 p-1 rounded text-white">🎯</span>
                 </div>
                 <h4 className="textxs font-bold text-blue-950">Our Mission</h4>
-                <p className="text-[10px] text-gray-700 mt-1 leading-relaxed">
+                <p className="text-sm text-gray-700 mt-1 leading-relaxed">
                   To empower students worldwide with access to quality education, 
                   fostering academic excellence and cultural understanding.
                 </p>
@@ -277,13 +277,13 @@ export default function About() {
               <motion.div
                 variants={itemVariants}
                 whileHover={{ y: -3 }}
-                className="group p-4 rounded-xl bg-white gradient-to-br from-blue-600 to-blue-700 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="group p-4 border-b border-orange-300 rounded bg-white gradient-to-br from-blue-600 to-blue-700 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center mb-2">
-                  <span className="text-lg text-orange-500">👁️</span>
+                  <span className="text-xl bg-orange-500 p-1 rounded text-white">👁️</span>
                 </div>
                 <h4 className="textxs font-bold text-blue-950">Our Vision</h4>
-                <p className="text-[10px] text-gray-700 mt-1 leading-relaxed">
+                <p className="text-sm text-gray-700 mt-1 leading-relaxed">
                   To become the leading global education consultancy, creating 
                   opportunities for every student regardless of boundaries.
                 </p>
