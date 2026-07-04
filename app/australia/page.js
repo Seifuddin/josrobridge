@@ -41,7 +41,7 @@ export default function AustraliaPage() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Back Button */}
         <Link href="/journey">
-          <button className="mb-6 flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 hover:border-slate-300 rounded-lg text-sm text-slate-700 transition shadow-sm hover:shadow">
+          <button className="hidden mb-6 flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 hover:border-slate-300 rounded-lg text-sm text-slate-700 transition shadow-sm hover:shadow">
             ← Back to Journey
           </button>
         </Link>

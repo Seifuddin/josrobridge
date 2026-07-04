@@ -144,12 +144,12 @@ export default function StudentSuccessWall() {
             <span className="inline-block bg-orange-100 text-orange-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
               Student Success Stories
             </span>
-            <h3 className="text-2xl md:text-3xl font-semibold mb-3 text-slate-900">
+            <h3 className="text-3xl md:text-4xl font-semibold mb-3 text-slate-900">
               Real Students.{" "}
-              <span className="text-orange-500">Real Transformations.</span>
+              <span className="text-blue-600">Real Transformations.</span>
             </h3>
             <div className="w-24 h-1 bg-orange-400 mx-auto rounded-full my-3"></div>
-            <p className="text-slate-600 text-sm max-w-2xl mx-auto">
+            <p className="text-slate-600 textsm max-w-2xl mx-auto">
               See how students from Kenya have successfully achieved their academic and career ambitions through international opportunities.
             </p>
           </motion.div>

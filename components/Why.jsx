@@ -42,8 +42,11 @@ export default function WhyJosroWins() {
         Why Us </div>
 
       <h2 className="text-3xl md:text-4xl font-bold text-blue-950">
-        Why Choose Josro Bridge?
+        Why Choose 
+        <span className="text-blue-600"> Josro Bridge?</span>
       </h2>
+
+      <div className="w-24 h-1 bg-orange-400 mx-auto rounded-full my-3"></div>
 
       <p className="mt-3 text-base text-gray-700">
         We don’t compete on promises. We win on execution.

@@ -163,8 +163,11 @@ export default function Services() {
         What We Do </div>
 
       <h2 className="text-3xl md:text-4xl font-bold text-blue-950">
-        Empowering Education & Global Opportunities
+        Empowering Education 
+        <span className="text-blue-600"> & Global Opportunities</span>
       </h2>
+
+      <div className="w-24 h-1 bg-orange-400 mx-auto rounded-full my-3"></div>
 
       <p className="mt-3 text-base text-gray-700">
         Josro Bridge International provides trusted guidance in university

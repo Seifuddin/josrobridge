@@ -65,8 +65,11 @@ Support Center </div>
           
 
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mt-2">
-            Frequently Asked Questions
+            Frequently 
+            <span className="text-blue-600"> Asked Questions</span>
           </h2>
+
+          <div className="w-24 h-1 bg-orange-400 mx-auto rounded-full my-3"></div>
 
           <p className="text-gray-500 textxs mt-2">
             Everything you need to know before applying

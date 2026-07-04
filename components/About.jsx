@@ -102,6 +102,8 @@ export default function About() {
             <span className="text-blue-600"> Global Opportunities</span>
           </h2>
 
+          <div className="w-24 h-1 bg-orange-400 mx-auto rounded-full my-3"></div>
+
           <p className="mt-3 text-slate-600 text-smmd: text-base max-w-2xl mx-auto">
             We connect ambitious individuals with world-class universities,
                 IELTS preparation programs, and career pathways that create

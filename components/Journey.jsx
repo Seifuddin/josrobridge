@@ -20,7 +20,9 @@ export default function GlobalAcademicJourney() {
             <span className="text-blue-600"> Academic Journey</span>
           </h2>
 
-          <p className="mt-1 text-xs text-slate-500">
+          <div className="w-24 h-1 bg-orange-400 mx-auto rounded-full my-3"></div>
+
+          <p className="mt-1 textxs text-slate-500">
             14+ universities • 4 countries • 1000+ programs
           </p>
         </div>
