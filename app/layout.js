@@ -8,8 +8,8 @@ export const metadata = {
   metadataBase: new URL("https://josrobridge.com"),
 
   title: {
-    default: "Josro Bridge - Study Abroad & University Placement Kenya",
-    template: "%s | Josro Bridge",
+    default: "Josro Bridge International Limited",
+    template: "%s | Josro Bridge International Limited",
   },
 
   description:
@@ -36,7 +36,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Josro Bridge - Study Abroad & University Placement Kenya",
+    title: "Josro Bridge International Limited",
     description:
       "University placement, IELTS training, visa support, and global education services.",
     url: "https://josrobridge.com",
@@ -55,7 +55,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Josro Bridge - Study Abroad & University Placement Kenya",
+    title: "Josro Bridge International Limited",
     description:
       "Study abroad, IELTS training, visa support, and international education services.",
     images: ["/og-image.jpg"],
