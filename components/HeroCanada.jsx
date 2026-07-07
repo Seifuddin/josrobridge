@@ -147,7 +147,7 @@ const StudyInCanadaHero = () => {
           </div>
 
           {/* Right Column - Image/Visual */}
-          <div className="relative lg:block hidden">
+          <div className="relative lg: block idden">
             <div className="relative">
               {/* Main Image Container */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
