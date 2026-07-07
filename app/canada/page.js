@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import StudyInCanadaHero from "@/components/HeroCanada";
 
 const canadaUniversities = [
   {
@@ -38,6 +39,7 @@ const canadaUniversities = [
 export default function CanadaPage() {
   return (
     <section className="py-10 mt-10 bg-gradient-to-b from-slate-50 via-white to-slate-50 min-h-screen">
+      <StudyInCanadaHero />
       <div className="max-w-7xl mx-auto px-6">
         {/* Back Button */}
         <Link href="/journey">
@@ -47,7 +49,7 @@ export default function CanadaPage() {
         </Link>
 
         {/* Country Header */}
-        <div className="mb-8">
+        <div className="hidden mb-8">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-4xl">🇨🇦</span>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900">
