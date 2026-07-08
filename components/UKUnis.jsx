@@ -3,40 +3,39 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import StudyInCanadaHero from "@/components/HeroCanada";
 
-const canadaUniversities = [
+const ukUniversities = [
   {
-    name: "University of Toronto",
-    image: "/images/torontouniversity.jpg",
-    link: "https://www.utoronto.ca",
-    rating: 4.7,
-    programs: 250,
-  },
-  {
-    name: "University of Alberta",
-    image: "/images/albertauniversity.jpeg",
-    link: "https://www.ualberta.ca",
-    rating: 4.3,
-    programs: 160,
-  },
-  {
-    name: "University of Calgary",
-    image: "/images/history-and-alumni-from-the-university-of-calgary.jpg",
-    link: "https://www.ucalgary.ca",
+    name: "University of Gloucestershire",
+    image: "/images/UniversityofGloucestershire.png",
+    link: "https://www.glos.ac.uk",
     rating: 4.2,
-    programs: 130,
+    programs: 120,
   },
   {
-    name: "University of Waterloo",
-    image: "/images/waterloo.jpg",
-    link: "https://uwaterloo.ca",
-    rating: 4.6,
-    programs: 190,
+    name: "York St John University",
+    image: "/images/YorkStJohnUniversity.webp",
+    link: "https://www.yorksj.ac.uk",
+    rating: 4.1,
+    programs: 95,
+  },
+  {
+    name: "Coventry University",
+    image: "/images/CoventryUniversity.jpg",
+    link: "https://www.coventry.ac.uk",
+    rating: 4.4,
+    programs: 150,
+  },
+  {
+    name: "University of Bristol",
+    image: "/images/Geography_Department,_University_of_Bristol_-_geograph.org.uk_-_201159.jpg",
+    link: "https://www.bristol.ac.uk",
+    rating: 4.5,
+    programs: 180,
   },
 ];
 
-export default function CanadaUniversities() {
+export default function UnitedKingdomUnis() {
   return (
     <section className="py-10 mt-10 bg-gradient-to-b from-slate-50 via-white to-slate-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
@@ -48,24 +47,24 @@ export default function CanadaUniversities() {
         </Link>
 
         {/* Country Header */}
-        <div className="hidden mb-8">
+        <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
-            <span className="text-4xl">🇨🇦</span>
+            <span className="text-4xl">🇬🇧</span>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900">
-              Canada
+              United Kingdom
             </h1>
             <span className="text-sm text-orange-500 bg-orange-100 px-3 py-1 rounded-full">
-              {canadaUniversities.length} Universities
+              {ukUniversities.length} Universities
             </span>
           </div>
           <p className="text-slate-600">
-            Explore top universities in Canada
+            Explore top universities in the United Kingdom
           </p>
         </div>
 
         {/* Universities Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {canadaUniversities.map((uni, index) => (
+          {ukUniversities.map((uni, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}

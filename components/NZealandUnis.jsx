@@ -3,40 +3,39 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import StudyInCanadaHero from "@/components/HeroCanada";
 
-const canadaUniversities = [
+const newZealandUniversities = [
   {
-    name: "University of Toronto",
-    image: "/images/torontouniversity.jpg",
-    link: "https://www.utoronto.ca",
-    rating: 4.7,
-    programs: 250,
+    name: "The University of Auckland",
+    image: "/images/UniversityofAuckland.jpg",
+    link: "https://www.auckland.ac.nz",
+    rating: 4.5,
+    programs: 180,
   },
   {
-    name: "University of Alberta",
-    image: "/images/albertauniversity.jpeg",
-    link: "https://www.ualberta.ca",
+    name: "The University of Waikato",
+    image: "/images/UniversityofWaikato.webp",
+    link: "https://www.waikato.ac.nz",
+    rating: 4.0,
+    programs: 85,
+  },
+  {
+    name: "University of Canterbury",
+    image: "/images/Ivey_Hall,_Lincoln_University,_New_Zealand.jpg",
+    link: "https://www.canterbury.ac.nz",
     rating: 4.3,
-    programs: 160,
+    programs: 140,
   },
   {
-    name: "University of Calgary",
-    image: "/images/history-and-alumni-from-the-university-of-calgary.jpg",
-    link: "https://www.ucalgary.ca",
-    rating: 4.2,
-    programs: 130,
-  },
-  {
-    name: "University of Waterloo",
-    image: "/images/waterloo.jpg",
-    link: "https://uwaterloo.ca",
-    rating: 4.6,
-    programs: 190,
+    name: "University of Otago",
+    image: "/images/Clocktower,_University_of_Otago,_Dunedin_2024.jpg",
+    link: "https://www.otago.ac.nz",
+    rating: 4.4,
+    programs: 155,
   },
 ];
 
-export default function CanadaUniversities() {
+export default function NewZealandUnis() {
   return (
     <section className="py-10 mt-10 bg-gradient-to-b from-slate-50 via-white to-slate-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
@@ -48,24 +47,24 @@ export default function CanadaUniversities() {
         </Link>
 
         {/* Country Header */}
-        <div className="hidden mb-8">
+        <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
-            <span className="text-4xl">🇨🇦</span>
+            <span className="text-4xl">🇳🇿</span>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900">
-              Canada
+              New Zealand
             </h1>
             <span className="text-sm text-orange-500 bg-orange-100 px-3 py-1 rounded-full">
-              {canadaUniversities.length} Universities
+              {newZealandUniversities.length} Universities
             </span>
           </div>
           <p className="text-slate-600">
-            Explore top universities in Canada
+            Explore top universities in New Zealand
           </p>
         </div>
 
         {/* Universities Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {canadaUniversities.map((uni, index) => (
+          {newZealandUniversities.map((uni, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}

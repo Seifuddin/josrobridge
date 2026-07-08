@@ -3,40 +3,39 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import StudyInCanadaHero from "@/components/HeroCanada";
 
-const canadaUniversities = [
+const australiaUniversities = [
   {
-    name: "University of Toronto",
-    image: "/images/torontouniversity.jpg",
-    link: "https://www.utoronto.ca",
-    rating: 4.7,
-    programs: 250,
-  },
-  {
-    name: "University of Alberta",
-    image: "/images/albertauniversity.jpeg",
-    link: "https://www.ualberta.ca",
-    rating: 4.3,
-    programs: 160,
-  },
-  {
-    name: "University of Calgary",
-    image: "/images/history-and-alumni-from-the-university-of-calgary.jpg",
-    link: "https://www.ucalgary.ca",
-    rating: 4.2,
-    programs: 130,
-  },
-  {
-    name: "University of Waterloo",
-    image: "/images/waterloo.jpg",
-    link: "https://uwaterloo.ca",
+    name: "The University of Queensland",
+    image: "/images/qweensland.png",
+    link: "https://www.uq.edu.au",
     rating: 4.6,
-    programs: 190,
+    programs: 200,
+  },
+  {
+    name: "The University of Melbourne",
+    image: "/images/UniversityofMelbourne.jpeg",
+    link: "https://www.unimelb.edu.au",
+    rating: 4.8,
+    programs: 220,
+  },
+  {
+    name: "The University of Adelaide",
+    image: "/images/adelaide.jpeg",
+    link: "https://www.adelaide.edu.au",
+    rating: 4.4,
+    programs: 170,
+  },
+  {
+    name: "The University of Sydney",
+    image: "/images/University-of-Sydney-campus.jpg",
+    link: "https://www.sydney.edu.au/",
+    rating: 4.8,
+    programs: 220,
   },
 ];
 
-export default function CanadaUniversities() {
+export default function AustralianUnis() {
   return (
     <section className="py-10 mt-10 bg-gradient-to-b from-slate-50 via-white to-slate-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
@@ -48,24 +47,24 @@ export default function CanadaUniversities() {
         </Link>
 
         {/* Country Header */}
-        <div className="hidden mb-8">
+        <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
-            <span className="text-4xl">🇨🇦</span>
+            <span className="text-4xl">🇦🇺</span>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900">
-              Canada
+              Australia
             </h1>
             <span className="text-sm text-orange-500 bg-orange-100 px-3 py-1 rounded-full">
-              {canadaUniversities.length} Universities
+              {australiaUniversities.length} Universities
             </span>
           </div>
           <p className="text-slate-600">
-            Explore top universities in Canada
+            Explore top universities in Australia
           </p>
         </div>
 
         {/* Universities Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {canadaUniversities.map((uni, index) => (
+          {australiaUniversities.map((uni, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -87,7 +86,7 @@ export default function CanadaUniversities() {
               </div>
 
               <div className="p-4">
-                <h3 className="font-semibold text-slate-900 textsm mb-2 line-clamp-2">
+                <h3 className="font-semibold text-slate-900 text- mb-2 line-clamp-2">
                   {uni.name}
                 </h3>
                 <div className="flex items-center gap-2 text-sm text-slate-500 mb-3">

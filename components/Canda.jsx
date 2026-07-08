@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-export default function CanadaHero() {
+export default function CanadanHero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-red-50 via-white to-blue-50">
       <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
