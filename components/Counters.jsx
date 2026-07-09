@@ -364,10 +364,10 @@ export default function GlobalOpportunitiesCounter() {
         >
           <div className="inline-flex items-center gap-4 px-6 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
             <span className="text-xs text-white/60">Ready to start your journey?</span>
-            <button className="group inline-flex items-center gap-1.5 px-4 py-1.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full text-white text-xs font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105">
+            <a href="/contacts" className="group inline-flex items-center gap-1.5 px-4 py-1.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full text-white text-xs font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105">
               Get Started
               <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>

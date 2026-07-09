@@ -6,120 +6,92 @@ import {
   ArrowRight,
   CheckCircle,
   Globe,
+  MapPin,
+  Users,
+  Award,
 } from "lucide-react";
 
 export default function EliteCTA() {
   return (
-    <section className="relative py-20 overflow-hidden">
-
-      {/* BACKGROUND IMAGE */}
+    <section className="relative py-16 md:py-24 overflow-hidden">
+      {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/photo-1521295121783-8a321d551ad2.avif" // Replace with your image
+          src="/images/photo-1521295121783-8a321d551ad2.avif"
           alt="Study Abroad"
           fill
           priority
           className="object-cover"
         />
-
-        {/* DARK OVERLAY */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/65 via-blue-950/65 to-blue-950/60" />
+        {/* Dark Overlay - gradient for depth */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/80 via-blue-900/70 to-blue-950/80" />
       </div>
 
-      {/* DECORATIVE GLOWS */}
-      <div className="absolute top-0 right-0 w-80 h-80 bg-orange-500/10 blur-3xl rounded-full" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-orange-500/10 blur-3xl rounded-full" />
+      {/* Decorative Glows */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/15 blur-3xl rounded-full" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 blur-3xl rounded-full" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-400/5 blur-3xl rounded-full" />
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-4xl mx-auto px-6 text-center">
+        {/* Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/20 text-orange-400 text-xs uppercase tracking-[0.2em] mb-6"
+        >
+          <Globe size={14} />
+          Global Education Access
+        </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        {/* Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-white leading-tight">
+            Your Future Abroad Starts With
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300">
+              The Right Guidance
+            </span>
+          </h2>
 
-          {/* LEFT CONTENT */}
-          <motion.div
-            initial={{ opacity: 0, x: -25 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="flex items-center gap-2 text-orange-400 text-xs uppercase tracking-[0.3em]">
-              <Globe size={14} />
-              Global Education Access
+          <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto mt-4 leading-relaxed">
+            We connect ambitious students to internationally recognized
+            universities, training programs, and global career opportunities
+            that transform lives.
+          </p>
+        </motion.div>
+
+        {/* Benefits Grid - replaces the right column */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 mt-8"
+        >
+          {[
+            { icon: CheckCircle, label: "Verified University Partnerships" },
+            { icon: MapPin, label: "Visa Documentation Assistance" },
+            { icon: Users, label: "Personalized Admission Support" },
+            { icon: Award, label: "Scholarship Guidance" },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-4 py-3 text-white/90 text-sm font-medium hover:bg-white/10 transition-all duration-300 hover:scale-[1.02]"
+            >
+              <item.icon size={16} className="text-orange-400 flex-shrink-0" />
+              <span>{item.label}</span>
             </div>
+          ))}
+        </motion.div>
 
-            <h2 className="text-3xl md:text-4xl font-bold text-white mt-4 leading-tight">
-              Your Future Abroad Starts With
-              <span className="block text-orange-400">
-                The Right Guidance
-              </span>
-            </h2>
-
-            <p className="text-white/75 text-base mt-4 max-w-xl leading-relaxed">
-              We don't just advise. We connect ambitious students
-              and professionals to internationally recognized
-              universities, training programs, and global career
-              opportunities that transform lives.
-            </p>
-
-            <div className="mt-8 space-y-3">
-              <div className="flex items-center gap-3 text-white/80">
-                <CheckCircle
-                  size={18}
-                  className="text-orange-400 flex-shrink-0"
-                />
-                Verified university partnerships
-              </div>
-
-              <div className="flex items-center gap-3 text-white/80">
-                <CheckCircle
-                  size={18}
-                  className="text-orange-400 flex-shrink-0"
-                />
-                End-to-end visa assistance
-              </div>
-
-              <div className="flex items-center gap-3 text-white/80">
-                <CheckCircle
-                  size={18}
-                  className="text-orange-400 flex-shrink-0"
-                />
-                IELTS preparation and career guidance
-              </div>
-            </div>
-          </motion.div>
-
-          {/* RIGHT PANEL */}
-          <motion.div
-            initial={{ opacity: 0, x: 25 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-7 shadow-2xl"
-          >
-            <h3 className="text-white text-xl font-bold">
-              Start Your Application
-            </h3>
-
-            <p className="text-white/70 text-sm mt-2">
-              Discover the best study destination based on your
-              academic background, career goals, and budget.
-            </p>
-
-            {/* CTA BOX */}
-            <div className="mt-6 bg-white/5 border border-white/10 rounded-2xl p-4">
-              <p className="text-orange-400 text-sm font-medium">
-                Why Students Choose Josro Bridge
-              </p>
-
-              <ul className="mt-3 space-y-2 text-sm text-white/70">
-                <li>• Personalized admission support</li>
-                <li>• Scholarship application guidance</li>
-                <li>• Visa documentation assistance</li>
-                <li>• Career and migration pathways</li>
-              </ul>
-            </div>
-
-            {/* BUTTONS */}
-            <div className="mt-6 space-y-3">
+        {/* BUTTONS */}
+            <div className="mt-6 flex items-center gap-3">
               <a
                 href="/contacts"
                 className="w-full flex items-center justify-center gap-2 bg-orange-500 text-white font-semibold py-2 rounded -xl hover:bg-orange-600 transition"
@@ -137,9 +109,28 @@ export default function EliteCTA() {
                 Talk to an Advisor
               </a>
             </div>
-          </motion.div>
 
-        </div>
+        {/* Trust indicators */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-12 flex flex-wrap items-center justify-center gap-6 text-white/50 text-sm"
+        >
+          <span className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 bg-orange-400 rounded-full" />
+            500+ Successful Placements
+          </span>
+          <span className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 bg-orange-400 rounded-full" />
+            15+ Partner Universities
+          </span>
+          <span className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 bg-orange-400 rounded-full" />
+            95% Visa Success Rate
+          </span>
+        </motion.div>
       </div>
     </section>
   );

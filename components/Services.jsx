@@ -300,7 +300,7 @@ function ServiceCard({ service, index, onView }) {
               <ExternalLink className="w-3.5 h-3.5" />
             </button>
             
-            <button className={`
+            <a href="/contacts" className={`
               px-4 py-2.5 rounded
               border-2 border-gray-200
               text-orange-700 text-sm font-medium
@@ -308,9 +308,9 @@ function ServiceCard({ service, index, onView }) {
               hover:bg-${service.color}-50
               transition-all duration-300
               flex items-center gap-1
-            `}>
+            `}> Apply
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </a>
           </div>
         </div>
 
