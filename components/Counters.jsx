@@ -313,7 +313,7 @@ export default function GlobalOpportunitiesCounter() {
           </motion.div>
 
           {/* Main Heading - Smaller */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
             Real Impact,
             <br />
             <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-orange-400 bg-clip-text text-transparent">

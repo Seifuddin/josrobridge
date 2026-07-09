@@ -34,8 +34,8 @@ const services = [
       "Scholarship assistance",
       "Course selection support",
     ],
-    color: "blue",
-    gradient: "from-blue-500 to-blue-600",
+    color: "orange",
+    gradient: "from-cyan-500 to-cyan-600",
     lightGradient: "from-blue-50 to-blue-100/50",
     tag: "Top Choice",
   },
@@ -51,8 +51,8 @@ const services = [
       "Writing workshops",
       "Mock examinations",
     ],
-    color: "emerald",
-    gradient: "from-emerald-500 to-emerald-600",
+    color: "orange",
+    gradient: "from-cyan-500 to-cyan-600",
     lightGradient: "from-emerald-50 to-emerald-100/50",
     tag: "Popular",
   },
@@ -68,8 +68,8 @@ const services = [
       "Investment guidance",
       "Growth strategies",
     ],
-    color: "purple",
-    gradient: "from-purple-500 to-purple-600",
+    color: "orange",
+    gradient: "from-cyan-500 to-cyan-600",
     lightGradient: "from-purple-50 to-purple-100/50",
     tag: "Expert",
   },
@@ -86,7 +86,7 @@ const services = [
       "Skills enhancement",
     ],
     color: "orange",
-    gradient: "from-orange-500 to-orange-600",
+    gradient: "from-cyan-500 to-cyan-600",
     lightGradient: "from-orange-50 to-orange-100/50",
     tag: "Premium",
   },
@@ -102,8 +102,8 @@ const services = [
       "Employer matching",
       "Relocation support",
     ],
-    color: "rose",
-    gradient: "from-rose-500 to-rose-600",
+    color: "orange",
+    gradient: "from-cyan-500 to-cyan-600",
     lightGradient: "from-rose-50 to-rose-100/50",
     tag: "Global",
   },
@@ -119,7 +119,7 @@ const services = [
       "Interview preparation",
       "Travel advisory",
     ],
-    color: "cyan",
+    color: "orange",
     gradient: "from-cyan-500 to-cyan-600",
     lightGradient: "from-cyan-50 to-cyan-100/50",
     tag: "Essential",
@@ -189,7 +189,7 @@ function ServiceCard({ service, index, onView }) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative h-full rounded-3xl bg-white shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden border border-gray-100">
+      <div className="relative h-full rounded bg-white shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden border border-gray-100">
         {/* Background Gradient */}
         <div className={`absolute inset-0 bg-gradient-to-br ${service.lightGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
 
@@ -204,6 +204,25 @@ function ServiceCard({ service, index, onView }) {
           
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-1 left-3">
+           
+           <div className="relative flex items-center gap-3">
+             <div className={`p-2 rounded -2xl bg-white backdrop-blur-sm ${colors.text}`}>
+              <Icon className="w-5 h-5 text-orange-400" />
+            </div>
+          <h3 className="text font-bold text-gray-200 mb-1">
+            {service.title}
+          </h3>
+          </div>
+
+          <p className="text-sm text-white leading-relaxed line-clamp-2">
+            {service.description}
+          </p>
+          
+          </div>
+
+          
           
           {/* Tag Badge */}
           <div className="absolute top-4 right-4">
@@ -217,10 +236,11 @@ function ServiceCard({ service, index, onView }) {
               <Sparkles className="w-3 h-3" />
               {service.tag}
             </span>
+            
           </div>
 
           {/* Icon - Overlay */}
-          <div className="absolute bottom-4 left-4">
+          <div className="hidden absolutebottom-4 left-4">
             <div className={`
               p-3 rounded-2xl 
               bg-white/90 backdrop-blur-sm 
@@ -235,12 +255,12 @@ function ServiceCard({ service, index, onView }) {
         </div>
 
         {/* Content */}
-        <div className="relative p-6">
-          <h3 className="text-xl font-bold text-gray-900 mb-2">
+        <div className="relative p-4">
+          <h3 className="hidden text-xl font-bold text-gray-900 mb-2">
             {service.title}
           </h3>
 
-          <p className="text-sm text-gray-600 leading-relaxed mb-4 line-clamp-2">
+          <p className="hidden text-sm text-gray-600 leading-relaxed mb-4 line-clamp-2">
             {service.description}
           </p>
 
@@ -267,7 +287,7 @@ function ServiceCard({ service, index, onView }) {
             <button
               onClick={() => onView(service)}
               className={`
-                flex-1 py-2.5 px-4 rounded-xl 
+                flex-1 py-2.5 px-4 rounded 
                 bg-gradient-to-r ${service.gradient} 
                 text-white text-sm font-medium
                 hover:shadow-lg hover:shadow-${service.color}-500/25
@@ -281,9 +301,9 @@ function ServiceCard({ service, index, onView }) {
             </button>
             
             <button className={`
-              px-4 py-2.5 rounded-xl
+              px-4 py-2.5 rounded
               border-2 border-gray-200
-              text-gray-700 text-sm font-medium
+              text-orange-700 text-sm font-medium
               hover:border-${service.color}-300
               hover:bg-${service.color}-50
               transition-all duration-300
@@ -419,7 +439,7 @@ export default function Services() {
 
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
             Empowering Education{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
               & Global Opportunities
             </span>
           </h2>
@@ -450,7 +470,7 @@ export default function Services() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-16 text-center"
+          className="hidden mt-16 text-center"
         >
           <div className="inline-flex items-center gap-6 px-8 py-4 rounded-full bg-white shadow-lg border border-gray-100">
             <div className="flex items-center gap-2">

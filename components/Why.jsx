@@ -18,19 +18,19 @@ const points = [
     title: "Faster Processing",
     desc: "We eliminate unnecessary delays through direct submission channels and priority handling systems.",
     icon: Zap,
-    color: "blue",
+    color: "orange",
   },
   {
     title: "Direct University Access",
     desc: "We connect students directly to partner institutions—no middle layers, no confusion.",
     icon: Link2,
-    color: "emerald",
+    color: "orange",
   },
   {
     title: "Verified Global Partners",
     desc: "Every institution we work with is vetted, accredited, and internationally recognized.",
     icon: ShieldCheck,
-    color: "purple",
+    color: "orange",
   },
   {
     title: "Full Journey Support",
@@ -102,7 +102,7 @@ export default function WhyJosroWins() {
   };
 
   return (
-    <section id="whyus" className="py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+    <section id="whyus" className="pt-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
       <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* HEADER */}
         <motion.div
@@ -141,18 +141,18 @@ export default function WhyJosroWins() {
           <motion.div variants={itemVariants} className="lg:col-span-4 space-y-6">
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
-                <Globe className="w-5 h-5 text-blue-600" />
+                <Globe className="w-5 h-5 text-orange-600" />
                 Did You Know?
               </h3>
 
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className=" text-gray-600 leading-relaxed">
                 Most agencies slow students down with unclear processes,
                 middlemen, and poor communication.
               </p>
 
               <div className="h-px bg-gray-200 my-4" />
 
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 We removed all of that. What remains is a direct,
                 structured, high-success system built for international placement.
               </p>
@@ -162,7 +162,7 @@ export default function WhyJosroWins() {
                 {stats.map((stat, i) => (
                   <div
                     key={i}
-                    className="text-center p-3 rounded-xl bg-gray-50 border border-gray-100"
+                    className="text-center p-3 rounded-xl bg-orange-50 border border-orange-100"
                   >
                     <div className={`text-xl font-bold text-${stat.color}-600`}>
                       {stat.value}
@@ -188,7 +188,7 @@ export default function WhyJosroWins() {
                 ))}
               </div>
               <span className="text-xs text-gray-600">
-                Trusted by <span className="font-semibold text-gray-900">500+</span> students
+                Trusted by <span className="font-semibold text-orange-700">500+</span> students
               </span>
             </div>
 
@@ -221,7 +221,7 @@ export default function WhyJosroWins() {
               <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-3 shadow-lg">
                 <div className="flex items-center gap-3">
                   <div className="bg-green-100 rounded-full p-1.5">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    <CheckCircle className="w-4 h-4 text-orange-600" />
                   </div>
                   <div>
                     <p className="text-xs font-semibold text-gray-900">
@@ -251,7 +251,7 @@ export default function WhyJosroWins() {
                   variants={itemVariants}
                   custom={i}
                   className={`
-                    group relative p-5 rounded-2xl 
+                    group relative p-3 rounded-2xl 
                     bg-white 
                     border border-gray-100 
                     ${colors.hover} 
@@ -315,7 +315,7 @@ export default function WhyJosroWins() {
           className="mt-8 text-center"
         >
           <div className="inline-flex items-center gap-6 px-8 py-3 rounded-full bg-gradient-to-r from-blue-50 to-orange-50 border border-gray-200 shadow-sm">
-            <span className="text-sm text-gray-700">
+            <span className="text-base text-gray-700">
               Ready to start your journey?
             </span>
             <button className="group inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full text-white text-sm font-medium hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105">

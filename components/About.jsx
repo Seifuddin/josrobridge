@@ -81,7 +81,7 @@ export default function About() {
         <div className="absolute bottom-0 -right-32 w-[400px] h-[400px] bg-gradient-to-tl from-blue-200/15 to-blue-100/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 smpx-6">
+      <div className="relative max-w-7xl mx-auto px-6">
         {/* TITLE AND SUBTITLE AT TOP */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -118,7 +118,7 @@ export default function About() {
           className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start"
         >
           {/* LEFT COLUMN - Now has the image (swapped from right) */}
-          <motion.div variants={itemVariants} className="relative order-2lg:order-1">
+          <motion.div variants={itemVariants} className="relativeorder-1 lg:order-2">
             {/* Main Image Container */}
             <div className="relative h-[380px] md:h-[420px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
@@ -220,7 +220,31 @@ export default function About() {
 
           {/* RIGHT COLUMN - Now has the content (swapped from left) */}
           <motion.div variants={itemVariants} className="space-y-4 order-1 lg:order-2">
-            {/* Description */}
+           
+
+            {/* Features - Compact Grid */}
+            <motion.div variants={itemVariants} className="grid grid-cols-1s md: grid-cols-3 gap-3 pt-2">
+              {features.map((feature, index) => (
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                  whileHover={{ y: -3 }}
+                  className="group p3 rounded bgwhite shadowsmhover:shadow-md transition-all duration-300 borderborder-slate-100"
+                >
+                  <div className={`w-4 h-4 rounded-lgbg-gradient-to-br ${feature.color} flex items-center justify-center mb-2 group-hover:scale-110 transition-transform`}>
+                    <feature.icon className="w-4 h-4 text-orange-700" />
+                  </div>
+                  <h4 className="text-xs font-bold text-blue-900 italic group-hover:text-orange-600 transition">
+                    {feature.title}
+                  </h4>
+                  <p className="text-[10px] text-slate-500 mt-0.5">
+                    {feature.description}
+                  </p>
+                </motion.div>
+              ))}
+            </motion.div>
+
+             {/* Description */}
             <motion.div variants={itemVariants} className="space-y-3">
               <p className="text-slate-600 text-smmd:text-base leading-relaxed">
                 Josro Bridge International Limited is an education and consultancy
@@ -235,35 +259,13 @@ export default function About() {
               </p>
             </motion.div>
 
-            {/* Features - Compact Grid */}
-            <motion.div variants={itemVariants} className="hidden md:grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-              {features.map((feature, index) => (
-                <motion.div
-                  key={index}
-                  variants={itemVariants}
-                  whileHover={{ y: -3 }}
-                  className="group p-3 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100"
-                >
-                  <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${feature.color} flex items-center justify-center mb-2 group-hover:scale-110 transition-transform`}>
-                    <feature.icon className="w-4 h-4 text-white" />
-                  </div>
-                  <h4 className="text-xs font-bold text-slate-800 group-hover:text-orange-600 transition">
-                    {feature.title}
-                  </h4>
-                  <p className="text-[10px] text-slate-500 mt-0.5">
-                    {feature.description}
-                  </p>
-                </motion.div>
-              ))}
-            </motion.div>
-
             {/* MISSION & VISION - Replacing the three small cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
               {/* Mission Card */}
               <motion.div
                 variants={itemVariants}
                 whileHover={{ y: -3 }}
-                className="group p-4 border-b border-orange-300 rounded bg-white bggradient-to-br from-orange-500 to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="group p-4 border-b border-gray-300 rounded bg-white bggradient-to-br from-orange-500 to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center mb-2">
                   <span className="text-xl bg-orange-500 p-1 rounded text-white">🎯</span>
@@ -279,7 +281,7 @@ export default function About() {
               <motion.div
                 variants={itemVariants}
                 whileHover={{ y: -3 }}
-                className="group p-4 border-b border-orange-300 rounded bg-white gradient-to-br from-blue-600 to-blue-700 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="group p-4 border-b border-gray-300 rounded bg-white gradient-to-br from-blue-600 to-blue-700 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center mb-2">
                   <span className="text-xl bg-orange-500 p-1 rounded text-white">👁️</span>
