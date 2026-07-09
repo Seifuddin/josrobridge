@@ -36,20 +36,17 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="bg-white py-1 px-6 shadow-md sticky top-0 z-50">
+    <nav className="bg-white px-6 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl px6 mx-auto flex justify-between items-center py-3">
-        {/* Logo */}
-        <Link href="/" className="flex items-center justify-center gap-3 group">
-          <div className="relative w-44 h-8 md:w-72 md:h-10">
-            <Image
-              src="/images/josro.png"
-              alt="Josro Bridge Logo"
-              width={60}
-              height={40}
-              className="rounded-md object-contain"
-            />
-          </div>
-          <div className="hidden leading-tight">
+        {/* LOGO */}
+<div className="flex items-center gap-3">
+  <img
+    src="/images/josro.png"
+    alt="Josro Bridge Logo"
+    className="w-14 h-14 object-contain"
+  />
+
+  <div className="hidden leading-tight">
     <h1 className="font-semibold text-blue-900 text-sm">
       Josro Bridge
     </h1>
@@ -57,7 +54,7 @@ export default function Navbar() {
       International Limited
     </p>
   </div>
-        </Link>
+  </div>
         {/* Desktop menu */}
         <ul className="hidden md:flex space-x-6 items-center">
           {navLinks.map((item, i) =>
