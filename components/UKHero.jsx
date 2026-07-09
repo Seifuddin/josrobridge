@@ -1,238 +1,71 @@
-"use client";
+// components/UnitedKingdomHero.tsx
+import Image from 'next/image';
 
-import React, { useEffect, useRef } from 'react';
-import { ChevronRight, MapPin, GraduationCap, Globe, Award, Building2, Crown } from 'lucide-react';
-
-const StudyInUKHero = () => {
-  const heroRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (heroRef.current) {
-        const scrolled = window.pageYOffset;
-        heroRef.current.style.transform = `translateY(${scrolled * 0.5}px)`;
-        heroRef.current.style.opacity = 1 - scrolled / 700;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
+export default function StudyInUKHero() {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-blue-50 via-white to-red-50">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-gradient-to-br from-red-200/30 to-blue-200/20 blur-3xl animate-pulse" />
-        <div className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-gradient-to-tr from-blue-200/30 to-red-200/20 blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full bg-gradient-to-r from-purple-100/10 to-blue-100/10 blur-3xl" />
-        
-        {/* Floating Icons - UK Specific */}
-        <div className="absolute top-20 left-10 animate-float-slow">
-          <Crown className="w-12 h-12 text-red-400/40" />
-        </div>
-        <div className="absolute bottom-32 right-20 animate-float-medium">
-          <Building2 className="w-16 h-16 text-blue-400/40" />
-        </div>
-        <div className="absolute top-1/3 right-10 animate-float-fast">
-          <Globe className="w-10 h-10 text-purple-400/40" />
-        </div>
-        <div className="absolute bottom-1/4 left-20 animate-float-slow">
-          <Award className="w-14 h-14 text-red-400/40" />
-        </div>
+    <section className="relative w-full overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-[1.002]">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/londonview.jpg"
+          alt="London skyline with Big Ben and Tower Bridge"
+          fill
+          className="object-cover object-[center_30%] brightness-[0.65] saturate-[1.05]"
+          priority
+          sizes="(max-width: 1280px) 100vw, 1280px"
+        />
       </div>
 
-      {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
-        <div className="grid lg:grid-cols-2 gap-12 items-center w-full py-20">
-          {/* Left Column */}
-          <div className="space-y-8" ref={heroRef}>
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-full px-4 py-2 shadow-lg">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500" />
-              </span>
-              <span className="text-sm font-medium text-gray-700">
-                🇬🇧 Apply Now for 2026 Intake
-              </span>
-            </div>
+      {/* Overlay - rich burgundy/navy for UK's regal feel */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-br from-[rgba(30,10,20,0.6)] to-[rgba(10,15,30,0.45)] backdrop-blur-[1px]" />
 
-            {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-              <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                Study in the
-              </span>
-              <br />
-              <span className="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
-                United Kingdom
-              </span>
-              <span className="text-gray-800"> 🇬🇧</span>
-            </h1>
+      {/* Content */}
+      <div className="relative z-20 flex flex-col items-start justify-center min-h-[480px] px-6 py-10 sm:px-10 sm:py-14 md:px-16 md:py-20 text-white">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/30 text-sm font-medium text-yellow-400 shadow-lg mb-5 sm:mb-6">
+          <i className="fas fa-graduation-cap text-yellow-300 text-sm" />
+          Josrobridge · educational consultancy
+        </div>
 
-            {/* Subtitle */}
-            <p className="text-lg sm:text-xl text-gray-600 max-w-lg leading-relaxed">
-              Join the ranks of world leaders at centuries-old institutions. 
-              Where tradition meets innovation in the heart of global academia.
-            </p>
+        {/* Heading */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight max-w-3xl">
+          Study in the <br className="sm:hidden" />
+          <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent drop-shadow-[0_2px_20px_rgba(255,215,0,0.3)]">
+            United Kingdom
+          </span>
+        </h1>
 
-            {/* Stats */}
-            <div className="flex flex-wrap gap-6 py-4">
-              <div className="flex items-center gap-3">
-                <div className="bg-blue-100 rounded-full p-2">
-                  <GraduationCap className="w-5 h-5 text-blue-600" />
-                </div>
-                <div>
-                  <p className="text-2xl font-bold text-gray-800">130+</p>
-                  <p className="text-sm text-gray-500">Universities</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="bg-red-100 rounded-full p-2">
-                  <Globe className="w-5 h-5 text-red-600" />
-                </div>
-                <div>
-                  <p className="text-2xl font-bold text-gray-800">500+</p>
-                  <p className="text-sm text-gray-500">Programs</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="bg-purple-100 rounded-full p-2">
-                  <Award className="w-5 h-5 text-purple-600" />
-                </div>
-                <div>
-                  <p className="text-2xl font-bold text-gray-800">96%</p>
-                  <p className="text-sm text-gray-500">Success Rate</p>
-                </div>
-              </div>
-            </div>
+        {/* Subtext */}
+        <p className="text-base sm:text-lg md:text-xl font-light max-w-lg mt-3 sm:mt-4 mb-6 sm:mb-8 leading-relaxed text-white/90 drop-shadow-md">
+          Home to some of the world's oldest and most prestigious universities. Let Josrobridge help you unlock your UK future.
+        </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105">
-                Get Free Consultation
-                <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-600 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity blur-xl -z-10" />
-              </button>
-              <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-gray-700 bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-full hover:bg-white hover:border-blue-300 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                <span className="mr-2">🏛️</span>
-                View Programs
-              </button>
-            </div>
+        {/* Buttons */}
+        <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+          <a
+            href="/contacts"
+            className="inline-flex items-center justify-center gap-2 px-6 py-2 sm:px-8 sm:py-3.5 bg-yellow-400 text-gray-900 font-semibold rounded shadow-md hover:bg-yellow-500 hover:scale-[1.02] transition-all duration-200 border border-white/30 text-sm sm:text-base"
+          >
+            <i className="fas fa-compass text-gray-900" />
+            Start Application
+          </a>
+          <a
+            href="https://wa.me/254720823950"
+            className="inline-flex items-center justify-center gap-2 px-6 py-2 sm:px-8 sm:py-3.5 bg-white/10 backdrop-blur-sm text-white font-semibold rounded shadow-md hover:bg-white/20 hover:scale-[1.02] transition-all duration-200 border border-white/40 text-sm sm:text-base"
+          >
+            <i className="fas fa-headset text-yellow-300" />
+            Talk to advisor
+          </a>
+        </div>
 
-            {/* Trust Badges */}
-            <div className="flex items-center gap-6 pt-4">
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center text-xs font-bold text-gray-600"
-                  >
-                    {String.fromCharCode(64 + i)}
-                  </div>
-                ))}
-              </div>
-              <div className="text-sm text-gray-500">
-                <span className="font-semibold text-gray-700">1000+</span> students placed
-                <span className="hidden sm:inline"> in UK universities</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column - Image */}
-          <div className="relative lg:block hidden">
-            <div className="relative">
-              {/* Main Image Container */}
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <div className="aspect-w-4 aspect-h-3 bg-gradient-to-br from-blue-400 to-red-500">
-                  <img
-                    src="https://images.unsplash.com/photo-1520986600661-8b0cfe6907b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Study in UK"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                </div>
-              </div>
-
-              {/* Floating Cards */}
-              <div className="absolute -top-6 -right-6 bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-4 animate-float-slow">
-                <div className="flex items-center gap-3">
-                  <div className="bg-green-100 rounded-full p-2">
-                    <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-gray-800">Visa Approved</p>
-                    <p className="text-xs text-gray-500">96% success rate</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute -bottom-4 -left-6 bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-4 animate-float-medium">
-                <div className="flex items-center gap-3">
-                  <div className="bg-blue-100 rounded-full p-2">
-                    <Crown className="w-5 h-5 text-blue-600" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-gray-800">Top Universities</p>
-                    <p className="text-xs text-gray-500">Oxford, Cambridge, LSE</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute bottom-20 -right-8 bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-4 animate-float-fast">
-                <div className="flex items-center gap-3">
-                  <div className="bg-purple-100 rounded-full p-2">
-                    <Award className="w-5 h-5 text-purple-600" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-gray-800">Scholarships</p>
-                    <p className="text-xs text-gray-500">Up to £50,000</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Footer detail */}
+        <div className="flex items-center gap-2 mt-6 sm:mt-8 text-xs sm:text-sm font-light text-[#e0ecff]/80 backdrop-blur-sm">
+          <i className="fas fa-crown text-yellow-400 text-base" />
+          <span>United Kingdom · 2026</span>
+          <span className="mx-1 opacity-30">|</span>
+          <span>Josrobridge</span>
         </div>
       </div>
-
-      {/* Bottom Wave */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg className="w-full h-20" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 50C240 100 480 0 720 50C960 100 1200 0 1440 50V100H0V50Z" className="fill-blue-50/50" />
-          <path d="M0 60C240 110 480 10 720 60C960 110 1200 10 1440 60V100H0V60Z" className="fill-white/70" />
-        </svg>
-      </div>
-
-      <style jsx>{`
-        @keyframes float-slow {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-20px); }
-        }
-        @keyframes float-medium {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-15px); }
-        }
-        @keyframes float-fast {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
-        }
-        .animate-float-slow {
-          animation: float-slow 6s ease-in-out infinite;
-        }
-        .animate-float-medium {
-          animation: float-medium 4s ease-in-out infinite;
-        }
-        .animate-float-fast {
-          animation: float-fast 3s ease-in-out infinite;
-        }
-        .delay-1000 {
-          animation-delay: 1000ms;
-        }
-      `}</style>
-    </div>
+    </section>
   );
-};
-
-export default StudyInUKHero;
+}
