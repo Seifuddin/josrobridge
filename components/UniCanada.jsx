@@ -38,7 +38,7 @@ const canadaUniversities = [
 
 export default function CanadaUniversities() {
   return (
-    <section className="py-10 bg-gradient-to-b from-slate-50 via-white to-slate-50 min-h-screen">
+    <section className="py-20 bg-gradient-to-b from-slate-50 via-white to-slate-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
         {/* Back Button */}
         <Link href="/journey">
@@ -48,7 +48,7 @@ export default function CanadaUniversities() {
         </Link>
 
         {/* Country Header */}
-        <div className="hidden mb-8">
+        <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-4xl">🇨🇦</span>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900">
@@ -105,7 +105,7 @@ export default function CanadaUniversities() {
                   </a>
                   <a
                     href="/contacts"
-                    className="flex-1 px-3 py-2 bg-slate-100 hover:bg-slate-200 transition text-slate-700 text-xs font-medium rounded -lg text-center"
+                    className="flex-1 px-3 py-2 border border-orange-200 hover:bg-slate-200 transition text-orange-700 text-xs font-medium rounded -lg text-center"
                   >
                     Apply
                   </a>
