@@ -226,7 +226,7 @@ const StudyInCanadaHero = () => {
         </svg>
       </div>
 
-      {/* Custom Animations - Add to your global CSS or use a style tag */}
+      {/* Custom Animations - Add to your global CSS or use a style tag
       <style jsx>{`
         @keyframes float-slow {
           0%, 100% { transform: translateY(0px); }
@@ -253,6 +253,7 @@ const StudyInCanadaHero = () => {
           animation-delay: 1000ms;
         }
       `}</style>
+       */}
     </div>
   );
 };
