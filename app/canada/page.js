@@ -6,7 +6,6 @@ export default function CanadaPage() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       <div className="relative">
-        <CanadanHero />
       <StudyInCanadaHero />
       <CanadaUniversities />
         {/* Hero content goes here */}

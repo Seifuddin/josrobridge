@@ -23,7 +23,7 @@ export default function Navbar() {
     { href: '#about', label: 'About' },
     { label: 'Study Abroad', dropdown: countries },
     { href: '#services', label: 'Services' },
-    { href: '#why', label: 'Why Us' },
+    { href: '#whyus', label: 'Why Us' },
     { href: '#faq', label: 'FAQ' },
     { href: '/contacts', label: 'Contacts' },
   ];
@@ -105,7 +105,7 @@ export default function Navbar() {
 
       {/* Mobile menu overlay */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-40 transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-white/70 bg-opacity-40 transition-opacity duration-300 ${
           isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
         onClick={() => setIsOpen(false)}
