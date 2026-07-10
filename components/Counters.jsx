@@ -288,7 +288,7 @@ export default function GlobalOpportunitiesCounter() {
       )}
 
       {/* Main Content */}
-      <div ref={ref} className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div ref={ref} className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section - Compact */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

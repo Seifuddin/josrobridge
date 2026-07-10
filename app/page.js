@@ -50,9 +50,9 @@ export default function Home() {
 
       <Hero />
       <About />
-      <GlobalOpportunitiesCounter />
-      <Services />
       <GlobalAcademicJourney />
+      <Services />
+      <GlobalOpportunitiesCounter />
       <WhyJosroWins />
       <StudentSuccessWall />
       <GlobalCTASection />
