@@ -22,7 +22,7 @@ export default function StudyInAustraliaHero() {
       {/* Content */}
       <div className="relative z-20 flex flex-col items-start justify-center min-h-[480px] px-6 py-10 sm:px-10 sm:py-14 md:px-16 md:py-20 text-white">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/30 text-sm font-medium text-amber-400 shadow-lg mb-5 sm:mb-6">
+        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/30 text-sm font-medium text-yellow-400 shadow-lg mb-5 sm:mb-6">
           <i className="fas fa-graduation-cap text-amber-300 text-sm" />
           Josrobridge · educational consultancy
         </div>
