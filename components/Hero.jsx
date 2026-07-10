@@ -69,7 +69,7 @@ const slides = [
     title: "Your Career Has No Borders",
     subtitle: "Navigate global labor markets with confidence. We connect your talent to opportunities in 50+ countries, ethically and seamlessly.",
     tag: "Labor Mobility",
-    stats: "50+ Countries",
+    stats: "4+ Countries",
     color: "from-blue-800/90 to-orange-300/80",
     accent: "orange",
   },
@@ -261,7 +261,7 @@ export default function Hero() {
             {/* CTA Section - Compact */}
             <div className="mt-6 flex flex-wrap items-center gap-4 animate-fade-in-up">
               <a
-                href="#services"
+                href="/contacts"
                 className="group relative inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl shadow-orange-500/30 hover:shadow-orange-500/50 hover:-translate-y-0.5 hover:scale-105"
               >
                 <span className="text-sm">Start Your Journey</span>
@@ -269,10 +269,11 @@ export default function Hero() {
                 <span className="absolute -top-1 -right-1 w-2 h-2 bg-orange-300 rounded-full animate-ping" />
               </a>
 
-              <button className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 backdrop-blur-2xl border border-white/20 text-white font-medium hover:bg-white/15 hover:border-white/30 transition-all duration-300 hover:scale-105">
+              <a
+                href="#services" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 backdrop-blur-2xl border border-white/20 text-white font-medium hover:bg-white/15 hover:border-white/30 transition-all duration-300 hover:scale-105">
                 <Play className="w-3.5 h-3.5 fill-white" />
-                <span className="text-sm">Watch Story</span>
-              </button>
+                <span className="text-sm">Services</span>
+              </a>
 
               <div className="flex -space-x-2 ml-1">
                 {[...Array(3)].map((_, i) => (
@@ -316,7 +317,7 @@ export default function Hero() {
                   <Globe className="w-4 h-4 text-orange-400" />
                 </div>
                 <div>
-                  <p className="text-white font-bold text-sm">50+</p>
+                  <p className="text-white font-bold text-sm">4+</p>
                   <p className="text-white/60 text-[10px]">Countries</p>
                 </div>
               </div>
