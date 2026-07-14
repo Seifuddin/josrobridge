@@ -42,7 +42,7 @@ const points = [
 
 const stats = [
   { label: "Success Rate", value: "94%", color: "blue" },
-  { label: "Partner Universities", value: "80+", color: "emerald" },
+  { label: "Partner Universities", value: "50+", color: "emerald" },
   { label: "Countries", value: "4+", color: "purple" },
 ];
 
@@ -181,7 +181,7 @@ export default function WhyJosroWins() {
                 {[1, 2, 3].map((i) => (
                   <div
                     key={i}
-                    className="w-8 h-8 rounded-full border-2 border-white bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-xs font-bold text-gray-600"
+                    className="w-8 h-8 rounded-full border-2 border-white bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center text-xs font-bold text-gray-600"
                   >
                     {String.fromCharCode(64 + i)}
                   </div>
@@ -195,7 +195,7 @@ export default function WhyJosroWins() {
             {/* CTA Link */}
             <motion.div
               variants={itemVariants}
-              className="flex items-center gap-2 text-sm font-semibold text-orange-600 cursor-pointer group"
+              className="hidden flex items-center gap-2 text-sm font-semibold text-orange-600 cursor-pointer group"
             >
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               Built for serious applicants only
@@ -205,7 +205,7 @@ export default function WhyJosroWins() {
           {/* CENTER - Image */}
           <motion.div
             variants={itemVariants}
-            className="lg:col-span-4 flex justify-center"
+            className="lg:col-span-4 flexjustify-center"
           >
             <div className="relative w-full max-w-sm aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl group">
               <img
@@ -228,7 +228,7 @@ export default function WhyJosroWins() {
                       Global Network
                     </p>
                     <p className="text-[10px] text-gray-500">
-                      80+ partner institutions
+                      50+ partner institutions
                     </p>
                   </div>
                 </div>

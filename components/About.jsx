@@ -64,7 +64,7 @@ export default function About() {
     {
       icon: Building2,
       title: "Global Network",
-      description: "15+ countries, 50+ partners",
+      description: "4+ countries, 50+ partners",
       color: "from-emerald-500 to-emerald-600",
     },
   ];

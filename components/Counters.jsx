@@ -47,7 +47,7 @@ function useCount(target, start) {
 const stats = [
   {
     label: "Students Placed",
-    value: 1240,
+    value: 500,
     icon: Users,
     suffix: "+",
     color: "blue",
@@ -71,7 +71,7 @@ const stats = [
   },
   {
     label: "Partner Institutions",
-    value: 80,
+    value: 50,
     icon: Building2,
     suffix: "+",
     color: "orange",

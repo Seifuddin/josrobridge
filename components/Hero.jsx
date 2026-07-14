@@ -29,7 +29,7 @@ const slides = [
     title: "Transform Your Future",
     subtitle: "Breakthrough boundaries with world-class education, global mobility, and strategic business solutions — all designed to accelerate your success.",
     tag: "University Placement",
-    stats: "98% Success Rate",
+    stats: "94% Success Rate",
     color: "from-blue-600/90 to-orange-500/80",
     accent: "orange",
   },
@@ -49,7 +49,7 @@ const slides = [
     title: "Scale Without Limits",
     subtitle: "From ambitious startups to global enterprises — we provide the strategic intelligence and operational excellence you need to dominate your market.",
     tag: "Business Consultancy",
-    stats: "300+ Clients Served",
+    stats: "500+ Clients Served",
     color: "from-blue-700/90 to-orange-400/80",
     accent: "orange",
   },
@@ -59,7 +59,7 @@ const slides = [
     title: "Lead the Revolution",
     subtitle: "Develop the mindset, skills, and network to become a visionary leader who doesn't just adapt to change — creates it.",
     tag: "Professional Training",
-    stats: "90% Career Growth",
+    stats: "94% Career Growth",
     color: "from-orange-700/90 to-blue-400/80",
     accent: "blue",
   },
@@ -67,7 +67,7 @@ const slides = [
     id: 5,
     image: "/images/horticulture+LHL+lawsuit+TN.webp",
     title: "Your Career Has No Borders",
-    subtitle: "Navigate global labor markets with confidence. We connect your talent to opportunities in 50+ countries, ethically and seamlessly.",
+    subtitle: "Navigate global labor markets with confidence. We connect your talent to opportunities in 4+ countries, ethically and seamlessly.",
     tag: "Labor Mobility",
     stats: "4+ Countries",
     color: "from-blue-800/90 to-orange-300/80",
@@ -97,20 +97,6 @@ export default function Hero() {
       opacity: Math.random() * 0.2 + 0.05,
     }));
     setParticles(newParticles);
-  }, []);
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      if (sectionRef.current) {
-        const rect = sectionRef.current.getBoundingClientRect();
-        const x = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
-        const y = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
-        setMousePosition({ x, y });
-      }
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
   useEffect(() => {
@@ -307,7 +293,7 @@ export default function Hero() {
                   <Users className="w-4 h-4 text-blue-400" />
                 </div>
                 <div>
-                  <p className="text-white font-bold text-sm">5000+</p>
+                  <p className="text-white font-bold text-sm">500+</p>
                   <p className="text-white/60 text-[10px]">Students Placed</p>
                 </div>
               </div>

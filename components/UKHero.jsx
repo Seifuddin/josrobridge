@@ -4,34 +4,34 @@ import Image from 'next/image';
 export default function StudyInUKHero() {
   return (
     <section className="relative w-full overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-[1.002]">
-      {/* Background Image */}
+      {/* Background Image - using local image from public folder */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/londonview.jpg"
           alt="London skyline with Big Ben and Tower Bridge"
           fill
-          className="object-cover object-[center_30%] brightness-[0.65] saturate-[1.05]"
+          className="object-cover object-[center_30%] brightness-[0.65] saturate-[1.1]"
           priority
           sizes="(max-width: 1280px) 100vw, 1280px"
         />
       </div>
 
-      {/* Overlay - rich burgundy/navy for UK's regal feel */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-br from-[rgba(30,10,20,0.6)] to-[rgba(10,15,30,0.45)] backdrop-blur-[1px]" />
+      {/* Overlay for readability */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-br from-[rgba(0,20,30,0.55)] to-[rgba(0,10,20,0.4)] backdrop-blur-[1px]" />
 
       {/* Content */}
       <div className="relative z-20 flex flex-col items-start justify-center min-h-[480px] px-6 py-10 sm:px-10 sm:py-14 md:px-16 md:py-20 text-white">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/30 text-sm font-medium text-yellow-400 shadow-lg mb-5 sm:mb-6">
-          <i className="fas fa-graduation-cap text-amber-300 text-sm" />
+        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/30 text-sm font-medium text-orange-400 shadow-lg mb-5 sm:mb-6">
+          <i className="fas fa-graduation-cap text-orange-300 text-sm" />
           Josrobridge · educational consultancy
         </div>
 
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight max-w-3xl">
           Study in the <br className="sm:hidden" />
-          <span className="bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent drop-shadow-[0_2px_20px_rgba(251,191,36,0.3)]">
-            United Kingdom
+          <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent drop-shadow-[0_2px_20px_rgba(251,191,36,0.3)]">
+            UK
           </span>
         </h1>
 
@@ -44,7 +44,7 @@ export default function StudyInUKHero() {
         <div className="flex flex-wrap items-center gap-3 sm:gap-4">
           <a
             href="/contacts"
-            className="inline-flex items-center justify-center gap-2 px-6 py-2 sm:px-8 sm:py-3.5 bg-amber-400 text-white font-semibold rounded shadow-md hover:bg-amber-500 hover:scale-[1.02] transition-all duration-200 border border-white/30 text-sm sm:text-base"
+            className="inline-flex items-center justify-center gap-2 px-6 py-2 sm:px-8 sm:py-3.5 bg-orange-400 text-white font-semibold rounded shadow-md hover:bg-amber-500 hover:scale-[1.02] transition-all duration-200 border border-white/30 text-sm sm:text-base"
           >
             <i className="fas fa-compass text-gray-900" />
             Start Application

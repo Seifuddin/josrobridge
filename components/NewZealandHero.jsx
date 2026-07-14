@@ -22,15 +22,15 @@ export default function StudyInNewZealandHero() {
       {/* Content */}
       <div className="relative z-20 flex flex-col items-start justify-center min-h-[480px] px-6 py-10 sm:px-10 sm:py-14 md:px-16 md:py-20 text-white">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/30 text-sm font-medium text-yellow-400 shadow-lg mb-5 sm:mb-6">
-          <i className="fas fa-graduation-cap text-amber-300 text-sm" />
+        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/30 text-sm font-medium text-orange-400 shadow-lg mb-5 sm:mb-6">
+          <i className="fas fa-graduation-cap text-orange-300 text-sm" />
           Josrobridge · educational consultancy
         </div>
 
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight max-w-3xl">
           Study in <br className="sm:hidden" />
-          <span className="bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent drop-shadow-[0_2px_20px_rgba(251,191,36,0.3)]">
+          <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent drop-shadow-[0_2px_20px_rgba(251,191,36,0.3)]">
             New Zealand
           </span>
         </h1>
@@ -44,7 +44,7 @@ export default function StudyInNewZealandHero() {
         <div className="flex flex-wrap items-center gap-3 sm:gap-4">
           <a
             href="/contacts"
-            className="inline-flex items-center justify-center gap-2 px-6 py-2 sm:px-8 sm:py-3.5 bg-amber-400 text-white font-semibold rounded shadow-md hover:bg-amber-500 hover:scale-[1.02] transition-all duration-200 border border-white/30 text-sm sm:text-base"
+            className="inline-flex items-center justify-center gap-2 px-6 py-2 sm:px-8 sm:py-3.5 bg-orange-400 text-white font-semibold rounded shadow-md hover:bg-amber-500 hover:scale-[1.02] transition-all duration-200 border border-white/30 text-sm sm:text-base"
           >
             <i className="fas fa-compass text-white" />
             Start Application

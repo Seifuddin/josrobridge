@@ -27,13 +27,6 @@ const canadaUniversities = [
     rating: 4.2,
     programs: 130,
   },
-  {
-    name: "University of Waterloo",
-    image: "/images/waterloo.jpg",
-    link: "https://uwaterloo.ca",
-    rating: 4.6,
-    programs: 190,
-  },
 ];
 
 export default function CanadaUniversities() {

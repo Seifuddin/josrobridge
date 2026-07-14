@@ -27,53 +27,53 @@ const countries = [
     id: "uk",
     name: "United Kingdom",
     code: "🇬🇧",
-    universities: 4,
+    universities: 3,
     image: "/images/londonview.jpg",
     href: "/united-kingdom",
     delay: 0.1,
     color: "from-blue-600/90 to-orange-500/50",
-    highlight: "Oxford • Cambridge • LSE",
+    highlight: "Gloucester • York St. John • Coventry",
     stats: "94% Student Satisfaction",
-    accent: "🇬🇧 London • Edinburgh • Manchester",
+    accent: "🇬🇧 Gloucester • York St. John • Coventry",
   },
   {
     id: "australia",
     name: "Australia",
     code: "🇦🇺",
-    universities: 4,
+    universities: 2,
     image: "/images/sidney.jpg",
     href: "/australia",
     delay: 0.2,
     color: "from-orange-600/90 to-blue-500/50",
-    highlight: "Sydney • Melbourne • UNSW",
+    highlight: "Queensland • Melbourne",
     stats: "Top 100 Universities",
-    accent: "🌏 Sydney • Melbourne • Brisbane",
+    accent: "🌏 Queensland • Melbourne",
   },
   {
     id: "new-zealand",
     name: "New Zealand",
     code: "🇳🇿",
-    universities: 4,
+    universities: 2,
     image: "/images/wellington.png",
     href: "/new-zealand",
     delay: 0.3,
     color: "from-blue-700/90 to-orange-400/50",
-    highlight: "Auckland • Otago • Wellington",
+    highlight: "Auckland • Wakaito",
     stats: "8.5/10 Quality of Life",
-    accent: "🏔️ Auckland • Wellington • Christchurch",
+    accent: "🏔️ Auckland • Waikato",
   },
   {
     id: "canada",
     name: "Canada",
     code: "🇨🇦",
-    universities: 4,
+    universities: 3,
     image: "/images/ottawa.jpg",
     href: "/canada",
     delay: 0.4,
     color: "from-orange-700/90 to-blue-400/50",
-    highlight: "Toronto • UBC • McGill",
+    highlight: "Toronto • Alberta • Calgary",
     stats: "Best Education System",
-    accent: "🍁 Toronto • Vancouver • Montreal",
+    accent: "🍁 Toronto • Alberta • Calgary",
   },
 ];
 
@@ -81,7 +81,7 @@ const additionalStats = [
   { icon: Users, label: "5000+", sub: "Students" },
   { icon: Award, label: "94%", sub: "Success" },
   { icon: Globe2, label: "4+", sub: "Countries" },
-  { icon: TrendingUp, label: "98%", sub: "Career Growth" },
+  { icon: TrendingUp, label: "94%", sub: "Career Growth" },
 ];
 
 export default function GlobalAcademicJourney() {
@@ -163,13 +163,13 @@ export default function GlobalAcademicJourney() {
           </div>
 
           <p className="mt-4 text-sm md:text-base text-white/60 max-w-2xl mx-auto font-light">
-            Explore world-class education across <span className="text-white font-medium">14+ universities</span> in 
+            Explore world-class education across <span className="text-white font-medium">10+ universities</span> in 
             <span className="text-orange-400 font-medium"> 4 countries</span> with access to 
             <span className="text-blue-400 font-medium"> 1000+ programs</span>
           </p>
 
           {/* Quick Stats - Compact */}
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4 mt-5">
+          <div className="hidden flexflex-wrap justify-center gap-3 md:gap-4 mt-5">
             {additionalStats.map((stat, index) => (
               <motion.div
                 key={index}
@@ -302,7 +302,7 @@ export default function GlobalAcademicJourney() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-10"
+          className="hidden mt-10"
         >
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#0F1525] via-[#1A1F35] to-[#0F1525] border border-white/5 p-6 md:p-8 shadow-xl shadow-black/30">
             {/* Background Decor - Subtle */}
@@ -352,7 +352,7 @@ export default function GlobalAcademicJourney() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: 0.4 }}
-          className="mt-8 flex flex-wrap justify-center items-center gap-4 md:gap-8 text-white/30 text-[10px]"
+          className="hidden mt-8 flex flex-wrap justify-center items-center gap-4 md:gap-8 text-white/30 text-[10px]"
         >
           <span className="flex items-center gap-1.5">
             <Star className="w-3 h-3 text-yellow-500/50 fill-yellow-500/20" />
@@ -366,7 +366,7 @@ export default function GlobalAcademicJourney() {
           <span className="w-px h-3 bg-white/10 hidden sm:block" />
           <span className="flex items-center gap-1.5">
             <Target className="w-3 h-3 text-blue-400/50" />
-            95% Success
+            94% Success
           </span>
           <span className="w-px h-3 bg-white/10 hidden sm:block" />
           <span className="flex items-center gap-1.5">

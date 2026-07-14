@@ -19,20 +19,6 @@ const newZealandUniversities = [
     rating: 4.0,
     programs: 85,
   },
-  {
-    name: "University of Canterbury",
-    image: "/images/Ivey_Hall,_Lincoln_University,_New_Zealand.jpg",
-    link: "https://www.canterbury.ac.nz",
-    rating: 4.3,
-    programs: 140,
-  },
-  {
-    name: "University of Otago",
-    image: "/images/Clocktower,_University_of_Otago,_Dunedin_2024.jpg",
-    link: "https://www.otago.ac.nz",
-    rating: 4.4,
-    programs: 155,
-  },
 ];
 
 export default function NewZealandUnis() {

@@ -26,13 +26,6 @@ const ukUniversities = [
     rating: 4.4,
     programs: 150,
   },
-  {
-    name: "University of Bristol",
-    image: "/images/Geography_Department,_University_of_Bristol_-_geograph.org.uk_-_201159.jpg",
-    link: "https://www.bristol.ac.uk",
-    rating: 4.5,
-    programs: 180,
-  },
 ];
 
 export default function UnitedKingdomUnis() {

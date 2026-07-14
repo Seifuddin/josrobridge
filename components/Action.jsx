@@ -72,7 +72,7 @@ export default function EliteCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 mt-8"
+          className="hidden gridgrid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 mt-8"
         >
           {[
             { icon: CheckCircle, label: "Verified University Partnerships" },
@@ -91,10 +91,10 @@ export default function EliteCTA() {
         </motion.div>
 
         {/* BUTTONS */}
-            <div className="mt-6 flex items-center gap-3">
+            <div className="mt-6 flex items-center justify-center gap-3">
               <a
                 href="/contacts"
-                className="w-full flex items-center justify-center gap-2 bg-orange-500 text-white font-semibold py-2 rounded -xl hover:bg-orange-600 transition"
+                className="wfull px-4 flex items-center justify-center gap-2 bg-orange-500 text-white font-semibold py-2 rounded -xl hover:bg-orange-600 transition"
               >
                 Start Application
                 <ArrowRight size={18} />
@@ -104,7 +104,7 @@ export default function EliteCTA() {
                 href="https://wa.me/254720823950"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 border border-orange-400/40 text-orange-300 py-2 rounded -xl hover:bg-orange-500/10 transition"
+                className="wfull px-4 flex items-center justify-center gap-2 border border-orange-400/40 text-orange-300 py-2 rounded -xl hover:bg-orange-500/10 transition"
               >
                 Talk to an Advisor
               </a>
@@ -116,7 +116,7 @@ export default function EliteCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-12 flex flex-wrap items-center justify-center gap-6 text-white/50 text-sm"
+          className="hidden mt-12flex flex-wrap items-center justify-center gap-6 text-white/50 text-sm"
         >
           <span className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 bg-orange-400 rounded-full" />

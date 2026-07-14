@@ -19,20 +19,6 @@ const australiaUniversities = [
     rating: 4.8,
     programs: 220,
   },
-  {
-    name: "The University of Adelaide",
-    image: "/images/adelaide.jpeg",
-    link: "https://www.adelaide.edu.au",
-    rating: 4.4,
-    programs: 170,
-  },
-  {
-    name: "The University of Sydney",
-    image: "/images/University-of-Sydney-campus.jpg",
-    link: "https://www.sydney.edu.au/",
-    rating: 4.8,
-    programs: 220,
-  },
 ];
 
 export default function AustralianUnis() {
