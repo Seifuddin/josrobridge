@@ -251,7 +251,7 @@ export default function About() {
                 firm committed to building bridges of opportunities for individuals
                 and organizations.
               </p>
-              <p className="md:hidden text-slate-600 text-sm md:text-base leading-relaxed">
+              <p className="md:hidden text-slate-600 text-smmd:text-base leading-relaxed">
                 With a focus on international education, language proficiency and
                 business growth, we empower students and professionals to achieve 
                 success in a globalized world.
