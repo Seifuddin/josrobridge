@@ -248,14 +248,13 @@ export default function About() {
             <motion.div variants={itemVariants} className="space-y-3">
               <p className="text-slate-600 text-smmd:text-base leading-relaxed">
                 Josro Bridge International Limited is an education and consultancy
-                firm committed to helping students and professionals unlock
-                international opportunities through education, language
-                proficiency, and career development.
+                firm committed to building bridges of opportunities for individuals
+                and organizations.
               </p>
-              <p className="hidden text-slate-600 text-sm md:text-base leading-relaxed">
-                We connect ambitious individuals with world-class universities,
-                IELTS preparation programs, and career pathways that create
-                lasting impact.
+              <p className="md:hidden text-slate-600 text-sm md:text-base leading-relaxed">
+                With a focus on international education, language proficiency and
+                business growth, we empower students and professionals to achieve 
+                success in a globalized world.
               </p>
             </motion.div>
 
@@ -272,8 +271,15 @@ export default function About() {
                 </div>
                 <h4 className="textxs font-bold text-blue-950">Our Mission</h4>
                 <p className="text-sm text-gray-700 mt-1 leading-relaxed">
-                  To empower students worldwide with access to quality education, 
-                  fostering academic excellence and cultural understanding.
+                  1. To connect students with reputable universities abroad for academic 
+                  and career advancement.
+                </p>
+                <p className="text-sm text-gray-700 mt-1 leading-relaxed">
+                  2. To deliver strategic business consultancy and training that drives 
+                  organizational growth and sustainability.
+                </p>
+                <p className="text-sm text-gray-700 mt-1 leading-relaxed">
+                  3. To connect skilled labor to enterprises abroad.
                 </p>
               </motion.div>
 
@@ -288,8 +294,8 @@ export default function About() {
                 </div>
                 <h4 className="textxs font-bold text-blue-950">Our Vision</h4>
                 <p className="text-sm text-gray-700 mt-1 leading-relaxed">
-                  To become the leading global education consultancy, creating 
-                  opportunities for every student regardless of boundaries.
+                  To be a leading global partner in education and consultancy, 
+                  fostering excellence, innovation and international collaboration.
                 </p>
               </motion.div>
             </div>
