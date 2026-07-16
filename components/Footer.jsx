@@ -32,7 +32,7 @@ export default function Footer() {
                 alt="Josro Bridge Logo"
                 width={45}
                 height={45}
-                className="rounded-md"
+                className="rounded p-1 bg-gray-50"
               />
 
               <div>

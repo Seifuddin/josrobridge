@@ -115,7 +115,7 @@ export default function About() {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start"
+          className="grid lg:grid-cols-2 gap-12 lg:gap-7 items-start"
         >
           {/* LEFT COLUMN - Now has the image (swapped from right) */}
           <motion.div variants={itemVariants} className="relativeorder-1 lg:order-2">
@@ -245,13 +245,13 @@ export default function About() {
             </motion.div>
 
              {/* Description */}
-            <motion.div variants={itemVariants} className="space-y-3">
+            <motion.div variants={itemVariants} className="space-y-2">
               <p className="text-slate-600 text-smmd:text-base leading-relaxed">
                 Josro Bridge International Limited is an education and consultancy
                 firm committed to building bridges of opportunities for individuals
                 and organizations.
               </p>
-              <p className="md:hidden text-slate-600 text-smmd:text-base leading-relaxed">
+              <p className="mdhidden text-slate-600 text-smmd:text-base leading-relaxed">
                 With a focus on international education, language proficiency and
                 business growth, we empower students and professionals to achieve 
                 success in a globalized world.
@@ -259,18 +259,19 @@ export default function About() {
             </motion.div>
 
             {/* MISSION & VISION - Replacing the three small cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt2">
               {/* Mission Card */}
               <motion.div
                 variants={itemVariants}
                 whileHover={{ y: -3 }}
                 className="group p-4 border-b border-gray-300 rounded bg-white bggradient-to-br from-orange-500 to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center mb-2">
-                  <span className="text-xl bg-orange-500 p-1 rounded text-white">🎯</span>
-                </div>
-                <h4 className="textxs font-bold text-blue-950">Our Mission</h4>
-                <p className="text-sm text-gray-700 mt-1 leading-relaxed">
+                <div className="relative flex items-center gap-3">
+              <span className="text-sm bg-orange-500 p-1 rounded text-white">🎯</span>
+          <h4 className="font-bold text-blue-950">Our Mission</h4>
+          </div>
+               
+                <p className="mt-2 text-sm text-gray-700 mt-1 leading-relaxed">
                   1. To connect students with reputable universities abroad for academic 
                   and career advancement.
                 </p>
@@ -289,11 +290,11 @@ export default function About() {
                 whileHover={{ y: -3 }}
                 className="group p-4 border-b border-gray-300 rounded bg-white gradient-to-br from-blue-600 to-blue-700 shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center mb-2">
-                  <span className="text-xl bg-orange-500 p-1 rounded text-white">👁️</span>
-                </div>
-                <h4 className="textxs font-bold text-blue-950">Our Vision</h4>
-                <p className="text-sm text-gray-700 mt-1 leading-relaxed">
+                <div className="relative flex items-center gap-3">
+               <span className="text-sm bg-orange-500 p-1 rounded text-white">👁️</span>
+          <h4 className="font-bold text-blue-950">Our Vision</h4>
+          </div>
+                <p className="mt-2 text-sm text-gray-700 mt-1 leading-relaxed">
                   To be a leading global partner in education and consultancy, 
                   fostering excellence, innovation and international collaboration.
                 </p>

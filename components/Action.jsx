@@ -13,7 +13,7 @@ import {
 
 export default function EliteCTA() {
   return (
-    <section className="relative py-16 md:py-24 overflow-hidden">
+    <section className="relative py-14 md:py-20 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -39,10 +39,10 @@ export default function EliteCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
-          className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/20 text-orange-400 text-xs uppercase tracking-[0.2em] mb-6"
+          className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/20 text-orange-400 text-xs uppercasetracking-[0.2em] mb-4"
         >
-          <Globe size={14} />
-          Global Education Access
+          <Globe size={12} />
+          Take Action
         </motion.div>
 
         {/* Heading */}
@@ -53,16 +53,14 @@ export default function EliteCTA() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-white leading-tight">
-            Your Future Abroad Starts With
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300">
-              The Right Guidance
+            Ready to start 
+            <span className="pl-2 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300">
+             your journey?
             </span>
           </h2>
 
           <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto mt-4 leading-relaxed">
-            We connect ambitious students to internationally recognized
-            universities, training programs, and global career opportunities
-            that transform lives.
+            Your Future Abroad Starts With The Right Guidance. Transform Yor Future Today. Sky is the Limit.
           </p>
         </motion.div>
 
@@ -94,7 +92,7 @@ export default function EliteCTA() {
             <div className="mt-6 flex items-center justify-center gap-3">
               <a
                 href="/contacts"
-                className="wfull px-4 flex items-center justify-center gap-2 bg-orange-500 text-white font-semibold py-2 rounded -xl hover:bg-orange-600 transition"
+                className="wfull px-4 flex items-center justify-center gap-2 bg-orange-500 text-white font-semibold py-2 rounded-full hover:bg-orange-600 transition"
               >
                 Start Application
                 <ArrowRight size={18} />
@@ -104,7 +102,7 @@ export default function EliteCTA() {
                 href="https://wa.me/254720823950"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="wfull px-4 flex items-center justify-center gap-2 border border-orange-400/40 text-orange-300 py-2 rounded -xl hover:bg-orange-500/10 transition"
+                className="wfull px-4 flex items-center justify-center gap-2 bg-white text-orange-500 py-2 rounded-full hover:bg-orange-500/10 transition"
               >
                 Talk to an Advisor
               </a>

@@ -158,7 +158,7 @@ export default function WhyJosroWins() {
               </p>
 
               {/* Stats Mini Grid */}
-              <div className="grid grid-cols-3 gap-3 mt-6">
+              <div className="hidden gridgrid-cols-3 gap-3 mt-6">
                 {stats.map((stat, i) => (
                   <div
                     key={i}
@@ -240,7 +240,7 @@ export default function WhyJosroWins() {
           </motion.div>
 
           {/* RIGHT COLUMN - Points */}
-          <motion.div variants={itemVariants} className="lg:col-span-4 space-y-4">
+          <motion.div variants={itemVariants} className="lg:col-span-4 space-y-3">
             {points.map((item, i) => {
               const Icon = item.icon;
               const colors = colorMap[item.color];
@@ -251,9 +251,9 @@ export default function WhyJosroWins() {
                   variants={itemVariants}
                   custom={i}
                   className={`
-                    group relative p-3 rounded-2xl 
-                    bg-white 
-                    border border-gray-100 
+                    group relative pb-2 px-2 rounded-md 
+                    bgwhite 
+                    border-b border-gray-100 
                     ${colors.hover} 
                     shadow-sm hover:shadow-lg 
                     transition-all duration-300 
@@ -261,16 +261,16 @@ export default function WhyJosroWins() {
                   `}
                 >
                   {/* Hover Glow */}
-                  <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${colors.gradient} blur-xl opacity-10`} />
+                  <div className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className={`absolute inset-0 rounded-md bg-gradient-to-r ${colors.gradient} blur-xl opacity-10`} />
                   </div>
 
                   <div className="relative flex gap-4">
                     {/* Icon Container */}
                     <div className={`
-                      flex-shrink-0 w-12 h-12 
+                      flex-shrink-0 w-7 h-7 
                       ${colors.bg} 
-                      rounded-xl 
+                      rounded 
                       flex items-center justify-center
                       group-hover:scale-110 
                       transition-transform duration-300
@@ -312,7 +312,7 @@ export default function WhyJosroWins() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-8 text-center"
+          className="hidden mt-8 text-center"
         >
           <div className="inline-flex items-center gap-6 px-8 py-3 rounded-full bg-gradient-to-r from-blue-50 to-orange-50 border border-gray-200 shadow-sm">
             <span className="text-base text-gray-700">
