@@ -22,6 +22,7 @@ export default function Navbar() {
     { href: '/', label: 'Home' },
     { href: '#about', label: 'About' },
     { label: 'Study Abroad', dropdown: countries },
+    { href: '/apply', label: 'Apply' },
     { href: '#services', label: 'Services' },
     { href: '#whyus', label: 'Why Us' },
     { href: '#faq', label: 'FAQ' },

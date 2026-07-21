@@ -234,7 +234,7 @@ export default function StudentSuccessWall() {
                     </div>
 
                     {/* Before/After */}
-                    <div className="mt-3 grid grid-cols-2 gap-2">
+                    <div className="hidden mt-3gridgrid-cols-2gap-2">
                       <div className="bg-slate-50 border border-slate-200 rounded-xl p-2.5">
                         <p className="text-[8px] uppercase font-bold text-slate-400 tracking-wider">
                           Before
