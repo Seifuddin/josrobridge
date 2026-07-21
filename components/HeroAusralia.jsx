@@ -43,7 +43,7 @@ export default function StudyInAustraliaHero() {
         {/* Buttons */}
         <div className="flex flex-wrap items-center gap-3 sm:gap-4">
           <a
-            href="/contacts"
+            href="/apply"
             className="inline-flex items-center justify-center gap-2 px-6 py-2 sm:px-8 sm:py-3.5 bg-orange-400 text-white font-semibold rounded shadow-md hover:bg-amber-500 hover:scale-[1.02] transition-all duration-200 border border-white/30 text-sm sm:text-base"
           >
             <i className="fas fa-compass text-white" />

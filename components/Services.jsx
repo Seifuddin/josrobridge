@@ -300,7 +300,7 @@ function ServiceCard({ service, index, onView }) {
               <ExternalLink className="w-3.5 h-3.5" />
             </button>
             
-            <a href="/contacts" className={`
+            <a href="/apply" className={`
               px-4 py-2.5 rounded
               border-2 border-gray-200
               text-orange-700 text-sm font-medium

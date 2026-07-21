@@ -381,7 +381,7 @@ export default function StudentSuccessWall() {
                       Apply Now →
                     </button>
                     <a
-                    href="/contacts"
+                    href="/apply"
                     className="px-6 py-2.5 bg-white text-orange-600 font-semibold rounded-xl hover:shadow-lg transition-all hover:scale-105"
                   >
                     Apply Now →

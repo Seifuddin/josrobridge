@@ -89,7 +89,7 @@ export default function NewZealandUnis() {
                     Explore
                   </a>
                   <a
-                    href="/contacts"
+                    href="/apply"
                     className="flex-1 px-3 py-2 border border-orange-200 hover:bg-slate-200 transition text-orange-700 text-xs font-medium rounded -lg text-center"
                   >
                     Apply

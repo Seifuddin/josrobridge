@@ -247,7 +247,7 @@ export default function Hero() {
             {/* CTA Section - Compact */}
             <div className="mt-6 flex flex-wrap items-center gap-4 animate-fade-in-up">
               <a
-                href="/contacts"
+                href="/apply"
                 className="group relative inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl shadow-orange-500/30 hover:shadow-orange-500/50 hover:-translate-y-0.5 hover:scale-105"
               >
                 <span className="text-sm">Start Your Journey</span>

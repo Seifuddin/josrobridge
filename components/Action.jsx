@@ -91,7 +91,7 @@ export default function EliteCTA() {
         {/* BUTTONS */}
             <div className="mt-6 flex items-center justify-center gap-3">
               <a
-                href="/contacts"
+                href="/apply"
                 className="wfull px-4 flex items-center justify-center gap-2 bg-orange-500 text-white font-semibold py-2 rounded-full hover:bg-orange-600 transition"
               >
                 Start Application
